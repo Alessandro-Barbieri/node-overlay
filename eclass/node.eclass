@@ -3,7 +3,6 @@
 
 EXPORT_FUNCTIONS src_prepare src_compile src_install src_test
 
-RESTRICT+=" mirror"
 SLOT="0"
 
 SRC_URI="https://registry.npmjs.org/${PN}/-/${P}.tgz"
