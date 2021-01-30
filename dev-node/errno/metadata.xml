@@ -6,7 +6,7 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://github.com/uuidjs/uuid/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/uuidjs/uuid.git</remote-id>
+		<bugs-to>https://github.com/rvagg/node-errno/issues</bugs-to>
+		<remote-id type="github">git+https://github.com/rvagg/node-errno.git</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -6,7 +6,7 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://github.com/uuidjs/uuid/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/uuidjs/uuid.git</remote-id>
+		<bugs-to>https://github.com/atom/emissary/issues</bugs-to>
+		<remote-id type="github">http://github.com/atom/emissary.git</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -6,7 +6,6 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://github.com/uuidjs/uuid/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/uuidjs/uuid.git</remote-id>
+		<remote-id type="github">git://github.com/thlorenz/ansicolors.git</remote-id>
 	</upstream>
 </pkgmetadata>
