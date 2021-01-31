@@ -10,3 +10,4 @@ HOMEPAGE="
 		https://www.npmjs.com/package/timecop
 "
 KEYWORDS="~amd64"
+LICENSE="MIT"

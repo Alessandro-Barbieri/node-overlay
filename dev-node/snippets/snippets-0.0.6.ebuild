@@ -10,3 +10,4 @@ HOMEPAGE="
 		https://www.npmjs.com/package/snippets
 "
 KEYWORDS="~amd64"
+LICENSE="MIT"

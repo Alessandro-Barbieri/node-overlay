@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/fb55/entities/issues</bugs-to>
-		<remote-id type="github">fb55/entities</remote-id>
+		<remote-id type="github">git://github.com/fb55/entities.git</remote-id>
 	</upstream>
 </pkgmetadata>

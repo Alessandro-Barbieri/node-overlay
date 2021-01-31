@@ -11,6 +11,7 @@ HOMEPAGE="
 	https://www.npmjs.com/package/less-cache
 "
 KEYWORDS="~amd64"
+LICENSE="MIT"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/fs-plus

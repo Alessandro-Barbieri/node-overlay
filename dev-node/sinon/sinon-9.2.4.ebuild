@@ -11,7 +11,7 @@ HOMEPAGE="
 	https://www.npmjs.com/package/sinon
 "
 
-LICENSE="BSD-3-Clause"
+LICENSE="BSD"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}

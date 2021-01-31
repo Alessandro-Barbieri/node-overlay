@@ -10,6 +10,7 @@ HOMEPAGE="
 		https://www.npmjs.com/package/styleguide
 "
 KEYWORDS="~amd64"
+LICENSE="CC-BY-SA-3.0"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/kss

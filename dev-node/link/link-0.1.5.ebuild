@@ -10,3 +10,4 @@ HOMEPAGE="
 		https://www.npmjs.com/package/link
 "
 KEYWORDS="~amd64"
+LICENSE="MIT BSD-2"

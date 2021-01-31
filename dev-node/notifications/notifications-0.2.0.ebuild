@@ -10,3 +10,4 @@ HOMEPAGE="
 		https://www.npmjs.com/package/notifications
 "
 KEYWORDS="~amd64"
+LICENSE="MIT"

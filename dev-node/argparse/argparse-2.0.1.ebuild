@@ -10,5 +10,6 @@ HOMEPAGE="
 	https://github.com/nodeca/argparse
 	https://www.npmjs.com/package/argparse
 "
-LICENSE="PSF-2"
+
+LICENSE="Python-2.0"
 KEYWORDS="~amd64"

@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/nodeca/argparse/issues</bugs-to>
-		<remote-id type="github">nodeca/argparse</remote-id>
+		<remote-id type="github">git+https://github.com/nodeca/argparse.git</remote-id>
 	</upstream>
 </pkgmetadata>
