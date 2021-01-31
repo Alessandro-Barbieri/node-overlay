@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="The fastest and simplest library for SQLite3 in Node.js."
 HOMEPAGE="
-	http://github.com/JoshuaWise/better-sqlite3
+	https://github.com/JoshuaWise/better-sqlite3
 	https://www.npmjs.com/package/better-sqlite3
 "
 

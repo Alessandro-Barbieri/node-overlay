@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="HANDLE CONFIGURATION ONCE AND FOR ALL"
 HOMEPAGE="
-	http://github.com/dominictarr/config-chain
+	https://github.com/dominictarr/config-chain
 	https://www.npmjs.com/package/config-chain
 "
 KEYWORDS="~amd64"

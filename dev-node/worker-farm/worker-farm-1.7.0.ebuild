@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Distribute processing tasks to child processes with an über-simple API and baked-in durability & custom concurrency options."
+DESCRIPTION="Distribute processing tasks to child processes"
 HOMEPAGE="
 	https://github.com/rvagg/node-worker-farm
 	https://www.npmjs.com/package/worker-farm

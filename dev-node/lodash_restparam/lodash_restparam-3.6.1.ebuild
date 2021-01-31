@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="The modern build of lodash’s _.restParam as a module."
+DESCRIPTION="The modern build of lodash's _.restParam as a module."
 HOMEPAGE="
 	https://lodash.com/
 	https://www.npmjs.com/package/lodash.restparam

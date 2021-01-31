@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="rawStream.pipe(JSONStream.parse()).pipe(streamOfObjects)"
 HOMEPAGE="
-	http://github.com/dominictarr/JSONStream
+	https://github.com/dominictarr/JSONStream
 	https://www.npmjs.com/package/JSONStream
 "
 
