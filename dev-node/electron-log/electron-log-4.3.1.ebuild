@@ -5,15 +5,11 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="YAML 1.2 parser and serializer"
+DESCRIPTION="Just a very simple logging module for your Electron application"
 HOMEPAGE="
-	https://github.com/nodeca/js-yaml
-	https://www.npmjs.com/package/js-yaml
+	https://github.com/megahertz/electron-log
+	https://www.npmjs.com/package/electron-log
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
-RDEPEND="
-	${NODEJS_RDEPEND}
-	dev-node/argparse
-"
