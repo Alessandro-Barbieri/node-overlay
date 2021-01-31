@@ -5,15 +5,11 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="YAML 1.2 parser and serializer"
+DESCRIPTION="Check if Electron is running in development"
 HOMEPAGE="
-	https://github.com/nodeca/js-yaml
-	https://www.npmjs.com/package/js-yaml
+	https://github.com/sindresorhus/electron-is-dev
+	https://www.npmjs.com/package/electron-is-dev
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
-RDEPEND="
-	${NODEJS_RDEPEND}
-	dev-node/argparse
-"

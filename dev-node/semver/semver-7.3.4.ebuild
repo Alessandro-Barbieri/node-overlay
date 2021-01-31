@@ -10,6 +10,7 @@ HOMEPAGE="
 	https://github.com/npm/node-semver
 	https://www.npmjs.com/package/semver
 "
+
 LICENSE="ISC"
 KEYWORDS="~amd64"
 RDEPEND="

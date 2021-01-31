@@ -5,15 +5,14 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="YAML 1.2 parser and serializer"
+DESCRIPTION="Zulip API client library"
 HOMEPAGE="
-	https://github.com/nodeca/js-yaml
-	https://www.npmjs.com/package/js-yaml
+		https://www.npmjs.com/package/zulip
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/argparse
+	dev-node/request
 "

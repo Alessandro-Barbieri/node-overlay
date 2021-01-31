@@ -6,7 +6,7 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://github.com/npm/node-semver/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/node-semver.git</remote-id>
+		<bugs-to>https://github.com/electron-elements/utils/issues</bugs-to>
+		<remote-id type="github">git+ssh://git@github.com/electron-elements/utils.git</remote-id>
 	</upstream>
 </pkgmetadata>
