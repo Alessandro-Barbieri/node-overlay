@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/jslicense/spdx-license-ids/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/jslicense/spdx-license-ids.git</remote-id>
+		<remote-id type="github">jslicense/spdx-license-ids</remote-id>
 	</upstream>
 </pkgmetadata>

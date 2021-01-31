@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/atom/emissary/issues</bugs-to>
-		<remote-id type="github">http://github.com/atom/emissary.git</remote-id>
+		<remote-id type="github">atom/emissary</remote-id>
 	</upstream>
 </pkgmetadata>

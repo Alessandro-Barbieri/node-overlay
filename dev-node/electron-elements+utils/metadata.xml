@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/electron-elements/utils/issues</bugs-to>
-		<remote-id type="github">git+ssh://git@github.com/electron-elements/utils.git</remote-id>
+		<remote-id type="github">electron-elements/utils</remote-id>
 	</upstream>
 </pkgmetadata>

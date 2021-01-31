@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/rvagg/prr/issues</bugs-to>
-		<remote-id type="github">https://github.com/rvagg/prr.git</remote-id>
+		<remote-id type="github">rvagg/prr</remote-id>
 	</upstream>
 </pkgmetadata>

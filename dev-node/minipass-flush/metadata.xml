@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/isaacs/minipass-flush/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/isaacs/minipass-flush.git</remote-id>
+		<remote-id type="github">isaacs/minipass-flush</remote-id>
 	</upstream>
 </pkgmetadata>

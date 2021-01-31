@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/atom/first-mate/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/atom/first-mate.git</remote-id>
+		<remote-id type="github">atom/first-mate</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/bruce/node-temp/issues</bugs-to>
-		<remote-id type="github">git://github.com/bruce/node-temp.git</remote-id>
+		<remote-id type="github">bruce/node-temp</remote-id>
 	</upstream>
 </pkgmetadata>

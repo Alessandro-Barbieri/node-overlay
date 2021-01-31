@@ -6,6 +6,6 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">https://github.com/node-red/node-red-nodes/storage/tail/</remote-id>
+		<remote-id type="github">node-red/node-red-nodes/storage/tail/</remote-id>
 	</upstream>
 </pkgmetadata>

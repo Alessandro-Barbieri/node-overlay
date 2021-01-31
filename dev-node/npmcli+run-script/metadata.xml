@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/run-script/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/run-script.git</remote-id>
+		<remote-id type="github">npm/run-script</remote-id>
 	</upstream>
 </pkgmetadata>

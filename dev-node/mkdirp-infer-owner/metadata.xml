@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/isaacs/mkdirp-infer-owner/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/isaacs/mkdirp-infer-owner.git</remote-id>
+		<remote-id type="github">isaacs/mkdirp-infer-owner</remote-id>
 	</upstream>
 </pkgmetadata>

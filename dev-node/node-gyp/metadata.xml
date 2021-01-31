@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/nodejs/node-gyp/issues</bugs-to>
-		<remote-id type="github">git://github.com/nodejs/node-gyp.git</remote-id>
+		<remote-id type="github">nodejs/node-gyp</remote-id>
 	</upstream>
 </pkgmetadata>

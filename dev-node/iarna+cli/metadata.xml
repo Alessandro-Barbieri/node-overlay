@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/iarna/cli/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/iarna/cli.git</remote-id>
+		<remote-id type="github">iarna/cli</remote-id>
 	</upstream>
 </pkgmetadata>

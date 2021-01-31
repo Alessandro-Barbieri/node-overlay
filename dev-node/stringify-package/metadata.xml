@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/stringify-package/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/stringify-package.git</remote-id>
+		<remote-id type="github">npm/stringify-package</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/lodash/lodash/issues</bugs-to>
-		<remote-id type="github">https://github.com/lodash/lodash</remote-id>
+		<remote-id type="github">lodash/lodash</remote-id>
 	</upstream>
 </pkgmetadata>

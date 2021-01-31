@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/kemitchell/validate-npm-package-license.js/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/kemitchell/validate-npm-package-license.js.git</remote-id>
+		<remote-id type="github">kemitchell/validate-npm-package-license.js</remote-id>
 	</upstream>
 </pkgmetadata>

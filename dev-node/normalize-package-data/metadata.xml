@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/normalize-package-data/issues</bugs-to>
-		<remote-id type="github">git://github.com/npm/normalize-package-data.git</remote-id>
+		<remote-id type="github">npm/normalize-package-data</remote-id>
 	</upstream>
 </pkgmetadata>

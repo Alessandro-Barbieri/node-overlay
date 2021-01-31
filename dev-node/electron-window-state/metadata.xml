@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/mawie81/electron-window-state/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/mawie81/electron-window-state.git</remote-id>
+		<remote-id type="github">mawie81/electron-window-state</remote-id>
 	</upstream>
 </pkgmetadata>

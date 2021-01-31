@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/develar/lazy-val/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/develar/lazy-val.git</remote-id>
+		<remote-id type="github">develar/lazy-val</remote-id>
 	</upstream>
 </pkgmetadata>

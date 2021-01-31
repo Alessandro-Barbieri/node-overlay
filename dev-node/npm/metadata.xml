@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://npm.community/c/bugs</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/cli.git</remote-id>
+		<remote-id type="github">npm/cli</remote-id>
 	</upstream>
 </pkgmetadata>

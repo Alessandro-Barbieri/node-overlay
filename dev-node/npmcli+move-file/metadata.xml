@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/move-file/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/move-file.git</remote-id>
+		<remote-id type="github">npm/move-file</remote-id>
 	</upstream>
 </pkgmetadata>

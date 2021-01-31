@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/iarna/lock-verify/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/iarna/lock-verify.git</remote-id>
+		<remote-id type="github">iarna/lock-verify</remote-id>
 	</upstream>
 </pkgmetadata>

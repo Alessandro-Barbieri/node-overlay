@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/Paul-Lazunko/property-accessor/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/Paul-Lazunko/property-accessor.git</remote-id>
+		<remote-id type="github">Paul-Lazunko/property-accessor</remote-id>
 	</upstream>
 </pkgmetadata>

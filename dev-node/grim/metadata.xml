@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/atom/grim/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/atom/grim.git</remote-id>
+		<remote-id type="github">atom/grim</remote-id>
 	</upstream>
 </pkgmetadata>

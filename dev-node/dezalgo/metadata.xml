@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/dezalgo/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/dezalgo.git</remote-id>
+		<remote-id type="github">npm/dezalgo</remote-id>
 	</upstream>
 </pkgmetadata>

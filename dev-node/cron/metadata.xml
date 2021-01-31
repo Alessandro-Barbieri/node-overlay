@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>http://github.com/kelektiv/node-cron/issues</bugs-to>
-		<remote-id type="github">git+ssh://git@github.com/kelektiv/node-cron</remote-id>
+		<remote-id type="github">kelektiv/node-cron</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/streamxorg/streamx/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/streamxorg/streamx.git</remote-id>
+		<remote-id type="github">streamxorg/streamx</remote-id>
 	</upstream>
 </pkgmetadata>

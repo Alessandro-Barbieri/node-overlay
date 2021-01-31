@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/rsms/js-lru/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/rsms/js-lru.git</remote-id>
+		<remote-id type="github">rsms/js-lru</remote-id>
 	</upstream>
 </pkgmetadata>

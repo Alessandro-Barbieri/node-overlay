@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/mikolalysenko/lazy-property/issues</bugs-to>
-		<remote-id type="github">git://github.com/mikolalysenko/lazy-property.git</remote-id>
+		<remote-id type="github">mikolalysenko/lazy-property</remote-id>
 	</upstream>
 </pkgmetadata>

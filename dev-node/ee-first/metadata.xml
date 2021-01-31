@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/jonathanong/ee-first/issues</bugs-to>
-		<remote-id type="github">https://github.com/jonathanong/ee-first</remote-id>
+		<remote-id type="github">jonathanong/ee-first</remote-id>
 	</upstream>
 </pkgmetadata>

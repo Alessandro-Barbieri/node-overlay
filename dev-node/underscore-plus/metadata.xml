@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/atom/underscore-plus/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/atom/underscore-plus.git</remote-id>
+		<remote-id type="github">atom/underscore-plus</remote-id>
 	</upstream>
 </pkgmetadata>

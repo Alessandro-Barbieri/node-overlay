@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/indutny/node-ip/issues</bugs-to>
-		<remote-id type="github">git+ssh://git@github.com/indutny/node-ip.git</remote-id>
+		<remote-id type="github">indutny/node-ip</remote-id>
 	</upstream>
 </pkgmetadata>

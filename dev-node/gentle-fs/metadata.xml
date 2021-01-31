@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/gentle-fs/issues</bugs-to>
-		<remote-id type="github">git://github.com/npm/gentle-fs.git</remote-id>
+		<remote-id type="github">npm/gentle-fs</remote-id>
 	</upstream>
 </pkgmetadata>

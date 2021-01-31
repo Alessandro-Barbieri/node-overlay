@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/crypto-utils/random-bytes/issues</bugs-to>
-		<remote-id type="github">https://github.com/crypto-utils/random-bytes</remote-id>
+		<remote-id type="github">crypto-utils/random-bytes</remote-id>
 	</upstream>
 </pkgmetadata>

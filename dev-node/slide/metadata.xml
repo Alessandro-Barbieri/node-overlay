@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/isaacs/slide-flow-control/issues</bugs-to>
-		<remote-id type="github">git://github.com/isaacs/slide-flow-control.git</remote-id>
+		<remote-id type="github">isaacs/slide-flow-control</remote-id>
 	</upstream>
 </pkgmetadata>

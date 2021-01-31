@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/rvagg/node-worker-farm/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/rvagg/node-worker-farm.git</remote-id>
+		<remote-id type="github">rvagg/node-worker-farm</remote-id>
 	</upstream>
 </pkgmetadata>

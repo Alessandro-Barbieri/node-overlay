@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/watilde/meant/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/watilde/meant.git</remote-id>
+		<remote-id type="github">watilde/meant</remote-id>
 	</upstream>
 </pkgmetadata>

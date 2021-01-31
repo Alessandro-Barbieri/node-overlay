@@ -6,6 +6,6 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">https://github.com/DefinitelyTyped/DefinitelyTyped.git</remote-id>
+		<remote-id type="github">DefinitelyTyped/DefinitelyTyped</remote-id>
 	</upstream>
 </pkgmetadata>

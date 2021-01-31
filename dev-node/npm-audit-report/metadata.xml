@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/npm-audit-report/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/npm-audit-report.git</remote-id>
+		<remote-id type="github">npm/npm-audit-report</remote-id>
 	</upstream>
 </pkgmetadata>

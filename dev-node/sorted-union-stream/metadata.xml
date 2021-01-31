@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/mafintosh/sorted-union-stream/issues</bugs-to>
-		<remote-id type="github">git://github.com/mafintosh/sorted-union-stream.git</remote-id>
+		<remote-id type="github">mafintosh/sorted-union-stream</remote-id>
 	</upstream>
 </pkgmetadata>

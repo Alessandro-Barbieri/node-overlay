@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/npm-user-validate/issues</bugs-to>
-		<remote-id type="github">git://github.com/npm/npm-user-validate.git</remote-id>
+		<remote-id type="github">npm/npm-user-validate</remote-id>
 	</upstream>
 </pkgmetadata>

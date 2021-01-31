@@ -6,6 +6,6 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">https://github.com/medikoo/es5-ext/tree/ext</remote-id>
+		<remote-id type="github">medikoo/es5-ext/tree/ext</remote-id>
 	</upstream>
 </pkgmetadata>

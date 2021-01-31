@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/IndigoUnited/js-err-code/issues/</bugs-to>
-		<remote-id type="github">git://github.com/IndigoUnited/js-err-code.git</remote-id>
+		<remote-id type="github">IndigoUnited/js-err-code</remote-id>
 	</upstream>
 </pkgmetadata>

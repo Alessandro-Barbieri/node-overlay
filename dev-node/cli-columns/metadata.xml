@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/shannonmoeller/cli-columns/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/shannonmoeller/cli-columns.git</remote-id>
+		<remote-id type="github">shannonmoeller/cli-columns</remote-id>
 	</upstream>
 </pkgmetadata>

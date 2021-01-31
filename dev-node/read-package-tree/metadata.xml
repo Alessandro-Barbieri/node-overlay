@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/read-package-tree/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/read-package-tree.git</remote-id>
+		<remote-id type="github">npm/read-package-tree</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/lifecycle/issues</bugs-to>
-		<remote-id type="github">git://github.com/npm/lifecycle.git</remote-id>
+		<remote-id type="github">npm/lifecycle</remote-id>
 	</upstream>
 </pkgmetadata>

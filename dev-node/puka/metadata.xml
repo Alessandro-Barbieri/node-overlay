@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://gitlab.com/rhendric/puka/issues</bugs-to>
-		<remote-id type="github">git+https://gitlab.com/rhendric/puka.git</remote-id>
+		<remote-id type="github">git+https://gitlab.com/rhendric/puka</remote-id>
 	</upstream>
 </pkgmetadata>

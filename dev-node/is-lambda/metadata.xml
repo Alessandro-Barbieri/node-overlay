@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/watson/is-lambda/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/watson/is-lambda.git</remote-id>
+		<remote-id type="github">watson/is-lambda</remote-id>
 	</upstream>
 </pkgmetadata>

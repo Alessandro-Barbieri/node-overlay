@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>http://github.com/maxogden/concat-stream/issues</bugs-to>
-		<remote-id type="github">git+ssh://git@github.com/maxogden/concat-stream</remote-id>
+		<remote-id type="github">maxogden/concat-stream</remote-id>
 	</upstream>
 </pkgmetadata>

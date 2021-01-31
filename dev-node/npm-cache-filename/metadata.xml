@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/npm-cache-filename/issues</bugs-to>
-		<remote-id type="github">git://github.com/npm/npm-cache-filename.git</remote-id>
+		<remote-id type="github">npm/npm-cache-filename</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -6,6 +6,6 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">git://github.com/thlorenz/ansistyles.git</remote-id>
+		<remote-id type="github">thlorenz/ansistyles</remote-id>
 	</upstream>
 </pkgmetadata>

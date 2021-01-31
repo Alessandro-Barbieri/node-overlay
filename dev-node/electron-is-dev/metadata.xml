@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/sindresorhus/electron-is-dev/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/sindresorhus/electron-is-dev.git</remote-id>
+		<remote-id type="github">sindresorhus/electron-is-dev</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/medikoo/next-tick/issues</bugs-to>
-		<remote-id type="github">git://github.com/medikoo/next-tick.git</remote-id>
+		<remote-id type="github">medikoo/next-tick</remote-id>
 	</upstream>
 </pkgmetadata>

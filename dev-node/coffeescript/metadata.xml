@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/jashkenas/coffeescript/issues</bugs-to>
-		<remote-id type="github">git://github.com/jashkenas/coffeescript.git</remote-id>
+		<remote-id type="github">jashkenas/coffeescript</remote-id>
 	</upstream>
 </pkgmetadata>

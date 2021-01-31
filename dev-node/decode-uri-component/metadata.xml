@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/samverschueren/decode-uri-component/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/samverschueren/decode-uri-component.git</remote-id>
+		<remote-id type="github">samverschueren/decode-uri-component</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/TooTallNate/once/issues</bugs-to>
-		<remote-id type="github">git://github.com/TooTallNate/once.git</remote-id>
+		<remote-id type="github">TooTallNate/once</remote-id>
 	</upstream>
 </pkgmetadata>

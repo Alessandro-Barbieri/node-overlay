@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/domenic/path-is-inside/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/domenic/path-is-inside.git</remote-id>
+		<remote-id type="github">domenic/path-is-inside</remote-id>
 	</upstream>
 </pkgmetadata>

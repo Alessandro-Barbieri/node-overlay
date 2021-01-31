@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/domenic/sorted-object/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/domenic/sorted-object.git</remote-id>
+		<remote-id type="github">domenic/sorted-object</remote-id>
 	</upstream>
 </pkgmetadata>

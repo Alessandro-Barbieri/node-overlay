@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/es-shims/object.getownpropertydescriptors/issues</bugs-to>
-		<remote-id type="github">git://github.com/es-shims/object.getownpropertydescriptors.git</remote-id>
+		<remote-id type="github">es-shims/object.getownpropertydescriptors</remote-id>
 	</upstream>
 </pkgmetadata>

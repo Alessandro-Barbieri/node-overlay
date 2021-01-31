@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/promise-spawn/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/promise-spawn.git</remote-id>
+		<remote-id type="github">npm/promise-spawn</remote-id>
 	</upstream>
 </pkgmetadata>

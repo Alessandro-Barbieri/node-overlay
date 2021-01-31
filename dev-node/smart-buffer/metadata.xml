@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/JoshGlazebrook/smart-buffer/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/JoshGlazebrook/smart-buffer.git</remote-id>
+		<remote-id type="github">JoshGlazebrook/smart-buffer</remote-id>
 	</upstream>
 </pkgmetadata>

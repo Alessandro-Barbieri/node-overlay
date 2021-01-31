@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/isaacs/util-extend/issues</bugs-to>
-		<remote-id type="github">git://github.com/isaacs/util-extend.git</remote-id>
+		<remote-id type="github">isaacs/util-extend</remote-id>
 	</upstream>
 </pkgmetadata>

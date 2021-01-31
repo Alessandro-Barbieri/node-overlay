@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/atom/node-oniguruma/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/atom/node-oniguruma.git</remote-id>
+		<remote-id type="github">atom/node-oniguruma</remote-id>
 	</upstream>
 </pkgmetadata>

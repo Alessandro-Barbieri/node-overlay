@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/andris9/encoding/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/andris9/encoding.git</remote-id>
+		<remote-id type="github">andris9/encoding</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/sindresorhus/os-homedir/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/sindresorhus/os-homedir.git</remote-id>
+		<remote-id type="github">sindresorhus/os-homedir</remote-id>
 	</upstream>
 </pkgmetadata>

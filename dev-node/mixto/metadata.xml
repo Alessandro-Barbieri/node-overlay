@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/atom/mixto/issues</bugs-to>
-		<remote-id type="github">https://github.com/atom/mixto</remote-id>
+		<remote-id type="github">atom/mixto</remote-id>
 	</upstream>
 </pkgmetadata>

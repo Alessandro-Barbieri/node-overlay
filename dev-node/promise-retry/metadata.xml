@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/IndigoUnited/node-promise-retry/issues/</bugs-to>
-		<remote-id type="github">git://github.com/IndigoUnited/node-promise-retry.git</remote-id>
+		<remote-id type="github">IndigoUnited/node-promise-retry</remote-id>
 	</upstream>
 </pkgmetadata>

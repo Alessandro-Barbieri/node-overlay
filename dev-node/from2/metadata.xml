@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/hughsk/from2/issues</bugs-to>
-		<remote-id type="github">git://github.com/hughsk/from2.git</remote-id>
+		<remote-id type="github">hughsk/from2</remote-id>
 	</upstream>
 </pkgmetadata>

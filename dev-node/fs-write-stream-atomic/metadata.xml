@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/fs-write-stream-atomic/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/fs-write-stream-atomic.git</remote-id>
+		<remote-id type="github">npm/fs-write-stream-atomic</remote-id>
 	</upstream>
 </pkgmetadata>

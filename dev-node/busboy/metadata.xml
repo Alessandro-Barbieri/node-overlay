@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/mscdex/busboy/issues</bugs-to>
-		<remote-id type="github">git+ssh://git@github.com/mscdex/busboy</remote-id>
+		<remote-id type="github">mscdex/busboy</remote-id>
 	</upstream>
 </pkgmetadata>

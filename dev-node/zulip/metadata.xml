@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/zulip/zulip-node/issues</bugs-to>
-		<remote-id type="github">https://github.com/zulip/zulip-node</remote-id>
+		<remote-id type="github">zulip/zulip-node</remote-id>
 	</upstream>
 </pkgmetadata>

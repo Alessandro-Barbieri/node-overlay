@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/follow-redirects/follow-redirects/issues</bugs-to>
-		<remote-id type="github">git+ssh://git@github.com/follow-redirects/follow-redirects</remote-id>
+		<remote-id type="github">follow-redirects/follow-redirects</remote-id>
 	</upstream>
 </pkgmetadata>

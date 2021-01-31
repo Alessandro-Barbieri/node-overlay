@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/npm/npm-package-arg/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/npm/npm-package-arg.git</remote-id>
+		<remote-id type="github">npm/npm-package-arg</remote-id>
 	</upstream>
 </pkgmetadata>

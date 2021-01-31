@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/dominictarr/JSONStream/issues</bugs-to>
-		<remote-id type="github">git://github.com/dominictarr/JSONStream.git</remote-id>
+		<remote-id type="github">dominictarr/JSONStream</remote-id>
 	</upstream>
 </pkgmetadata>

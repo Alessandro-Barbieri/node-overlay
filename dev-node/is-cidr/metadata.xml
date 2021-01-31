@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/silverwind/is-cidr/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/silverwind/is-cidr.git</remote-id>
+		<remote-id type="github">silverwind/is-cidr</remote-id>
 	</upstream>
 </pkgmetadata>

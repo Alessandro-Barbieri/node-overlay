@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/mafintosh/flush-write-stream/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/mafintosh/flush-write-stream.git</remote-id>
+		<remote-id type="github">mafintosh/flush-write-stream</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/iarna/unique-slug/issues</bugs-to>
-		<remote-id type="github">git://github.com/iarna/unique-slug.git</remote-id>
+		<remote-id type="github">iarna/unique-slug</remote-id>
 	</upstream>
 </pkgmetadata>

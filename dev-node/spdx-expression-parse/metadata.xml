@@ -7,6 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://github.com/jslicense/spdx-expression-parse.js/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/jslicense/spdx-expression-parse.js.git</remote-id>
+		<remote-id type="github">jslicense/spdx-expression-parse.js</remote-id>
 	</upstream>
 </pkgmetadata>
