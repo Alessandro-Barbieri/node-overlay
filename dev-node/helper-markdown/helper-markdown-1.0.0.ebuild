@@ -16,6 +16,6 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/handlebars-utils
-	dev-node/highlight.js
+	dev-node/highlight_js
 	dev-node/remarkable
 "

@@ -11,5 +11,5 @@ HOMEPAGE="
 	https://www.npmjs.com/package/foreachasync
 "
 
-LICENSE="(MIT OR Apache-2.0)"
+LICENSE="|| ( MIT Apache-2.0 )"
 KEYWORDS="~amd64"

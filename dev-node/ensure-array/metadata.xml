@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer type="person">
-		<email>lssndrbarbieri@gmail.com</email>
-		<name>Alessandro Barbieri</name>
-	</maintainer>
-	<upstream>
-		<bugs-to>http://github.com/jeffbski/ensure-array/issues</bugs-to>
-		<remote-id type="github">git+ssh://git@github.com/jeffbski/ensure-array.git</remote-id>
-	</upstream>
+  <maintainer type="person">
+    <email>lssndrbarbieri@gmail.com</email>
+    <name>Alessandro Barbieri</name>
+  </maintainer>
+  <upstream>
+    <bugs-to>http://github.com/jeffbski/ensure-array/issues</bugs-to>
+    <remote-id type="github">jeffbski/ensure-array</remote-id>
+  </upstream>
 </pkgmetadata>

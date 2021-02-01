@@ -11,3 +11,4 @@ HOMEPAGE="
 	https://www.npmjs.com/package/dom-walk
 "
 KEYWORDS="~amd64"
+LICENSE="MIT"

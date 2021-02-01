@@ -5,11 +5,14 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="A server for Chrome Devtools Autosave (https://github.com/NV/chrome-devtools-autosave)"
+DESCRIPTION="A server for Chrome Devtools Autosave"
 HOMEPAGE="
+		https://github.com/NV/chrome-devtools-autosave
 		https://www.npmjs.com/package/autosave
 "
 KEYWORDS="~amd64"
+#no license ... https://github.com/NV/chrome-devtools-autosave-server/issues/39
+LICENSE=""
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/commander

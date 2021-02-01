@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/date.js
+	dev-node/date_js
 	dev-node/handlebars-utils
 	dev-node/moment
 "

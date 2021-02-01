@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer type="person">
-		<email>lssndrbarbieri@gmail.com</email>
-		<name>Alessandro Barbieri</name>
-	</maintainer>
-	<upstream>
-		<bugs-to>https://github.com/guigrpa/timm/issues</bugs-to>
-		<remote-id type="github">git+https://github.com/guigrpa/timm.git</remote-id>
-	</upstream>
+  <maintainer type="person">
+    <email>lssndrbarbieri@gmail.com</email>
+    <name>Alessandro Barbieri</name>
+  </maintainer>
+  <upstream>
+    <bugs-to>https://github.com/guigrpa/timm/issues</bugs-to>
+    <remote-id type="github">guigrpa/timm</remote-id>
+  </upstream>
 </pkgmetadata>

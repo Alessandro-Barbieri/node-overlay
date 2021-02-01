@@ -11,5 +11,5 @@ HOMEPAGE="
 	https://www.npmjs.com/package/argparse
 "
 
-LICENSE="Python-2.0"
+LICENSE="PSF-2"
 KEYWORDS="~amd64"
