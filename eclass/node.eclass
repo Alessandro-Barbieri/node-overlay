@@ -34,6 +34,7 @@ node_src_prepare() {
 	find . -iname 'code-of-conduct*' -maxdepth 1 -delete || die
 	find . -iname 'contributing*' -maxdepth 1 -delete || die
 	find . -iname 'license*' -maxdepth 1 -delete || die
+	#should I delete all the dotfiles?
 	rm -rf .DS_Store .editorconfig .github .gitignore .tm_properties .travis* || die
 
 	default
