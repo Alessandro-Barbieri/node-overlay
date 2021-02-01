@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Provide AMD's define() API for declaring modules in the AMD format"
 HOMEPAGE="
-	http://github.com/jrburke/amdefine
+	https://github.com/jrburke/amdefine
 	https://www.npmjs.com/package/amdefine
 "
 

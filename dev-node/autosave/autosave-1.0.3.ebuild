@@ -12,7 +12,7 @@ HOMEPAGE="
 "
 KEYWORDS="~amd64"
 #no license ... https://github.com/NV/chrome-devtools-autosave-server/issues/39
-LICENSE=""
+LICENSE="all-rights-reserved"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/commander

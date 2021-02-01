@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Fast and simple xml generator. Supports attributes, CDATA, etc. Includes tests and examples."
 HOMEPAGE="
-	http://github.com/dylang/node-xml
+	https://github.com/dylang/node-xml
 	https://www.npmjs.com/package/xml
 "
 

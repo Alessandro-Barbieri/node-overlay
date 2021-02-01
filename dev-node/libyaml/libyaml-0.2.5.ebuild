@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Bindings to libYAML"
 HOMEPAGE="
-	http://github.com/stephank/yaml.node
+	https://github.com/stephank/yaml.node
 	https://www.npmjs.com/package/libyaml
 "
 KEYWORDS="~amd64"

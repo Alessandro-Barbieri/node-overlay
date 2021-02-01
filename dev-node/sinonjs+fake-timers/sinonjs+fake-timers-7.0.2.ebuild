@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Fake JavaScript timers"
 HOMEPAGE="
-	http://github.com/sinonjs/fake-timers
+	https://github.com/sinonjs/fake-timers
 	https://www.npmjs.com/package/@sinonjs/fake-timers
 "
 

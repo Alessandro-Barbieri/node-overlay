@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Trim a consecutively repeated substring: foo--bar---baz → foo-bar-baz"
+DESCRIPTION="Trim a consecutively repeated substring"
 HOMEPAGE="
 	https://github.com/sindresorhus/trim-repeated
 	https://www.npmjs.com/package/trim-repeated

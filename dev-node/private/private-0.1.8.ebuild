@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Utility for associating truly private state with any JavaScript object"
 HOMEPAGE="
-	http://github.com/benjamn/private
+	https://github.com/benjamn/private
 	https://www.npmjs.com/package/private
 "
 
