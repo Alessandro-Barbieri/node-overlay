@@ -6,3 +6,5 @@ Software packaged:
 - mocha
 - carto
 - tangram
+- atom
+- node-red
