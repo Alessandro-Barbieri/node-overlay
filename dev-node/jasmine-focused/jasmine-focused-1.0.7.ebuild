@@ -10,6 +10,7 @@ HOMEPAGE="
 	http://atom.github.io/jasmine-focused
 	https://www.npmjs.com/package/jasmine-focused
 "
+LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}

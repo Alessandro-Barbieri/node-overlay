@@ -10,6 +10,7 @@ HOMEPAGE="
 	https://github.com/atom/jasmine-tagged
 	https://www.npmjs.com/package/jasmine-tagged
 "
+LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}

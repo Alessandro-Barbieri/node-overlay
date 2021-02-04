@@ -15,6 +15,7 @@ HOMEPAGE="
 LICENSE="MIT"
 KEYWORDS="~amd64"
 MODULES=(
+	bracket-matcher
 	archive-view
 	atom-dark-syntax
 	atom-dark-ui
@@ -101,7 +102,6 @@ RDEPEND="
 	dev-node/autosave
 	dev-node/babel-core
 	dev-node/bookmarks
-	dev-node/bracket-matcher
 	dev-node/chai
 	dev-node/chart_js
 	dev-node/clear-cut

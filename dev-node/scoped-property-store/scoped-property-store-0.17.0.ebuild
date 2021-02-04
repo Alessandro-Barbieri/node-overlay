@@ -11,6 +11,7 @@ HOMEPAGE="
 	https://www.npmjs.com/package/scoped-property-store
 "
 KEYWORDS="~amd64"
+LICENSE="MIT"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/atom-slick
