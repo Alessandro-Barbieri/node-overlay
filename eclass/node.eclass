@@ -20,6 +20,8 @@ RDEPEND="${NODEJS_RDEPEND}"
 BDEPEND="${NODEJS_BDEPEND}"
 
 S="${WORKDIR}/package"
+MODULE_NAME="${PN}"
+MODULE_PREFIX="${T}/${MODULE_NAME}/prefix"
 
 node_src_prepare() {
 	#remove version constraints on dependencies
@@ -43,7 +45,7 @@ node_src_prepare() {
 node_src_compile() {
 	#path to the modules
 	export NODE_PATH="/usr/$(get_libdir)/node_modules"
-	export npm_config_prefix="${T}/prefix"
+	export npm_config_prefix="${MODULE_PREFIX}"
 	#path to the headers needed by node-gyp
 	export npm_config_nodedir="/usr/include/node"
 	in_iuse test || export NODE_ENV="production"
@@ -56,22 +58,28 @@ node_src_install() {
 	jq 'with_entries(if .key == "devDeps" then .key = "devDependencies" else . end)' package.json | sponge package.json || die
 
 	#install some files in the docdir
-	find . -iname "authors*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
-	find . -iname "changelog*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
-	find . -iname "changes*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
-	find . -iname "copyright*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
-	find . -iname "history*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
-	find . -iname "readme*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
+	insinto "/usr/share/doc/${MODULE_NAME}"
+	find . -iname "authors*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
+	find . -iname "changelog*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
+	find . -iname "changes*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
+	find . -iname "copyright*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
+	find . -iname "history*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
+	find . -iname "readme*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
 
 	#copy files instead of symlinks
-	rsync -avLAX "${T}/prefix/" "${ED}/usr" --exclude /bin || die
+	rsync -avLAX "${MODULE_PREFIX}/" "${ED}/usr" --exclude /bin || die
 
-	if [ -d "${T}/prefix/bin" ] ; then
+	if [ -d "${MODULE_PREFIX}/bin" ] ; then
 		#keep the symlinks
-		rsync -avAX "${T}/prefix/bin/" "${ED}/usr/bin" || die
+		rsync -avAX "${MODULE_PREFIX}/bin/" "${ED}/usr/bin" || die
 	fi
 }
 
 node_src_test() {
 	npm test || die
 }
+
+#src_prepare() {
+#	node_src_prepare
+#	default
+#}

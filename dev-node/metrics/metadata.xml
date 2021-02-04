@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/mikejihbe/metrics/issues</bugs-to>
-    <remote-id type="github">git://github.com/mikejihbe/metrics</remote-id>
+    <remote-id type="github">mikejihbe/metrics</remote-id>
   </upstream>
 </pkgmetadata>

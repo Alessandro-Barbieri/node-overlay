@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/image-size/image-size/issues</bugs-to>
-    <remote-id type="github">git://github.com/image-size/image-size</remote-id>
+    <remote-id type="github">image-size/image-size</remote-id>
   </upstream>
 </pkgmetadata>

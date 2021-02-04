@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/grncdr/js-is-function/issues</bugs-to>
-    <remote-id type="github">git://github.com/grncdr/js-is-function</remote-id>
+    <remote-id type="github">grncdr/js-is-function</remote-id>
   </upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/pvorb/node-md5/issues</bugs-to>
-    <remote-id type="github">git://github.com/pvorb/node-md5</remote-id>
+    <remote-id type="github">pvorb/node-md5</remote-id>
   </upstream>
 </pkgmetadata>

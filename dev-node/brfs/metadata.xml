@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/substack/brfs/issues</bugs-to>
-    <remote-id type="github">git://github.com/substack/brfs</remote-id>
+    <remote-id type="github">substack/brfs</remote-id>
   </upstream>
 </pkgmetadata>

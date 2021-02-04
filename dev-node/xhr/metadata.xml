@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/naugtur/xhr/issues</bugs-to>
-    <remote-id type="github">git://github.com/naugtur/xhr</remote-id>
+    <remote-id type="github">naugtur/xhr</remote-id>
   </upstream>
 </pkgmetadata>

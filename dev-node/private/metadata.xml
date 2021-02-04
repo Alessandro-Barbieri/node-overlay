@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/benjamn/private/issues</bugs-to>
-    <remote-id type="github">git://github.com/benjamn/private</remote-id>
+    <remote-id type="github">benjamn/private</remote-id>
   </upstream>
 </pkgmetadata>

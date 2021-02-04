@@ -6,6 +6,6 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <remote-id type="github">git://github.com/NV/chrome-devtools-autosave-server</remote-id>
+    <remote-id type="github">NV/chrome-devtools-autosave-server</remote-id>
   </upstream>
 </pkgmetadata>

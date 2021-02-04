@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/hij1nx/EventEmitter2/issues</bugs-to>
-    <remote-id type="github">git://github.com/hij1nx/EventEmitter2</remote-id>
+    <remote-id type="github">hij1nx/EventEmitter2</remote-id>
   </upstream>
 </pkgmetadata>

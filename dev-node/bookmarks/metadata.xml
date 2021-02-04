@@ -6,6 +6,6 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <remote-id type="github">git://github.com/twolfson/bookmarks</remote-id>
+    <remote-id type="github">twolfson/bookmarks</remote-id>
   </upstream>
 </pkgmetadata>

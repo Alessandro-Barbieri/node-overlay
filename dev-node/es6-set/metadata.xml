@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/medikoo/es6-set/issues</bugs-to>
-    <remote-id type="github">git://github.com/medikoo/es6-set</remote-id>
+    <remote-id type="github">medikoo/es6-set</remote-id>
   </upstream>
 </pkgmetadata>

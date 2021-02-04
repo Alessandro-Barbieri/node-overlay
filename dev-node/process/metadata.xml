@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/shtylman/node-process/issues</bugs-to>
-    <remote-id type="github">git://github.com/shtylman/node-process</remote-id>
+    <remote-id type="github">shtylman/node-process</remote-id>
   </upstream>
 </pkgmetadata>

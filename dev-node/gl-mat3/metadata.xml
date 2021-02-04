@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/gl-modules/gl-mat3/issues</bugs-to>
-    <remote-id type="github">git://github.com/gl-modules/gl-mat3</remote-id>
+    <remote-id type="github">gl-modules/gl-mat3</remote-id>
   </upstream>
 </pkgmetadata>

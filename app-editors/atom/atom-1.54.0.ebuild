@@ -14,31 +14,92 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+MODULES=(
+	archive-view
+	atom-dark-syntax
+	atom-dark-ui
+	atom-keymap
+	atom-light-syntax
+	atom-light-ui
+	atom-select-list
+	autocomplete-atom-api
+	autocomplete-css
+	autocomplete-html
+	autocomplete-plus
+	autocomplete-snippets
+	background-tips
+	base16-tomorrow-dark-theme
+	base16-tomorrow-light-theme
+	background-tips
+	language-c
+	language-clojure
+	language-coffee-script
+	language-csharp
+	language-css
+	language-gfm
+	language-git
+	language-go
+	language-html
+	language-hyperlink
+	language-java
+	language-javascript
+	language-json
+	language-less
+	language-make
+	language-mustache
+	language-objective-c
+	language-perl
+	language-php
+	language-property-list
+	language-python
+	language-ruby
+	language-ruby-on-rails
+	language-rust-bundled
+	language-sass
+	language-shellscript
+	language-source
+	language-sql
+	language-text
+	language-todo
+	language-toml
+	language-typescript
+	language-xml
+	language-yaml
+	symbols-view
+	tree-sitter
+	wrap-guide
+	update-package-dependencies
+	solarized-dark-syntax
+	solarized-light-syntax
+	spell-check
+	one-dark-syntax
+	one-dark-ui
+	one-light-syntax
+	one-light-ui
+	open-on-github
+	line-ending-selector
+	go-to-line
+	grammar-selector
+	image-view
+	incompatible-packages
+	settings-view
+	keybinding-resolver
+	exception-reporting
+	deprecation-cop
+	dev-live-reload
+	encoding-selector
+)
+
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/atom+nsfw
 	dev-node/atom+source-map-support
 	dev-node/atom+watcher
 	dev-node/about
-	dev-node/archive-view
 	dev-node/async
-	dev-node/atom-dark-syntax
-	dev-node/atom-dark-ui
-	dev-node/atom-keymap
-	dev-node/atom-light-syntax
-	dev-node/atom-light-ui
-	dev-node/atom-select-list
-	dev-node/autocomplete-atom-api
-	dev-node/autocomplete-css
-	dev-node/autocomplete-html
-	dev-node/autocomplete-plus
-	dev-node/autocomplete-snippets
 	dev-node/autoflow
 	dev-node/autosave
 	dev-node/babel-core
-	dev-node/background-tips
-	dev-node/base16-tomorrow-dark-theme
-	dev-node/base16-tomorrow-light-theme
 	dev-node/bookmarks
 	dev-node/bracket-matcher
 	dev-node/chai
@@ -49,15 +110,11 @@ RDEPEND="
 	dev-node/command-palette
 	dev-node/dalek
 	dev-node/dedent
-	dev-node/deprecation-cop
-	dev-node/dev-live-reload
 	dev-node/devtron
 	dev-node/electron-notarize
 	dev-node/electron-osx-sign
-	dev-node/encoding-selector
 	dev-node/etch
 	dev-node/event-kit
-	dev-node/exception-reporting
 	dev-node/find-and-replace
 	dev-node/find-parent-dir
 	dev-node/first-mate
@@ -71,52 +128,12 @@ RDEPEND="
 	dev-node/git-utils
 	dev-node/github
 	dev-node/glob
-	dev-node/go-to-line
-	dev-node/grammar-selector
 	dev-node/grim
-	dev-node/image-view
-	dev-node/incompatible-packages
 	dev-node/jasmine-json
 	dev-node/jasmine-reporters
 	dev-node/jasmine-tagged
 	dev-node/key-path-helpers
-	dev-node/keybinding-resolver
-	dev-node/language-c
-	dev-node/language-clojure
-	dev-node/language-coffee-script
-	dev-node/language-csharp
-	dev-node/language-css
-	dev-node/language-gfm
-	dev-node/language-git
-	dev-node/language-go
-	dev-node/language-html
-	dev-node/language-hyperlink
-	dev-node/language-java
-	dev-node/language-javascript
-	dev-node/language-json
-	dev-node/language-less
-	dev-node/language-make
-	dev-node/language-mustache
-	dev-node/language-objective-c
-	dev-node/language-perl
-	dev-node/language-php
-	dev-node/language-property-list
-	dev-node/language-python
-	dev-node/language-ruby
-	dev-node/language-ruby-on-rails
-	dev-node/language-rust-bundled
-	dev-node/language-sass
-	dev-node/language-shellscript
-	dev-node/language-source
-	dev-node/language-sql
-	dev-node/language-text
-	dev-node/language-todo
-	dev-node/language-toml
-	dev-node/language-typescript
-	dev-node/language-xml
-	dev-node/language-yaml
 	dev-node/less-cache
-	dev-node/line-ending-selector
 	dev-node/line-top-index
 	dev-node/link
 	dev-node/markdown-preview
@@ -130,11 +147,6 @@ RDEPEND="
 	dev-node/normalize-package-data
 	dev-node/notifications
 	dev-node/nslog
-	dev-node/one-dark-syntax
-	dev-node/one-dark-ui
-	dev-node/one-light-syntax
-	dev-node/one-light-ui
-	dev-node/open-on-github
 	dev-node/package-generator
 	dev-node/pathwatcher
 	dev-node/postcss
@@ -148,27 +160,52 @@ RDEPEND="
 	dev-node/season
 	dev-node/semver
 	dev-node/service-hub
-	dev-node/settings-view
 	dev-node/sinon
 	dev-node/snippets
-	dev-node/solarized-dark-syntax
-	dev-node/solarized-light-syntax
-	dev-node/spell-check
 	dev-node/status-bar
 	dev-node/styleguide
-	dev-node/symbols-view
 	dev-node/tabs
 	dev-node/temp
 	dev-node/text-buffer
 	dev-node/timecop
-	dev-node/tree-sitter
 	dev-node/tree-view
 	dev-node/typescript-simple
-	dev-node/update-package-dependencies
 	dev-node/vscode-ripgrep
 	dev-node/welcome
 	dev-node/whitespace
 	dev-node/winreg
-	dev-node/wrap-guide
 	dev-node/yargs
 "
+
+src_prepare() {
+	node_src_prepare
+	default
+	for m in "${MODULES[@]}"
+	do
+		export NODE_MODULE="${m}"
+		cd "${S}/${m}" || die
+		node_src_prepare
+	done
+}
+
+src_compile(){
+	node_src_compile
+
+	for m in "${MODULES[@]}"
+	do
+		export NODE_MODULE="${m}"
+		cd "${S}/${m}" || die
+		node_src_compile
+	done
+}
+
+src_install(){
+	node_src_install
+
+	for m in "${MODULES[@]}"
+	do
+		export NODE_MODULE="${m}"
+		cd "${S}/${m}" || die
+		node_src_install
+	done
+}

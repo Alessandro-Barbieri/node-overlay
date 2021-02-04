@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>http://github.com/mathjax/MathJax/issues</bugs-to>
-    <remote-id type="github">git://github.com/mathjax/MathJax</remote-id>
+    <remote-id type="github">mathjax/MathJax</remote-id>
   </upstream>
 </pkgmetadata>

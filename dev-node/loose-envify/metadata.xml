@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/zertosh/loose-envify/issues</bugs-to>
-    <remote-id type="github">git://github.com/zertosh/loose-envify</remote-id>
+    <remote-id type="github">zertosh/loose-envify</remote-id>
   </upstream>
 </pkgmetadata>

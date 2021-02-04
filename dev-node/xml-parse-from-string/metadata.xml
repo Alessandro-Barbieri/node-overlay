@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/Jam3/xml-parse-from-string/issues</bugs-to>
-    <remote-id type="github">git://github.com/Jam3/xml-parse-from-string</remote-id>
+    <remote-id type="github">Jam3/xml-parse-from-string</remote-id>
   </upstream>
 </pkgmetadata>

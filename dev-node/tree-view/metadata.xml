@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/maxogden/tree-view/issues</bugs-to>
-    <remote-id type="github">git://github.com/maxogden/tree-view</remote-id>
+    <remote-id type="github">maxogden/tree-view</remote-id>
   </upstream>
 </pkgmetadata>

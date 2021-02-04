@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/kss-node/kss-node/issues</bugs-to>
-    <remote-id type="github">git://github.com/kss-node/kss-node</remote-id>
+    <remote-id type="github">kss-node/kss-node</remote-id>
   </upstream>
 </pkgmetadata>

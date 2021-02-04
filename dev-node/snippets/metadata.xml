@@ -6,6 +6,6 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <remote-id type="github">git://github.com/jheusala/js-snippets</remote-id>
+    <remote-id type="github">jheusala/js-snippets</remote-id>
   </upstream>
 </pkgmetadata>

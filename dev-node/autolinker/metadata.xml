@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/gregjacobs/Autolinker.js/issues</bugs-to>
-    <remote-id type="github">git://github.com/gregjacobs/Autolinker.js</remote-id>
+    <remote-id type="github">gregjacobs/Autolinker.js</remote-id>
   </upstream>
 </pkgmetadata>

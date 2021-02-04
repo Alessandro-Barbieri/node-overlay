@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/feross/is-buffer/issues</bugs-to>
-    <remote-id type="github">git://github.com/feross/is-buffer</remote-id>
+    <remote-id type="github">feross/is-buffer</remote-id>
   </upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/mattdesl/parse-bmfont-xml/issues</bugs-to>
-    <remote-id type="github">git://github.com/mattdesl/parse-bmfont-xml</remote-id>
+    <remote-id type="github">mattdesl/parse-bmfont-xml</remote-id>
   </upstream>
 </pkgmetadata>

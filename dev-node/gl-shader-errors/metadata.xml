@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/stackgl/gl-shader-errors/issues</bugs-to>
-    <remote-id type="github">git://github.com/stackgl/gl-shader-errors</remote-id>
+    <remote-id type="github">stackgl/gl-shader-errors</remote-id>
   </upstream>
 </pkgmetadata>

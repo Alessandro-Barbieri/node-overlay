@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/browserify/static-eval/issues</bugs-to>
-    <remote-id type="github">git://github.com/browserify/static-eval</remote-id>
+    <remote-id type="github">browserify/static-eval</remote-id>
   </upstream>
 </pkgmetadata>

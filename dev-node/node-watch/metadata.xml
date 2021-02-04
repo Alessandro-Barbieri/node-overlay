@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/yuanchuan/node-watch/issues</bugs-to>
-    <remote-id type="github">git://github.com/yuanchuan/node-watch</remote-id>
+    <remote-id type="github">yuanchuan/node-watch</remote-id>
   </upstream>
 </pkgmetadata>

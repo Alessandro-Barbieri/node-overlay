@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/mapbox/geojson-vt/issues</bugs-to>
-    <remote-id type="github">git://github.com/mapbox/geojson-vt</remote-id>
+    <remote-id type="github">mapbox/geojson-vt</remote-id>
   </upstream>
 </pkgmetadata>

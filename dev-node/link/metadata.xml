@@ -6,6 +6,6 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <remote-id type="github">git://github.com/calyptus/link.js</remote-id>
+    <remote-id type="github">calyptus/link.js</remote-id>
   </upstream>
 </pkgmetadata>

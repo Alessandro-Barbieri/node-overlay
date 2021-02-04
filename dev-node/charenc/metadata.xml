@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/pvorb/node-charenc/issues</bugs-to>
-    <remote-id type="github">git://github.com/pvorb/node-charenc</remote-id>
+    <remote-id type="github">pvorb/node-charenc</remote-id>
   </upstream>
 </pkgmetadata>

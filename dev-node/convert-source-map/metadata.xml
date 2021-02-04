@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/thlorenz/convert-source-map/issues</bugs-to>
-    <remote-id type="github">git://github.com/thlorenz/convert-source-map</remote-id>
+    <remote-id type="github">thlorenz/convert-source-map</remote-id>
   </upstream>
 </pkgmetadata>

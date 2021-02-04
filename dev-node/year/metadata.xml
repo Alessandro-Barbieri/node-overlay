@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/jonschlinkert/year/issues</bugs-to>
-    <remote-id type="github">git://github.com/jonschlinkert/year</remote-id>
+    <remote-id type="github">jonschlinkert/year</remote-id>
   </upstream>
 </pkgmetadata>

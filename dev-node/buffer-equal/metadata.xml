@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/substack/node-buffer-equal/issues</bugs-to>
-    <remote-id type="github">git://github.com/substack/node-buffer-equal</remote-id>
+    <remote-id type="github">substack/node-buffer-equal</remote-id>
   </upstream>
 </pkgmetadata>

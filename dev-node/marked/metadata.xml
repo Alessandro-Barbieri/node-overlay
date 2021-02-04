@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>http://github.com/markedjs/marked/issues</bugs-to>
-    <remote-id type="github">git://github.com/markedjs/marked</remote-id>
+    <remote-id type="github">markedjs/marked</remote-id>
   </upstream>
 </pkgmetadata>

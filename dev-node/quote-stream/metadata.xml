@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/substack/quote-stream/issues</bugs-to>
-    <remote-id type="github">git://github.com/substack/quote-stream</remote-id>
+    <remote-id type="github">substack/quote-stream</remote-id>
   </upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/Raynos/min-document/issues</bugs-to>
-    <remote-id type="github">git://github.com/Raynos/min-document</remote-id>
+    <remote-id type="github">Raynos/min-document</remote-id>
   </upstream>
 </pkgmetadata>

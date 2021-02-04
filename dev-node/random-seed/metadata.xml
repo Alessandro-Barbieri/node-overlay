@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/skratchdot/random-seed/issues</bugs-to>
-    <remote-id type="github">git://github.com/skratchdot/random-seed</remote-id>
+    <remote-id type="github">skratchdot/random-seed</remote-id>
   </upstream>
 </pkgmetadata>

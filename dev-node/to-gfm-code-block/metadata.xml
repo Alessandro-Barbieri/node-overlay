@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/jonschlinkert/to-gfm-code-block/issues</bugs-to>
-    <remote-id type="github">git://github.com/jonschlinkert/to-gfm-code-block</remote-id>
+    <remote-id type="github">jonschlinkert/to-gfm-code-block</remote-id>
   </upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/Raynos/global/issues</bugs-to>
-    <remote-id type="github">git://github.com/Raynos/global</remote-id>
+    <remote-id type="github">Raynos/global</remote-id>
   </upstream>
 </pkgmetadata>
