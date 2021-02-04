@@ -16,3 +16,4 @@ SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+S="${WORKDIR}/node"
