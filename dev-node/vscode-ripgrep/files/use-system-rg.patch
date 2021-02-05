@@ -1,0 +1,8 @@
+--- a/lib/index.js	2021-02-05 01:31:19.628453810 +0100
++++ b/lib/index.js	2021-02-05 01:32:51.829011803 +0100
+@@ -2,4 +2,4 @@
+ 
+ const path = require('path');
+ 
+-module.exports.rgPath = path.join(__dirname, `../bin/rg${process.platform === 'win32' ? '.exe' : ''}`);
++module.exports.rgPath = path.join(__dirname, `/usr/bin/rg`);

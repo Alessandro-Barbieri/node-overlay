@@ -17,4 +17,13 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/https-proxy-agent
 	dev-node/proxy-from-env
+	sys-apps/ripgrep
 "
+
+PATCHES=( "${FILESDIR}/use-system-rg.patch" )
+
+src_prepare() {
+	#remove postinstall hook
+	jq 'del(.postinstall)' | sponge package.json || die
+	node_src_prepare
+}

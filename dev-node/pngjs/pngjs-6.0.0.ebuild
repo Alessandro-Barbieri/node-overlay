@@ -13,3 +13,8 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+BDEPEND="sys-apps/fakeroot"
+
+src_unpack() {
+	fakeroot unpack "${A}" || die
+}

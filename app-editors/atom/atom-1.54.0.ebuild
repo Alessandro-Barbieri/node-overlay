@@ -105,7 +105,7 @@ RDEPEND="
 	dev-node/chai
 	dev-node/chart_js
 	dev-node/clear-cut
-	dev-node/coffee-script
+	dev-node/coffeescript
 	dev-node/color
 	dev-node/command-palette
 	dev-node/dalek
