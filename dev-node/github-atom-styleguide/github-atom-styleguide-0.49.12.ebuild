@@ -6,17 +6,14 @@ EAPI=7
 inherit node
 
 DESCRIPTION="Generate a KSS based styleguide"
+SRC_URI="https://github.com/atom/styleguide/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 HOMEPAGE="
-		https://www.npmjs.com/package/styleguide
+		https://github.com/atom/styleguide
 "
 KEYWORDS="~amd64"
-LICENSE="CC-BY-SA-3.0"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/kss
-	dev-node/commander
-	dev-node/handlebars
-	dev-node/libyaml
-	dev-node/wrench
-	dev-node/handlebars-helpers
+	dev-node/atom-select-list
+	dev-node/etch
+	dev-node/dedent
 "

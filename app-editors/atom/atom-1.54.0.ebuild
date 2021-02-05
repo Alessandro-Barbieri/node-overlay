@@ -163,7 +163,7 @@ RDEPEND="
 	dev-node/sinon
 	dev-node/snippets
 	dev-node/status-bar
-	dev-node/styleguide
+	dev-node/github-atom-styleguide
 	dev-node/tabs
 	dev-node/temp
 	dev-node/text-buffer
