@@ -24,6 +24,7 @@ PATCHES=( "${FILESDIR}/use-system-rg.patch" )
 
 src_prepare() {
 	#remove postinstall hook
-	jq 'del(.postinstall)' | sponge package.json || die
+	jq 'del(.scripts.postinstall)' package.json | sponge package.json || die
 	node_src_prepare
 }
+

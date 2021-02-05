@@ -17,3 +17,4 @@ RDEPEND="
 	dev-node/etch
 	dev-node/dedent
 "
+S="${WORKDIR}/${P/github-atom-/}"

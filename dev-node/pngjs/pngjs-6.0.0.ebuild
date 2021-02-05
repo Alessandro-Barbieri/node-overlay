@@ -16,5 +16,5 @@ KEYWORDS="~amd64"
 BDEPEND="sys-apps/fakeroot"
 
 src_unpack() {
-	fakeroot unpack "${A}" || die
+	fakeroot tar xvzof "${DISTDIR}/${A}" || die
 }

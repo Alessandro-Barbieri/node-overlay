@@ -20,4 +20,4 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/types+node
 "
-S="${WORKDIR}/${PN}"
+S="${WORKDIR}/${PN_RIGHT}"

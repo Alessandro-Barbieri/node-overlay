@@ -11,17 +11,13 @@ HOMEPAGE="
 	https://atom.io
 	https://github.com/atom/atom
 "
-
+S="${WORKDIR}/${P}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
-MODULES=(
+TODO=(
 	bracket-matcher
 	archive-view
-	atom-dark-syntax
-	atom-dark-ui
 	atom-keymap
-	atom-light-syntax
-	atom-light-ui
 	atom-select-list
 	autocomplete-atom-api
 	autocomplete-css
@@ -29,14 +25,6 @@ MODULES=(
 	autocomplete-plus
 	autocomplete-snippets
 	background-tips
-	base16-tomorrow-dark-theme
-	base16-tomorrow-light-theme
-	background-tips
-	language-c
-	language-clojure
-	language-coffee-script
-	language-csharp
-	language-css
 	language-gfm
 	language-git
 	language-go
@@ -69,28 +57,35 @@ MODULES=(
 	symbols-view
 	tree-sitter
 	wrap-guide
+	spell-check
+	open-on-github
+	image-view
+	settings-view
+	keybinding-resolver
+	encoding-selector
+)
+MODULES=(
+	atom-dark-syntax
+	atom-dark-ui
+	atom-light-syntax
+	atom-light-ui
+	base16-tomorrow-dark-theme
+	base16-tomorrow-light-theme
 	update-package-dependencies
 	solarized-dark-syntax
 	solarized-light-syntax
-	spell-check
 	one-dark-syntax
 	one-dark-ui
 	one-light-syntax
 	one-light-ui
-	open-on-github
 	line-ending-selector
 	go-to-line
 	grammar-selector
-	image-view
 	incompatible-packages
-	settings-view
-	keybinding-resolver
 	exception-reporting
 	deprecation-cop
 	dev-live-reload
-	encoding-selector
 )
-
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/atom+nsfw
@@ -183,7 +178,7 @@ src_prepare() {
 	for m in "${MODULES[@]}"
 	do
 		export NODE_MODULE="${m}"
-		cd "${S}/${m}" || die
+		cd "${S}/packages/${m}" || die
 		node_src_prepare
 	done
 }
@@ -194,7 +189,7 @@ src_compile(){
 	for m in "${MODULES[@]}"
 	do
 		export NODE_MODULE="${m}"
-		cd "${S}/${m}" || die
+		cd "${S}/packages/${m}" || die
 		node_src_compile
 	done
 }
@@ -205,7 +200,7 @@ src_install(){
 	for m in "${MODULES[@]}"
 	do
 		export NODE_MODULE="${m}"
-		cd "${S}/${m}" || die
+		cd "${S}/packages/${m}" || die
 		node_src_install
 	done
 }

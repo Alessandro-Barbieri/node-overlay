@@ -21,4 +21,4 @@ RDEPEND="
 	dev-node/types+node
 	dev-node/safe-buffer
 "
-S="${WORKDIR}/${PN}"
+S="${WORKDIR}/${PN_RIGHT}"

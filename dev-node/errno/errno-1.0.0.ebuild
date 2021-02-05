@@ -17,3 +17,10 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/prr
 "
+
+src_install() {
+	node_src_install
+	# errno binary conflicts with sys-apps/moreutils
+	# https://github.com/rvagg/node-errno/issues/32
+	mv "${ED}/usr/bin/errno" "${ED}/usr/bin/node-errno" || die
+}
