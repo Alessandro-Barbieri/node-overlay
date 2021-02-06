@@ -16,3 +16,4 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/dicer
 "
+S="${WORKDIR}/mscdex-busboy-5a1040d"

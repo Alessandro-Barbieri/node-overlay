@@ -16,3 +16,4 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/streamsearch
 "
+S="${WORKDIR}/mscdex-dicer-117c923"

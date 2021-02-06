@@ -173,34 +173,6 @@ RDEPEND="
 "
 
 src_prepare() {
+	rm -rf docs/contributing.md || die
 	node_src_prepare
-	default
-	for m in "${MODULES[@]}"
-	do
-		export NODE_MODULE="${m}"
-		cd "${S}/packages/${m}" || die
-		node_src_prepare
-	done
-}
-
-src_compile(){
-	node_src_compile
-
-	for m in "${MODULES[@]}"
-	do
-		export NODE_MODULE="${m}"
-		cd "${S}/packages/${m}" || die
-		node_src_compile
-	done
-}
-
-src_install(){
-	node_src_install
-
-	for m in "${MODULES[@]}"
-	do
-		export NODE_MODULE="${m}"
-		cd "${S}/packages/${m}" || die
-		node_src_install
-	done
 }

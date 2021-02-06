@@ -34,10 +34,12 @@ node_src_prepare() {
 
 	#delete some trash
 	find . -iname 'code-of-conduct*' -maxdepth 1 -delete || die
+	find . -iname 'code_of_conduct*' -maxdepth 1 -delete || die
 	find . -iname 'contributing*' -maxdepth 1 -delete || die
+	find . -iname 'dockerfile*' -maxdepth 1 -delete || die
+	find . -iname 'issue_template*' -maxdepth 1 -delete || die
 	find . -iname 'license*' -maxdepth 1 -delete || die
-	#should I delete all the dotfiles?
-	rm -rf .DS_Store .editorconfig .github .gitignore .tm_properties .travis* || die
+	find . -iname 'pull_request_template*' -maxdepth 1 -delete || die
 
 	default
 }
@@ -49,7 +51,7 @@ node_src_compile() {
 	#path to the headers needed by node-gyp
 	export npm_config_nodedir="/usr/include/node"
 	in_iuse test || export NODE_ENV="production"
-	npm install --global || die
+	npm install --global --build-from-source || die
 }
 
 node_src_install() {
@@ -57,14 +59,17 @@ node_src_install() {
 	jq 'with_entries(if .key == "deps" then .key = "dependencies" else . end)' package.json | sponge package.json || die
 	jq 'with_entries(if .key == "devDeps" then .key = "devDependencies" else . end)' package.json | sponge package.json || die
 
+	#should I delete all the dotfiles?
+	rm -rf .[!.]* || die
+
 	#install some files in the docdir
-	insinto "/usr/share/doc/${MODULE_NAME}"
-	find . -iname "authors*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
-	find . -iname "changelog*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
-	find . -iname "changes*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
-	find . -iname "copyright*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
-	find . -iname "history*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
-	find . -iname "readme*" -maxdepth 1 -exec doins "{}" \; -exec rm "{}" \; || die
+	find . -iname "authors*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
+	find . -iname "changelog*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
+	find . -iname "changes*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
+	find . -iname "copyright*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
+	find . -iname "history*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
+	find . -iname "readme*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
+	find . -iname "security*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
 
 	#copy files instead of symlinks
 	rsync -avLAX "${MODULE_PREFIX}/" "${ED}/usr" --exclude /bin || die
@@ -78,8 +83,3 @@ node_src_install() {
 node_src_test() {
 	npm test || die
 }
-
-#src_prepare() {
-#	node_src_prepare
-#	default
-#}
