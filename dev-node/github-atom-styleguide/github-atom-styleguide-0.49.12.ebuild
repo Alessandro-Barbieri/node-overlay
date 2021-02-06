@@ -11,6 +11,7 @@ HOMEPAGE="
 		https://github.com/atom/styleguide
 "
 KEYWORDS="~amd64"
+LICENSE="MIT"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/atom-select-list

@@ -6,7 +6,7 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <bugs-to>https://github.com/atom/atom-select-list/issues</bugs-to>
-    <remote-id type="github">atom/atom-select-list</remote-id>
+    <bugs-to>https://github.com/Semigradsky/math-interval-parser/issues</bugs-to>
+    <remote-id type="github">Semigradsky/math-interval-parser</remote-id>
   </upstream>
 </pkgmetadata>
