@@ -13,8 +13,9 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
-RDEPEND="
-	${NODEJS_RDEPEND}
+DEPEND="
+	${NODEJS_DEPEND}
 	dev-node/node-pre-gyp
 	dev-node/node-addon-api
 "
+NPM_FLAGS="--build-from-source"

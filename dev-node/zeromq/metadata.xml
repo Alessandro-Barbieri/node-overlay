@@ -9,4 +9,7 @@
     <bugs-to>https://github.com/zeromq/zeromq.js/issues</bugs-to>
     <remote-id type="github">zeromq/zeromq</remote-id>
   </upstream>
+  <use>
+    <flag name="drafts">Build the draft API</flag>
+  </use>
 </pkgmetadata>

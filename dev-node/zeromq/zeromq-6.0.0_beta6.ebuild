@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit node
+inherit node flag-o-matic
 
 MYPV="${PV/_beta/-beta.}"
 MYP="${PN}-${MYPV}"
@@ -16,7 +16,34 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="drafts"
+
+CDEPEND="net-libs/zeromq:=[drafts?]"
+DEPEND="
+	${NODEJS_DEPEND}
+	${CDEPEND}
+	dev-node/node-gyp-build
+	dev-node/node-addon-api
+"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/node-gyp-build
+	${CDEPEND}
 "
+
+src_configure() {
+	NPM_FLAGS="--zmq-shared" # --build-from-source"
+	use drafts && NPM_FLAGS+=" --zmq-draft"
+	append-cxxflags " -I/usr/$(get_libdir)/node_modules/node-addon-api"
+}
+
+src_prepare() {
+	rm -rf prebuilds || die
+	rm -rf vendor || die
+	node_src_prepare
+}
+
+src_compile() {
+	node_src_compile
+	rm -rf build/Release/.deps || die
+	rm -rf build/Release/obj.target || die
+}

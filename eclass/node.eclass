@@ -22,6 +22,7 @@ BDEPEND="${NODEJS_BDEPEND}"
 S="${WORKDIR}/package"
 MODULE_NAME="${PN}"
 MODULE_PREFIX="${T}/${MODULE_NAME}/prefix"
+NPM_FLAGS=""
 
 node_src_prepare() {
 	#remove version constraints on dependencies
@@ -31,6 +32,10 @@ node_src_prepare() {
 	#here we trick npm into believing there are no dependencies so it will not try to fetch them
 	jq 'with_entries(if .key == "dependencies" then .key = "deps" else . end)' package.json | sponge package.json || die
 	jq 'with_entries(if .key == "devDependencies" then .key = "devDeps" else . end)' package.json | sponge package.json || die
+
+	# are those useful?
+	rm -f npm-shrinkwrap.json || die
+	rm -f package-lock.json || die
 
 	#delete some trash
 	find . -iname 'code-of-conduct*' -maxdepth 1 -delete || die
@@ -51,7 +56,7 @@ node_src_compile() {
 	#path to the headers needed by node-gyp
 	export npm_config_nodedir="/usr/include/node"
 	in_iuse test || export NODE_ENV="production"
-	npm install --global --build-from-source || die
+	npm install --global "${NPM_FLAGS}" || die
 }
 
 node_src_install() {
