@@ -14,6 +14,10 @@ HOMEPAGE="
 
 LICENSE="Apache-2.0"
 KEYWORDS="~amd64"
+DEPEND="
+	${NODEJS_DEPEND}
+	dev-node/electron-builder
+"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/electron-elements+send-feedback
@@ -33,8 +37,9 @@ RDEPEND="
 	dev-node/node-json-db
 	dev-node/semver
 "
+S="${WORKDIR}/${P}"
 
 src_prepare() {
-	jq '.name == "zulip-desktop"' package.json | sponge package.json || die
+	jq '.name = "zulip-desktop"' package.json | sponge package.json || die
 	node_src_prepare
 }

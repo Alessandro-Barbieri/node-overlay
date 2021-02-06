@@ -5,14 +5,14 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="TypeScript definitions for semver"
+DESCRIPTION="TypeScript definitions for verror"
 HOMEPAGE="
-		https://www.npmjs.com/package/@types/semver
+		https://www.npmjs.com/package/@types/verror
 "
 
 PN_LEFT="${PN%%+*}"
 PN_RIGHT="${PN#*+}"
 SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-S="${WORKDIR}/${PN_RIGHT}"
+
 LICENSE="MIT"
 KEYWORDS="~amd64"
