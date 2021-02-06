@@ -17,3 +17,4 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/minimatch
 "
+S="${WORKDIR}/FileList-v${PV}"

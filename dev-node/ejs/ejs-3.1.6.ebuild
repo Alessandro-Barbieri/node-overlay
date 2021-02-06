@@ -17,3 +17,4 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/jake
 "
+S="${WORKDIR}/${PN}-v${PV}"

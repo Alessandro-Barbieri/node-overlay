@@ -13,3 +13,14 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+PATCHES=( "${FILESDIR}/use-system-7zip.patch" )
+RDEPEND="
+	${NODE_RDEPEND}
+	app-arch/p7zip
+"
+
+src_prepare() {
+	# delete bundled binaries
+	rm -rf linux mac win || die
+	node_src_prepare
+}

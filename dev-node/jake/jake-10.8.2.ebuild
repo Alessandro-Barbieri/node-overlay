@@ -20,3 +20,4 @@ RDEPEND="
 	dev-node/chalk
 	dev-node/async
 "
+S="${WORKDIR}/${PN}-v${PV}"

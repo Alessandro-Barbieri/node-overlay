@@ -21,5 +21,4 @@ RDEPEND="
 	dev-node/iconv-lite
 	dev-node/js-yaml
 	dev-node/sanitize-filename
-	dev-node/dmg-license
 "
