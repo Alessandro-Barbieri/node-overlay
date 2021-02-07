@@ -20,8 +20,7 @@ RDEPEND="${NODEJS_RDEPEND}"
 BDEPEND="${NODEJS_BDEPEND}"
 
 S="${WORKDIR}/package"
-MODULE_NAME="${PN}"
-MODULE_PREFIX="${T}/${MODULE_NAME}/prefix"
+MODULE_PREFIX="${T}/prefix"
 NPM_FLAGS=""
 
 node_src_prepare() {
