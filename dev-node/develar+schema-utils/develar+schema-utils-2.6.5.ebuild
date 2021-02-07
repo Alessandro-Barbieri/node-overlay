@@ -19,6 +19,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/ajv
-	dev-node/ajv-keywords
+	<dev-node/ajv-7
+	<dev-node/ajv-keywords-4
 "
