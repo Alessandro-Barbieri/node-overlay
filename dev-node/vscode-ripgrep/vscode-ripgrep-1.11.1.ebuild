@@ -27,4 +27,3 @@ src_prepare() {
 	jq 'del(.scripts.postinstall)' package.json | sponge package.json || die
 	node_src_prepare
 }
-

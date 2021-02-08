@@ -1,0 +1,26 @@
+--- a/app-builder-bin/index.js	2020-12-14 14:59:18.000000000 -0000
++++ b/app-builder-bin/index.js	2021-02-07 11:36:01.647411436 -0000
+@@ -2,21 +2,4 @@
+ 
+ const path = require("path")
+ 
+-function getPath() {
+-  if (process.env.USE_SYSTEM_APP_BUILDER === "true") {
+-    return "app-builder"
+-  }
+-
+-  const platform = process.platform;
+-  if (platform === "darwin") {
+-    return path.join(__dirname, "mac", "app-builder")
+-  }
+-  else if (platform === "win32") {
+-    return path.join(__dirname, "win", process.arch, "app-builder.exe")
+-  }
+-  else {
+-    return path.join(__dirname, "linux", process.arch, "app-builder")
+-  }
+-}
+-
+-exports.appBuilderPath = getPath()
+\ No newline at end of file
++exports.appBuilderPath = "app-builder"

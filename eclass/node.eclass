@@ -20,8 +20,7 @@ RDEPEND="${NODEJS_RDEPEND}"
 BDEPEND="${NODEJS_BDEPEND}"
 
 S="${WORKDIR}/package"
-MODULE_NAME="${PN}"
-MODULE_PREFIX="${T}/${MODULE_NAME}/prefix"
+MODULE_PREFIX="${T}/prefix"
 NPM_FLAGS=""
 
 node_src_prepare() {
@@ -34,8 +33,7 @@ node_src_prepare() {
 	jq 'with_entries(if .key == "devDependencies" then .key = "devDeps" else . end)' package.json | sponge package.json || die
 
 	# are those useful?
-	rm -f npm-shrinkwrap.json || die
-	rm -f package-lock.json || die
+	rm -f npm-shrinkwrap.json package-lock.json yarn.lock || die
 
 	#delete some trash
 	find . -iname 'code-of-conduct*' -maxdepth 1 -delete || die
