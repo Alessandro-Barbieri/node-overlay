@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/davepacheco/node-verror/issues</bugs-to>
-    <remote-id type="github">git://github.com/davepacheco/node-verror</remote-id>
+    <remote-id type="github">davepacheco/node-verror</remote-id>
   </upstream>
 </pkgmetadata>

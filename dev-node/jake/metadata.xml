@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/jakejs/jake/issues</bugs-to>
-    <remote-id type="github">git://github.com/jakejs/jake</remote-id>
+    <remote-id type="github">jakejs/jake</remote-id>
   </upstream>
 </pkgmetadata>

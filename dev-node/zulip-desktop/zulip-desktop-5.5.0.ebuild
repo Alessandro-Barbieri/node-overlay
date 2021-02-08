@@ -36,6 +36,8 @@ RDEPEND="
 	dev-node/iso_639_3
 	dev-node/node-json-db
 	dev-node/semver
+
+	dev-node/electron
 "
 S="${WORKDIR}/${P}"
 

@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/davepacheco/node-extsprintf/issues</bugs-to>
-    <remote-id type="github">git://github.com/davepacheco/node-extsprintf</remote-id>
+    <remote-id type="github">davepacheco/node-extsprintf</remote-id>
   </upstream>
 </pkgmetadata>
