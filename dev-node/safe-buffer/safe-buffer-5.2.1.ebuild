@@ -10,5 +10,6 @@ HOMEPAGE="
 	https://github.com/feross/safe-buffer
 	https://www.npmjs.com/package/safe-buffer
 "
+
 LICENSE="MIT"
 KEYWORDS="~amd64"
