@@ -31,6 +31,7 @@ with open(os.path.join(pacchetto, "metadata.xml"), "w") as metadata:
 	metadata.write("\t<upstream>\n")
 	if "bugs" in dati.keys():
 		bugs_uri=dati["bugs"]["url"]
+#		bugs_uri=dati["bugs"]
 		metadata.write("".join(["\t\t<bugs-to>", bugs_uri, "</bugs-to>\n"]))
 
 #	manutentori=dati["maintainers"]

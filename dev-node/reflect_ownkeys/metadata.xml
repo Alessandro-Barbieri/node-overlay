@@ -6,7 +6,7 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://github.com/ljharb/object.assign/issues</bugs-to>
-		<remote-id type="github">git://github.com/ljharb/object.assign</remote-id>
+		<bugs-to>https://github.com/es-shims/Reflect.ownKeys/issues</bugs-to>
+		<remote-id type="github">es-shims/Reflect.ownKeys</remote-id>
 	</upstream>
 </pkgmetadata>

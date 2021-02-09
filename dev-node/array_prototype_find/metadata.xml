@@ -6,7 +6,7 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://github.com/ljharb/object.assign/issues</bugs-to>
-		<remote-id type="github">git://github.com/ljharb/object.assign</remote-id>
+		<bugs-to>https://github.com/paulmillr/Array.prototype.find/issues</bugs-to>
+		<remote-id type="github">git://github.com/paulmillr/Array.prototype.find</remote-id>
 	</upstream>
 </pkgmetadata>

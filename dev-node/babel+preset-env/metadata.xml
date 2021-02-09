@@ -6,7 +6,3 @@
 		<name>Alessandro Barbieri</name>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://github.com/ljharb/object.assign/issues</bugs-to>
-		<remote-id type="github">git://github.com/ljharb/object.assign</remote-id>
-	</upstream>
-</pkgmetadata>
