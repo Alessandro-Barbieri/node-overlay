@@ -6,7 +6,6 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <bugs-to>https://github.com/ljharb/object.assign/issues</bugs-to>
-    <remote-id type="github">git://github.com/ljharb/object.assign.git</remote-id>
+    <remote-id type="github">http://github.com/pkrumins/node-lazy.git</remote-id>
   </upstream>
 </pkgmetadata>
