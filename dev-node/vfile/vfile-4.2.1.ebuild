@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+unist
+	node-types/unist
 	dev-node/is-buffer
 	dev-node/unist-util-stringify-position
 	dev-node/vfile-message

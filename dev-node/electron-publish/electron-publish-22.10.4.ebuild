@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+fs-extra
+	node-types/fs-extra
 	dev-node/bluebird-lst
 	dev-node/builder-util
 	dev-node/builder-util-runtime

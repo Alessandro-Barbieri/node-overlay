@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+semver
+	node-types/semver
 	dev-node/builder-util-runtime
 	dev-node/fs-extra
 	dev-node/js-yaml

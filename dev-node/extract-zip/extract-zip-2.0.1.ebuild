@@ -18,5 +18,5 @@ RDEPEND="
 	dev-node/debug
 	dev-node/get-stream
 	dev-node/yauzl
-	dev-node/types+yauzl
+	node-types/yauzl
 "

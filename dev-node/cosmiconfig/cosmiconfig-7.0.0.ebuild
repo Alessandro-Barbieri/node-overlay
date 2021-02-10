@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+parse-json
+	node-types/parse-json
 	dev-node/import-fresh
 	dev-node/parse-json
 	dev-node/path-type

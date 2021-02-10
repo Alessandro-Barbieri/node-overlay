@@ -21,6 +21,6 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/jest+console
 	dev-node/jest+types
-	dev-node/types+istanbul-lib-coverage
+	node-types/istanbul-lib-coverage
 	dev-node/collect-v8-coverage
 "

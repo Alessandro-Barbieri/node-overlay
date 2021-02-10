@@ -42,6 +42,7 @@ node_src_prepare() {
 	find . -iname 'dockerfile*' -maxdepth 1 -delete || die
 	find . -iname 'issue_template*' -maxdepth 1 -delete || die
 	find . -iname 'license*' -maxdepth 1 -delete || die
+	find . -iname 'licence*' -maxdepth 1 -delete || die
 	find . -iname 'pull_request_template*' -maxdepth 1 -delete || die
 
 	default

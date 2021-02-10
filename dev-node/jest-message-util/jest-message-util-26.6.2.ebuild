@@ -15,9 +15,9 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+code-frame
+	node-babel/code-frame
 	dev-node/jest+types
-	dev-node/types+stack-utils
+	node-types/stack-utils
 	dev-node/chalk
 	dev-node/graceful-fs
 	dev-node/micromatch

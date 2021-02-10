@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+http-proxy
+	node-types/http-proxy
 	dev-node/http-proxy
 	dev-node/is-glob
 	dev-node/lodash

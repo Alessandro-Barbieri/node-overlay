@@ -15,7 +15,7 @@ LICENSE="BSD"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+helper-plugin-utils
+	node-babel/helper-plugin-utils
 	dev-node/istanbuljs+load-nyc-config
 	dev-node/istanbuljs+schema
 	dev-node/istanbul-lib-instrument

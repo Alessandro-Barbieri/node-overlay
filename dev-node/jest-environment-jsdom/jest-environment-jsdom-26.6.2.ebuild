@@ -18,7 +18,7 @@ RDEPEND="
 	dev-node/jest+environment
 	dev-node/jest+fake-timers
 	dev-node/jest+types
-	dev-node/types+node
+	node-types/node
 	dev-node/jest-mock
 	dev-node/jest-util
 	dev-node/jsdom

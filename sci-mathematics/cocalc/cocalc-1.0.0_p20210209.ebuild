@@ -17,17 +17,17 @@ LICENSE="AGPL-3+ Commons-Clause CC-BY-SA-2.0"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+core
-	dev-node/babel+plugin-transform-react-jsx
-	dev-node/babel+polyfill
-	dev-node/babel+preset-env
-	dev-node/babel+runtime
-	dev-node/types+enzyme
-	dev-node/types+jest
-	dev-node/types+jquery
-	dev-node/types+katex
-	dev-node/types+node
-	dev-node/types+react
+	node-babel/core
+	node-babel/plugin-transform-react-jsx
+	node-babel/polyfill
+	node-babel/preset-env
+	node-babel/runtime
+	node-types/enzyme
+	node-types/jest
+	node-types/jquery
+	node-types/katex
+	node-types/node
+	node-types/react
 	dev-node/typescript-eslint+eslint-plugin
 	dev-node/typescript-eslint+parser
 	dev-node/assets-webpack-plugin

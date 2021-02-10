@@ -14,16 +14,16 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+plugin-syntax-async-generators
-	dev-node/babel+plugin-syntax-bigint
-	dev-node/babel+plugin-syntax-class-properties
-	dev-node/babel+plugin-syntax-import-meta
-	dev-node/babel+plugin-syntax-json-strings
-	dev-node/babel+plugin-syntax-logical-assignment-operators
-	dev-node/babel+plugin-syntax-nullish-coalescing-operator
-	dev-node/babel+plugin-syntax-numeric-separator
-	dev-node/babel+plugin-syntax-object-rest-spread
-	dev-node/babel+plugin-syntax-optional-catch-binding
-	dev-node/babel+plugin-syntax-optional-chaining
-	dev-node/babel+plugin-syntax-top-level-await
+	node-babel/plugin-syntax-async-generators
+	node-babel/plugin-syntax-bigint
+	node-babel/plugin-syntax-class-properties
+	node-babel/plugin-syntax-import-meta
+	node-babel/plugin-syntax-json-strings
+	node-babel/plugin-syntax-logical-assignment-operators
+	node-babel/plugin-syntax-nullish-coalescing-operator
+	node-babel/plugin-syntax-numeric-separator
+	node-babel/plugin-syntax-object-rest-spread
+	node-babel/plugin-syntax-optional-catch-binding
+	node-babel/plugin-syntax-optional-chaining
+	node-babel/plugin-syntax-top-level-await
 "

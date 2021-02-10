@@ -15,7 +15,7 @@ LICENSE="MPL-2.0"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+runtime
+	node-babel/runtime
 	dev-node/mdn+browser-compat-data
 	dev-node/addons-scanner-utils
 	dev-node/ajv

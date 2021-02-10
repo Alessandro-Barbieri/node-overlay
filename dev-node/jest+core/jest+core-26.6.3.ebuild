@@ -24,7 +24,7 @@ RDEPEND="
 	dev-node/jest+test-result
 	dev-node/jest+transform
 	dev-node/jest+types
-	dev-node/types+node
+	node-types/node
 	dev-node/ansi-escapes
 	dev-node/chalk
 	dev-node/exit

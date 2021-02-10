@@ -16,8 +16,8 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/jest+types
-	dev-node/types+graceful-fs
-	dev-node/types+node
+	node-types/graceful-fs
+	node-types/node
 	dev-node/anymatch
 	dev-node/fb-watchman
 	dev-node/graceful-fs

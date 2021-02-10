@@ -20,7 +20,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/jest+types
-	dev-node/types+node
+	node-types/node
 	dev-node/chalk
 	dev-node/jest-message-util
 	dev-node/jest-util

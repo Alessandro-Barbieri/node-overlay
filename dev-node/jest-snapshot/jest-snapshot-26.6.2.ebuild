@@ -15,10 +15,10 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+types
+	node-babel/types
 	dev-node/jest+types
-	dev-node/types+babel__traverse
-	dev-node/types+prettier
+	node-types/babel__traverse
+	node-types/prettier
 	dev-node/chalk
 	dev-node/expect
 	dev-node/graceful-fs

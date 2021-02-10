@@ -19,5 +19,5 @@ RDEPEND="
 	dev-node/commander
 	dev-node/glob
 	dev-node/minimatch
-	dev-node/types+glob
+	node-types/glob
 "

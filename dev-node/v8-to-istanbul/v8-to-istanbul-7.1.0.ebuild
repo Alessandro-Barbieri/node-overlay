@@ -15,7 +15,7 @@ LICENSE="ISC"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+istanbul-lib-coverage
+	node-types/istanbul-lib-coverage
 	dev-node/convert-source-map
 	dev-node/source-map
 "

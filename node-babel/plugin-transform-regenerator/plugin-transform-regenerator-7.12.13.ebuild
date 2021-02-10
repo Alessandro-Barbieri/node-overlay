@@ -1,0 +1,21 @@
+# Copyright 1999-2021 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+
+inherit node
+
+DESCRIPTION="Explode async and generator functions into a state machine."
+HOMEPAGE="
+	https://babel.dev/docs/en/next/babel-plugin-transform-regenerator
+	https://www.npmjs.com/package/@babel/plugin-transform-regenerator
+"
+
+SRC_URI="https://registry.npmjs.org/@babel/${PN}/-/${PN}-${PV}.tgz -> babel-${P}.tgz"
+
+LICENSE="MIT"
+KEYWORDS="~amd64"
+RDEPEND="
+	${NODEJS_RDEPEND}
+	dev-node/regenerator-transform
+"

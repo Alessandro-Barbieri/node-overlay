@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+html-minifier-terser
+	node-types/html-minifier-terser
 	dev-node/html-minifier-terser
 	dev-node/loader-utils
 	dev-node/lodash
