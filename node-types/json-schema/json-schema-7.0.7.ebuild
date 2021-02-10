@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="TypeScript definitions for json-schema 4.0, 6.0 and"
+DESCRIPTION="TypeScript definitions for json-schema"
 HOMEPAGE="
 	https://www.npmjs.com/package/@types/json-schema
 "
@@ -14,3 +14,4 @@ SRC_URI="https://registry.npmjs.org/@types/${PN}/-/${PN}-${PV}.tgz -> types-${P}
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+S="${WORKDIR}/${PN}"
