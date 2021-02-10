@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/pcardune/handlebars-loader/issues</bugs-to>
-    <remote-id type="github">git://github.com/pcardune/handlebars-loader.git</remote-id>
+    <remote-id type="github">pcardune/handlebars-loader</remote-id>
   </upstream>
 </pkgmetadata>

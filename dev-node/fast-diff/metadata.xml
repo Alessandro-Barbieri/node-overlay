@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/jhchen/fast-diff/issues</bugs-to>
-    <remote-id type="github">git+https://github.com/jhchen/fast-diff.git</remote-id>
+    <remote-id type="github">jhchen/fast-diff</remote-id>
   </upstream>
 </pkgmetadata>

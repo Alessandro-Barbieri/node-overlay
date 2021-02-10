@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/flatiron/cliff/issues</bugs-to>
-    <remote-id type="github">http://github.com/flatiron/cliff.git</remote-id>
+    <remote-id type="github">flatiron/cliff</remote-id>
   </upstream>
 </pkgmetadata>

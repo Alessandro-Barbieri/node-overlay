@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/evcohen/jsx-ast-utils/issues</bugs-to>
-    <remote-id type="github">git+https://github.com/evcohen/jsx-ast-utils.git</remote-id>
+    <remote-id type="github">evcohen/jsx-ast-utils</remote-id>
   </upstream>
 </pkgmetadata>

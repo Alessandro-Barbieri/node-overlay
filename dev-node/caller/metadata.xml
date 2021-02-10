@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/totherik/caller/issues</bugs-to>
-    <remote-id type="github">git://github.com/totherik/caller.git</remote-id>
+    <remote-id type="github">totherik/caller</remote-id>
   </upstream>
 </pkgmetadata>

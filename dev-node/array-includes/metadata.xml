@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/es-shims/array-includes/issues</bugs-to>
-    <remote-id type="github">git://github.com/es-shims/array-includes.git</remote-id>
+    <remote-id type="github">es-shims/array-includes</remote-id>
   </upstream>
 </pkgmetadata>

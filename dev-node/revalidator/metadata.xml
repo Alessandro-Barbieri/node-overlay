@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/flatiron/revalidator/issues</bugs-to>
-    <remote-id type="github">http://github.com/flatiron/revalidator.git</remote-id>
+    <remote-id type="github">flatiron/revalidator</remote-id>
   </upstream>
 </pkgmetadata>

@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/es-shims/Array.prototype.flatMap/issues</bugs-to>
-    <remote-id type="github">git://github.com/es-shims/Array.prototype.flatMap.git</remote-id>
+    <remote-id type="github">es-shims/Array.prototype.flatMap</remote-id>
   </upstream>
 </pkgmetadata>

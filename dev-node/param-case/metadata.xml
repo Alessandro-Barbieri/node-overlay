@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/blakeembrey/change-case/issues</bugs-to>
-    <remote-id type="github">git://github.com/blakeembrey/change-case.git</remote-id>
+    <remote-id type="github">blakeembrey/change-case</remote-id>
   </upstream>
 </pkgmetadata>

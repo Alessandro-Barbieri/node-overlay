@@ -6,6 +6,6 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <remote-id type="github">http://github.com/pkrumins/node-lazy.git</remote-id>
+    <remote-id type="github">pkrumins/node-lazy</remote-id>
   </upstream>
 </pkgmetadata>

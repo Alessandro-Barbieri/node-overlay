@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/bmeck/understudy/issues</bugs-to>
-    <remote-id type="github">git+ssh://git@github.com/bmeck/understudy.git</remote-id>
+    <remote-id type="github">bmeck/understudy</remote-id>
   </upstream>
 </pkgmetadata>

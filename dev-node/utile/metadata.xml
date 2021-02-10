@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/flatiron/utile/issues</bugs-to>
-    <remote-id type="github">http://github.com/flatiron/utile.git</remote-id>
+    <remote-id type="github">flatiron/utile</remote-id>
   </upstream>
 </pkgmetadata>

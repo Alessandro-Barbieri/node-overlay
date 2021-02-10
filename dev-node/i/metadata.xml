@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/pksunkara/inflect/issues</bugs-to>
-    <remote-id type="github">git://github.com/pksunkara/inflect.git</remote-id>
+    <remote-id type="github">pksunkara/inflect</remote-id>
   </upstream>
 </pkgmetadata>

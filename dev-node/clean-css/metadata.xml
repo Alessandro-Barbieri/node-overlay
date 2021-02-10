@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/jakubpawlowicz/clean-css/issues</bugs-to>
-    <remote-id type="github">git+https://github.com/jakubpawlowicz/clean-css.git</remote-id>
+    <remote-id type="github">jakubpawlowicz/clean-css</remote-id>
   </upstream>
 </pkgmetadata>

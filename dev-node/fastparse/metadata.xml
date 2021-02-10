@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/webpack/fastparse/issues</bugs-to>
-    <remote-id type="github">git+https://github.com/webpack/fastparse.git</remote-id>
+    <remote-id type="github">webpack/fastparse</remote-id>
   </upstream>
 </pkgmetadata>

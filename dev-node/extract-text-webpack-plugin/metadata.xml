@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/webpack-contrib/extract-text-webpack-plugin/issues</bugs-to>
-    <remote-id type="github">git+ssh://git@github.com/webpack-contrib/extract-text-webpack-plugin.git</remote-id>
+    <remote-id type="github">webpack-contrib/extract-text-webpack-plugin</remote-id>
   </upstream>
 </pkgmetadata>

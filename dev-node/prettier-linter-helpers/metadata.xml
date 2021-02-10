@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/prettier/prettier-linter-helpers/issues</bugs-to>
-    <remote-id type="github">git+https://github.com/prettier/prettier-linter-helpers.git</remote-id>
+    <remote-id type="github">prettier/prettier-linter-helpers</remote-id>
   </upstream>
 </pkgmetadata>

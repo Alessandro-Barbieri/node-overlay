@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/indexzero/errs/issues</bugs-to>
-    <remote-id type="github">http://github.com/indexzero/errs.git</remote-id>
+    <remote-id type="github">indexzero/errs</remote-id>
   </upstream>
 </pkgmetadata>

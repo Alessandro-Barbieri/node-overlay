@@ -6,6 +6,6 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <remote-id type="github">git://github.com/dominictarr/pause-stream.git</remote-id>
+    <remote-id type="github">dominictarr/pause-stream</remote-id>
   </upstream>
 </pkgmetadata>

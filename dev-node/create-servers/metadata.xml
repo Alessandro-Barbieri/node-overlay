@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/http-party/create-servers/issues</bugs-to>
-    <remote-id type="github">git+https://github.com/http-party/create-servers.git</remote-id>
+    <remote-id type="github">http-party/create-servers</remote-id>
   </upstream>
 </pkgmetadata>

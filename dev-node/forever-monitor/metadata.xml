@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/foreversd/forever-monitor/issues</bugs-to>
-    <remote-id type="github">git+ssh://git@github.com/foreversd/forever-monitor.git</remote-id>
+    <remote-id type="github">foreversd/forever-monitor</remote-id>
   </upstream>
 </pkgmetadata>

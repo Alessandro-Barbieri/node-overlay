@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/flatiron/nconf/issues</bugs-to>
-    <remote-id type="github">git+ssh://git@github.com/flatiron/nconf.git</remote-id>
+    <remote-id type="github">flatiron/nconf</remote-id>
   </upstream>
 </pkgmetadata>
