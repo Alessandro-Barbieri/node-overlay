@@ -33,7 +33,7 @@ node_src_prepare() {
 	jq 'with_entries(if .key == "devDependencies" then .key = "devDeps" else . end)' package.json | sponge package.json || die
 
 	# are those useful?
-	rm -f npm-shrinkwrap.json package-lock.json yarn.lock || die
+	rm -fv npm-shrinkwrap.json package-lock.json yarn.lock || die
 
 	#delete some trash
 	find . -iname 'code-of-conduct*' -maxdepth 1 -delete || die
@@ -64,7 +64,7 @@ node_src_install() {
 	jq 'with_entries(if .key == "devDeps" then .key = "devDependencies" else . end)' package.json | sponge package.json || die
 
 	#should I delete all the dotfiles?
-	rm -rf .[!.]* || die
+	rm -rvf .[!.]* || die
 
 	#install some files in the docdir
 	find . -iname "authors*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
@@ -77,11 +77,11 @@ node_src_install() {
 	find . -iname "security*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
 
 	#copy files instead of symlinks
-	rsync -avLAX "${MODULE_PREFIX}/" "${ED}/usr" --exclude /bin || die
+	rsync -aLAX "${MODULE_PREFIX}/" "${ED}/usr" --exclude /bin || die
 
 	if [ -d "${MODULE_PREFIX}/bin" ] ; then
 		#keep the symlinks
-		rsync -avAX "${MODULE_PREFIX}/bin/" "${ED}/usr/bin" || die
+		rsync -aAX "${MODULE_PREFIX}/bin/" "${ED}/usr/bin" || die
 	fi
 }
 
