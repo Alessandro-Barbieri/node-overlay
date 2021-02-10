@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="Apache-2.0"
 KEYWORDS="~amd64"
+IUSE="examples"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/complex_js
@@ -24,3 +25,10 @@ RDEPEND="
 	dev-node/tiny-emitter
 	dev-node/typed-function
 "
+
+src_install() {
+	dodoc -r docs/.
+	use examples && dodoc -r examples/.
+	rm -rf docs examples || die
+	node_src_install
+}
