@@ -20,3 +20,9 @@ RDEPEND="
 	dev-node/tar
 "
 #TODO: unbundle sqlite
+
+src_install() {
+	dodoc -r docs/.
+	rm -rf docs || die
+	node_src_install
+}

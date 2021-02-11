@@ -13,3 +13,10 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+HTML_DOCS=( docs/. )
+
+src_install() {
+	einstalldocs
+	rm -rf docs || die
+	node_src_install
+}

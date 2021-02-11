@@ -13,3 +13,9 @@ HOMEPAGE="
 
 LICENSE="ISC"
 KEYWORDS="~amd64"
+
+src_install() {
+	dodoc -r docs/.
+	rm -rf docs || die
+	node_src_install
+}

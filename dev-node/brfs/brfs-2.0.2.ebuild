@@ -20,3 +20,10 @@ RDEPEND="
 	dev-node/static-module
 	dev-node/through2
 "
+IUSE="examples"
+
+src_install() {
+	use examples && dodoc -r example
+	rm -rf example || die
+	node_src_install
+}

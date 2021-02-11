@@ -20,3 +20,9 @@ RDEPEND="
 	dev-node/json-schema-traverse
 	dev-node/uri-js
 "
+
+src_install() {
+	dodoc -r docs/.
+	rm -rf docs || die
+	node_src_install
+}

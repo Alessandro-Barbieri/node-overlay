@@ -13,3 +13,9 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+
+src_install() {
+	node_src_install
+	rm "${ED}/usr/bin/cake" || die
+	rm "${ED}/usr/bin/coffee" || die
+}

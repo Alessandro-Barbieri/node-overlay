@@ -39,6 +39,7 @@ node_src_prepare() {
 	find . -iname 'code-of-conduct*' -maxdepth 1 -delete || die
 	find . -iname 'code_of_conduct*' -maxdepth 1 -delete || die
 	find . -iname 'contributing*' -maxdepth 1 -delete || die
+	find . -iname 'contribution*' -maxdepth 1 -delete || die
 	find . -iname 'dockerfile*' -maxdepth 1 -delete || die
 	find . -iname 'issue_template*' -maxdepth 1 -delete || die
 	find . -iname 'license*' -maxdepth 1 -delete || die

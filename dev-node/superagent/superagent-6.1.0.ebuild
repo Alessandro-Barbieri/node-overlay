@@ -26,3 +26,10 @@ RDEPEND="
 	dev-node/readable-stream
 	dev-node/semver
 "
+HTML_DOCS=( docs/. index.html )
+
+src_install() {
+	einstalldocs
+	rm -rf docs || die
+	node_src_install
+}

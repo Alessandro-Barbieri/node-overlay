@@ -19,7 +19,7 @@ KEYWORDS="~amd64"
 IUSE="examples"
 
 src_install() {
-	use examples && dodoc -r example
-	rm -rf example || die
+	use examples && dodoc -r examples
+	rm -rf examples || die
 	node_src_install
 }
