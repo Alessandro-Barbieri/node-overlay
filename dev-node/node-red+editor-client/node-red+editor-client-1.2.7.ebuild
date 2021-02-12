@@ -10,10 +10,5 @@ HOMEPAGE="
 	https://github.com/node-red/node-red
 	https://www.npmjs.com/package/@node-red/editor-client
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="Apache-2.0"
 KEYWORDS="~amd64"

@@ -16,8 +16,8 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/7zip-bin
-	node-types/debug
-	node-types/fs-extra
+	dev-node/types+debug
+	dev-node/types+fs-extra
 	dev-node/app-builder-bin
 	dev-node/bluebird-lst
 	dev-node/builder-util-runtime

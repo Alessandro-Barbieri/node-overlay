@@ -10,11 +10,6 @@ HOMEPAGE="
 	https://github.com/mapbox/vector-tile-js
 	https://www.npmjs.com/package/@mapbox/vector-tile
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="BSD"
 KEYWORDS="~amd64"
 RDEPEND="

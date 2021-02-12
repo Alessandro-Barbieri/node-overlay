@@ -15,6 +15,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/retry
+	dev-node/types+retry
 	dev-node/retry
 "

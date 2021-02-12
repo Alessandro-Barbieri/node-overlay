@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/minimist
+	dev-node/types+minimist
 	dev-node/camelcase-keys
 	dev-node/decamelize
 	dev-node/decamelize-keys

@@ -23,7 +23,7 @@ RDEPEND="
 	dev-node/jest+test-result
 	dev-node/jest+transform
 	dev-node/jest+types
-	node-types/yargs
+	dev-node/types+yargs
 	dev-node/chalk
 	dev-node/cjs-module-lexer
 	dev-node/collect-v8-coverage

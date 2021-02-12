@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/yargs
+	dev-node/types+yargs
 	dev-node/app-builder-lib
 	dev-node/bluebird-lst
 	dev-node/builder-util

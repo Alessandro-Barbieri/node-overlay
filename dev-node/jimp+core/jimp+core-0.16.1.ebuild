@@ -10,16 +10,11 @@ HOMEPAGE="
 	https://github.com/oliver-moran/jimp
 	https://www.npmjs.com/package/@jimp/core
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-babel/runtime
+	dev-node/babel+runtime
 	dev-node/jimp+utils
 	dev-node/any-base
 	dev-node/buffer

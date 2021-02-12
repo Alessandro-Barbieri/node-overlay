@@ -17,7 +17,7 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/jest+test-result
 	dev-node/jest+types
-	node-types/node
+	dev-node/types+node
 	dev-node/ansi-escapes
 	dev-node/chalk
 	dev-node/jest-util

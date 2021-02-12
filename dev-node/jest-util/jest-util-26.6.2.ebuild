@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/jest+types
-	node-types/node
+	dev-node/types+node
 	dev-node/chalk
 	dev-node/graceful-fs
 	dev-node/is-ci

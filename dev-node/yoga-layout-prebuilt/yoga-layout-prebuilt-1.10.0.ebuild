@@ -15,5 +15,5 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/yoga-layout
+	dev-node/types+yoga-layout
 "

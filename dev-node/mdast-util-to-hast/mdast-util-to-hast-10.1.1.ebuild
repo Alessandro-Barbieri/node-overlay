@@ -15,8 +15,8 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/mdast
-	node-types/unist
+	dev-node/types+mdast
+	dev-node/types+unist
 	dev-node/mdast-util-definitions
 	dev-node/mdurl
 	dev-node/unist-builder

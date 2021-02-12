@@ -15,8 +15,8 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/eslint-scope
-	node-types/estree
+	dev-node/types+eslint-scope
+	dev-node/types+estree
 	dev-node/webassemblyjs+ast
 	dev-node/webassemblyjs+wasm-edit
 	dev-node/webassemblyjs+wasm-parser

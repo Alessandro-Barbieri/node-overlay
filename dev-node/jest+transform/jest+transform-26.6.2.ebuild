@@ -10,16 +10,11 @@ HOMEPAGE="
 	https://github.com/facebook/jest
 	https://www.npmjs.com/package/@jest/transform
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-babel/core
+	dev-node/babel+core
 	dev-node/jest+types
 	dev-node/babel-plugin-istanbul
 	dev-node/chalk

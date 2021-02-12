@@ -10,11 +10,6 @@ HOMEPAGE="
 	https://jestjs.io/
 	https://www.npmjs.com/package/@jest/core
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
@@ -24,7 +19,7 @@ RDEPEND="
 	dev-node/jest+test-result
 	dev-node/jest+transform
 	dev-node/jest+types
-	node-types/node
+	dev-node/types+node
 	dev-node/ansi-escapes
 	dev-node/chalk
 	dev-node/exit

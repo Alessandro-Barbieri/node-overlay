@@ -67,10 +67,10 @@ with open(os.path.join(pacchetto, "".join([pacchetto, "-", versione, ".ebuild"])
 	ebuild.write('\thttps://www.npmjs.com/package/')
 	ebuild.write(vero_nome)
 	ebuild.write('\n"\n')
-	if "+" in pacchetto:
-		ebuild.write('\nPN_LEFT="${PN%%+*}"')
-		ebuild.write('\nPN_RIGHT="${PN#*+}"')
-		ebuild.write('\nSRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"\n')
+#	if "+" in pacchetto:
+#		ebuild.write('\nPN_LEFT="${PN%%+*}"')
+#		ebuild.write('\nPN_RIGHT="${PN#*+}"')
+#		ebuild.write('\nSRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"\n')
 
 	if "." in vero_nome:
 		ebuild.write('\nMYPN="${PN//_/.}"')

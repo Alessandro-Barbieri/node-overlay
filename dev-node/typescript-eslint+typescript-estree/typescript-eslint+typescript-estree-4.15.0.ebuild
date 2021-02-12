@@ -10,11 +10,6 @@ HOMEPAGE="
 	https://github.com/typescript-eslint/typescript-eslint
 	https://www.npmjs.com/package/@typescript-eslint/typescript-estree
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="BSD-2"
 KEYWORDS="~amd64"
 RDEPEND="

@@ -17,5 +17,5 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/ajv
 	dev-node/ajv-keywords
-	node-types/json-schema
+	dev-node/types+json-schema
 "

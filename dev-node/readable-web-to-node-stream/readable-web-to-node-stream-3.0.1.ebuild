@@ -15,6 +15,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/readable-stream
+	dev-node/types+readable-stream
 	dev-node/readable-stream
 "

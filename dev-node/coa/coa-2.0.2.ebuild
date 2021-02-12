@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/q
+	dev-node/types+q
 	dev-node/chalk
 	dev-node/q
 "

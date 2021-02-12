@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-babel/code-frame
+	dev-node/babel+code-frame
 	dev-node/eslint+eslintrc
 	dev-node/ajv
 	dev-node/chalk

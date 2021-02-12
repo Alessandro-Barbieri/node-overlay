@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-babel/core
+	dev-node/babel+core
 	dev-node/jest+test-sequencer
 	dev-node/jest+types
 	dev-node/babel-jest

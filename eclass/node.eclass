@@ -4,9 +4,8 @@
 EXPORT_FUNCTIONS src_prepare src_compile src_install src_test
 
 SLOT="0"
-
-SRC_URI="https://registry.npmjs.org/${PN}/-/${P}.tgz"
-
+PN_LEFT="${PN%%+*}"
+PN_RIGHT="${PN#*+}"
 NODEJS_DEPEND="net-libs/nodejs"
 NDDEJS_RDEPEND="${NODEJS_DEPEND}"
 NODEJS_BDEPEND="
@@ -19,9 +18,27 @@ DEPEND="${NODEJS_DEPEND}"
 RDEPEND="${NODEJS_RDEPEND}"
 BDEPEND="${NODEJS_BDEPEND}"
 
-S="${WORKDIR}/package"
 MODULE_PREFIX="${T}/prefix"
 NPM_FLAGS=""
+
+case "${PN}" in
+	*+*)
+	SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
+	;;
+
+	*)
+	SRC_URI="https://registry.npmjs.org/${PN}/-/${P}.tgz"
+	;;
+esac
+case "${PN}" in
+	*types+*)
+	S="${WORKDIR}/${PN_RIGHT}"
+	;;
+
+	*)
+	S="${WORKDIR}/package"
+	;;
+esac
 
 node_src_prepare() {
 	#remove version constraints on dependencies

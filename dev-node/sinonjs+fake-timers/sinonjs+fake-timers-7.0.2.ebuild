@@ -10,11 +10,6 @@ HOMEPAGE="
 	https://github.com/sinonjs/fake-timers
 	https://www.npmjs.com/package/@sinonjs/fake-timers
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="BSD"
 KEYWORDS="~amd64"
 RDEPEND="

@@ -15,6 +15,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/webpack
+	dev-node/types+webpack
 	dev-node/del
 "

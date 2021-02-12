@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/jest
+	dev-node/types+jest
 	dev-node/bs-logger
 	dev-node/buffer-from
 	dev-node/fast-json-stable-stringify

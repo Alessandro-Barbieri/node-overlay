@@ -10,16 +10,11 @@ HOMEPAGE="
 	https://github.com/typescript-eslint/typescript-eslint
 	https://www.npmjs.com/package/@typescript-eslint/experimental-utils
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/json-schema
+	dev-node/types+json-schema
 	dev-node/typescript-eslint+scope-manager
 	dev-node/typescript-eslint+types
 	dev-node/typescript-eslint+typescript-estree

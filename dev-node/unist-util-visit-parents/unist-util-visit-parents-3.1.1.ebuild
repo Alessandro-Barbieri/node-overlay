@@ -15,6 +15,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/unist
+	dev-node/types+unist
 	dev-node/unist-util-is
 "

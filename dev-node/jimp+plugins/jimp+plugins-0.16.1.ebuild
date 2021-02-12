@@ -9,16 +9,11 @@ DESCRIPTION="Default Jimp plugin."
 HOMEPAGE="
 		https://www.npmjs.com/package/@jimp/plugins
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-babel/runtime
+	dev-node/babel+runtime
 	dev-node/jimp+plugin-blit
 	dev-node/jimp+plugin-blur
 	dev-node/jimp+plugin-circle

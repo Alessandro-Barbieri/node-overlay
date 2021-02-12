@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-babel/runtime
+	dev-node/babel+runtime
 	dev-node/jimp+custom
 	dev-node/jimp+plugins
 	dev-node/jimp+types

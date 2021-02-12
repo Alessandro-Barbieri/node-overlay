@@ -17,8 +17,8 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/sindresorhus+is
 	dev-node/szmarczak+http-timer
-	node-types/cacheable-request
-	node-types/responselike
+	dev-node/types+cacheable-request
+	dev-node/types+responselike
 	dev-node/cacheable-lookup
 	dev-node/cacheable-request
 	dev-node/decompress-response

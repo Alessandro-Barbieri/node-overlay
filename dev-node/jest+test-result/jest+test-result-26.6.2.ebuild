@@ -10,17 +10,12 @@ HOMEPAGE="
 	https://github.com/facebook/jest
 	https://www.npmjs.com/package/@jest/test-result
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/jest+console
 	dev-node/jest+types
-	node-types/istanbul-lib-coverage
+	dev-node/types+istanbul-lib-coverage
 	dev-node/collect-v8-coverage
 "

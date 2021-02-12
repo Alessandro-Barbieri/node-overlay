@@ -11,9 +11,6 @@ HOMEPAGE="
 "
 
 MYPN="${PN//_/.}"
-PN_LEFT="${MYPN%%+*}"
-PN_RIGHT="${MYPN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
 
 LICENSE="MIT"
 KEYWORDS="~amd64"

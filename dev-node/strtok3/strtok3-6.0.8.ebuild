@@ -16,6 +16,6 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/tokenizer+token
-	node-types/debug
+	dev-node/types+debug
 	dev-node/peek-readable
 "

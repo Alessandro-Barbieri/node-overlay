@@ -14,5 +14,5 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-babel/runtime
+	dev-node/babel+runtime
 "

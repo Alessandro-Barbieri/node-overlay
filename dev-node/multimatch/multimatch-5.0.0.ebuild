@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/minimatch
+	dev-node/types+minimatch
 	dev-node/array-differ
 	dev-node/array-union
 	dev-node/arrify

@@ -15,7 +15,7 @@ LICENSE="BSD"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-babel/core
+	dev-node/babel+core
 	dev-node/istanbuljs+schema
 	dev-node/istanbul-lib-coverage
 	dev-node/semver

@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/mdast
+	dev-node/types+mdast
 	dev-node/mdast-util-to-string
 	dev-node/micromark
 	dev-node/parse-entities

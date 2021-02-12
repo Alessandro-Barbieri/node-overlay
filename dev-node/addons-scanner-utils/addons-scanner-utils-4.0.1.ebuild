@@ -14,7 +14,7 @@ LICENSE="MPL-2.0"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-types/yauzl
+	dev-node/types+yauzl
 	dev-node/common-tags
 	dev-node/first-chunk-stream
 	dev-node/strip-bom-stream
