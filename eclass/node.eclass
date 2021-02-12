@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EXPORT_FUNCTIONS src_prepare src_compile src_install src_test
+EXPORT_FUNCTIONS src_prepare src_compile src_install src_test src_configure
 
 SLOT="0"
 PN_LEFT="${PN%%+*}"
@@ -66,13 +66,16 @@ node_src_prepare() {
 	default
 }
 
-node_src_compile() {
+node_src_configure() {
 	#path to the modules
 	export NODE_PATH="/usr/$(get_libdir)/node_modules"
 	export npm_config_prefix="${MODULE_PREFIX}"
 	#path to the headers needed by node-gyp
 	export npm_config_nodedir="/usr/include/node"
 	in_iuse test || export NODE_ENV="production"
+}
+
+node_src_compile() {
 	npm install --global "${NPM_FLAGS}" || die
 }
 

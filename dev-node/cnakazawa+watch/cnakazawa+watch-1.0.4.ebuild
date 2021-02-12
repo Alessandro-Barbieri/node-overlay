@@ -12,6 +12,7 @@ HOMEPAGE="
 "
 LICENSE="Apache-2.0"
 KEYWORDS="~amd64"
+PATCHES=( "${FILESDIR}/rename-executable.patch" )
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/exec-sh

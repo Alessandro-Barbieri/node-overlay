@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+PATCHES=( "${FILESDIR}/mkdirp.patch" )
 CDEPEND="dev-libs/libsass"
 DEPEND="
 	${NODEJS_DEPEND}
@@ -42,4 +43,12 @@ RDEPEND="
 src_prepare() {
 	rm -r src/libsass || die
 	node_src_prepare
+}
+
+src_configure() {
+	export LIBSASS_EXT=yes
+	export LIBSASS_CFLAGS="${CXXFLAGS}"
+	export LIBSASS_LDFLAGS="${LDFLAGS}"
+	export LIBSASS_LIBRARY="-lsass"
+	node_src_configure
 }

@@ -1,0 +1,11 @@
+--- a/package.json	2021-02-12 20:33:32.333711231 -0000
++++ b/package.json	2021-02-12 20:38:03.587465747 -0000
+@@ -13,7 +13,7 @@
+     "files"
+   ],
+   "bin": {
+-    "watch": "./cli.js"
++    "cnakazawa_watch": "./cli.js"
+   },
+   "version": "1.0.4",
+   "homepage": "https://github.com/mikeal/watch",
