@@ -46,5 +46,6 @@ RDEPEND="
 	dev-node/upath
 	dev-node/yargs
 	dev-node/yauzl
-	dev-node/fsevents
 "
+# MAC only
+#	dev-node/fsevents

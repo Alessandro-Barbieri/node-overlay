@@ -28,5 +28,6 @@ RDEPEND="
 	dev-node/micromatch
 	dev-node/sane
 	dev-node/walker
-	dev-node/fsevents
 "
+# MAC only
+#	dev-node/fsevents

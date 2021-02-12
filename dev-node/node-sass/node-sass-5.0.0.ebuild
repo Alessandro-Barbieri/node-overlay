@@ -13,8 +13,14 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+CDEPEND="dev-libs/libsass"
+DEPEND="
+	${NODEJS_DEPEND}
+	${CDEPEND}
+"
 RDEPEND="
 	${NODEJS_RDEPEND}
+	${CDEPEND}
 	dev-node/async-foreach
 	dev-node/chalk
 	dev-node/cross-spawn
@@ -32,3 +38,8 @@ RDEPEND="
 	dev-node/stdout-stream
 	dev-node/true-case-path
 "
+
+src_prepare() {
+	rm -r src/libsass || die
+	node_src_prepare
+}
