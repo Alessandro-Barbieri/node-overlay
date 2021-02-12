@@ -13,3 +13,9 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+
+src_install() {
+	dodoc -r doc/.
+	rm -rf doc || die
+	node_src_install
+}

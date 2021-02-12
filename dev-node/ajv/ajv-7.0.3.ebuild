@@ -20,3 +20,9 @@ RDEPEND="
 	dev-node/require-from-string
 	dev-node/uri-js
 "
+
+src_install() {
+	dodoc -r docs/.
+	rm -rf docs || die
+	node_src_install
+}

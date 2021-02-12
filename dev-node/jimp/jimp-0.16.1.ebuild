@@ -21,3 +21,10 @@ RDEPEND="
 	dev-node/jimp+types
 	dev-node/regenerator-runtime
 "
+IUSE="examples"
+
+src_install() {
+	use examples && dodoc -r browser/examples
+	rm -rf browser/examples || die
+	node_src_install
+}

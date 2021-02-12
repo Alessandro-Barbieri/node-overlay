@@ -1,2 +1,4 @@
 atom-package
 dev-node
+node-babel
+node-types

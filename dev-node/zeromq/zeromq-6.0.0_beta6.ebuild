@@ -34,6 +34,7 @@ src_configure() {
 	NPM_FLAGS="--zmq-shared" # --build-from-source"
 	use drafts && NPM_FLAGS+=" --zmq-draft"
 	append-cxxflags " -I/usr/$(get_libdir)/node_modules/node-addon-api"
+	node_src_configure
 }
 
 src_prepare() {

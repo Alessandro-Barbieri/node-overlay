@@ -9,11 +9,6 @@ DESCRIPTION="TypeScript definitions for readable-stream"
 HOMEPAGE="
 		https://www.npmjs.com/package/@types/readable-stream
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
@@ -21,4 +16,3 @@ RDEPEND="
 	dev-node/types+node
 	dev-node/safe-buffer
 "
-S="${WORKDIR}/${PN_RIGHT}"

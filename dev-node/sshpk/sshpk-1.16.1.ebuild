@@ -10,5 +10,18 @@ HOMEPAGE="
 	https://github.com/arekinath/node-sshpk
 	https://www.npmjs.com/package/sshpk
 "
+
 LICENSE="MIT"
 KEYWORDS="~amd64"
+RDEPEND="
+	${NODEJS_RDEPEND}
+	dev-node/asn1
+	dev-node/assert-plus
+	dev-node/dashdash
+	dev-node/getpass
+	dev-node/safer-buffer
+	dev-node/jsbn
+	dev-node/tweetnacl
+	dev-node/ecc-jsbn
+	dev-node/bcrypt-pbkdf
+"

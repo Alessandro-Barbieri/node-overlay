@@ -10,5 +10,6 @@ HOMEPAGE="
 	https://github.com/isaacs/inherits
 	https://www.npmjs.com/package/inherits
 "
+
 LICENSE="ISC"
 KEYWORDS="~amd64"

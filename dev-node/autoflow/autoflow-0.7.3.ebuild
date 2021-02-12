@@ -18,3 +18,11 @@ RDEPEND="
 	dev-node/eventemitter2
 	dev-node/ensure-array
 "
+IUSE="examples"
+
+src_install() {
+	use examples && dodoc -r examples
+	dodoc -r doc/.
+	rm -rf examples doc || die
+	node_src_install
+}

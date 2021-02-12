@@ -10,11 +10,6 @@ HOMEPAGE="
 	https://github.com/atom/node-source-map-support
 	https://www.npmjs.com/package/@atom/source-map-support
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="

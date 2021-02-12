@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <bugs-to>https://github.com/es-shims/RegExp.prototype.flags/issues</bugs-to>
-    <remote-id type="github">es-shims/RegExp</remote-id>
+    <remote-id type="github">es-shims/RegExp.prototype.flags</remote-id>
   </upstream>
 </pkgmetadata>

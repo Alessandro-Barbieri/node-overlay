@@ -19,3 +19,10 @@ RDEPEND="
 	dev-node/xmlbuilder
 	dev-node/xmldom
 "
+IUSE="examples"
+
+src_install() {
+	use examples && dodoc -r examples
+	rm -rf examples || die
+	node_src_install
+}

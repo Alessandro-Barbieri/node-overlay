@@ -11,9 +11,6 @@ HOMEPAGE="
 	https://www.npmjs.com/package/@atom/plist
 "
 
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
 KEYWORDS="~amd64"
 LICENSE="MIT"
 RDEPEND="

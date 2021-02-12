@@ -20,3 +20,10 @@ RDEPEND="
 	dev-node/mkdirp
 	dev-node/rimraf
 "
+IUSE="examples"
+
+src_install() {
+	use examples && dodoc -r examples
+	rm -rf examples || die
+	node_src_install
+}

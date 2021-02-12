@@ -12,3 +12,10 @@ HOMEPAGE="
 "
 KEYWORDS="~amd64"
 LICENSE="MIT"
+IUSE="examples"
+
+src_install() {
+	use examples && dodoc -r example
+	rm -rf example || die
+	node_src_install
+}

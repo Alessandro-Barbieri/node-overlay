@@ -10,10 +10,5 @@ HOMEPAGE="
 	https://github.com/discoveryjs/json-ext
 	https://www.npmjs.com/package/@discoveryjs/json-ext
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"

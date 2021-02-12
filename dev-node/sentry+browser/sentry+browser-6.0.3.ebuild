@@ -10,11 +10,6 @@ HOMEPAGE="
 	https://github.com/getsentry/sentry-javascript/tree/master/packages/browser
 	https://www.npmjs.com/package/@sentry/browser
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="BSD"
 KEYWORDS="~amd64"
 RDEPEND="

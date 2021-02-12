@@ -10,5 +10,13 @@ HOMEPAGE="
 	https://github.com/joyent/node-jsprim
 	https://www.npmjs.com/package/jsprim
 "
+
 LICENSE="MIT"
 KEYWORDS="~amd64"
+RDEPEND="
+	${NODEJS_RDEPEND}
+	dev-node/assert-plus
+	dev-node/extsprintf
+	dev-node/json-schema
+	dev-node/verror
+"

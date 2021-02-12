@@ -12,7 +12,14 @@ HOMEPAGE="
 "
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="examples"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/through
 "
+
+src_install() {
+	use examples && dodoc -r examples
+	rm -rf examples || die
+	node_src_install
+}

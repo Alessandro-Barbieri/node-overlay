@@ -16,3 +16,10 @@ SRC_URI="https://registry.npmjs.org/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+HTML_DOCS=( doc/API.html )
+
+src_install() {
+	einstalldocs
+	rm -rf doc || die
+	node_src_install
+}

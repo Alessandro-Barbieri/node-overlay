@@ -1,0 +1,34 @@
+diff -ru a/scripts/build.js b/scripts/build.js
+--  a/scripts/build.js	1985-10-26 08:15:00.000000000 -0000
++++ b/scripts/build.js	2021-02-12 20:27:08.543217132 -0000
+@@ -24,27 +24,12 @@
+         : 'Release',
+     'binding.node');
+ 
+-  mkdir(path.dirname(install), function(err) {
+-    if (err && err.code !== 'EEXIST') {
++  mkdir.sync(path.dirname(install))
++  fs.rename(target, install, function(err) {
++    if (err) {
+       console.error(err.message);
+       return;
+     }
+-
+-    fs.stat(target, function(err) {
+-      if (err) {
+-        console.error('Build succeeded but target not found');
+-        return;
+-      }
+-
+-      fs.rename(target, install, function(err) {
+-        if (err) {
+-          console.error(err.message);
+-          return;
+-        }
+-
+-        console.log('Installed to', install);
+-      });
+-    });
+   });
+ }
+ 

@@ -9,11 +9,6 @@ DESCRIPTION="TypeScript definitions for eslint-scope"
 HOMEPAGE="
 		https://www.npmjs.com/package/@types/eslint-scope
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="

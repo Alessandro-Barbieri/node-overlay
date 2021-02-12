@@ -16,3 +16,10 @@ SRC_URI="https://registry.npmjs.org/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
 
 LICENSE="|| ( MIT GPL-2 )"
 KEYWORDS="~amd64"
+IUSE="examples"
+
+src_install() {
+	use examples && dodoc -r examples
+	rm -rf examples || die
+	node_src_install
+}

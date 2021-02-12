@@ -9,15 +9,9 @@ DESCRIPTION="TypeScript definitions for responselike"
 HOMEPAGE="
 	https://www.npmjs.com/package/@types/responselike
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/types+node
 "
-S="${WORKDIR}/${PN_RIGHT}"

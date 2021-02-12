@@ -9,11 +9,5 @@ DESCRIPTION="TypeScript definitions for http-cache-semantics"
 HOMEPAGE="
 	https://www.npmjs.com/package/@types/http-cache-semantics
 "
-
-PN_LEFT="${PN%%+*}"
-PN_RIGHT="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${PV}.tgz -> ${P}.tgz"
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
-S="${WORKDIR}/${PN_RIGHT}"
