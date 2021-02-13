@@ -23,6 +23,6 @@ RDEPEND="
 
 src_install() {
 	dodoc -r docs/.
-	rm -rf docs || die
+	rm -r docs || die
 	node_src_install
 }
