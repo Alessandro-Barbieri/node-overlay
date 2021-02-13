@@ -19,3 +19,9 @@ RDEPEND="
 	dev-node/import-local
 	dev-node/jest-cli
 "
+
+src_install() {
+	node_src_install
+	# jest executable conflict with the one provided by jest-cli
+	rm "${ED}/usr/bin/jest" || die
+}

@@ -3,7 +3,8 @@
 
 EAPI=7
 
-inherit node
+PYTHON_COMPAT=( python3_{7,8} )
+inherit node distutils-r1
 
 COMMIT="0a0c09a174086706914f2c32c07ca84ad62de81b"
 DESCRIPTION="Collaborative Calculation in the Cloud"
@@ -12,9 +13,10 @@ HOMEPAGE="
 	https://cocalc.com
 	https://github.com/sagemathinc/cocalc
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${COMMIT}/src"
 LICENSE="AGPL-3+ Commons-Clause CC-BY-SA-2.0"
 KEYWORDS="~amd64"
+IUSE="examples"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/babel+core
@@ -99,3 +101,44 @@ RDEPEND="
 	dev-node/webpack-sha-hash
 	dev-node/webpack-stats-plugin
 "
+
+src_prepare() {
+	cd "${S}/smc_pyutil" || die
+	distutils-r1_python_prepare_all
+	cd "${S}/smc_sagews" || die
+	distutils-r1_python_prepare_all
+	cd "${S}" || die
+	node_src_prepare
+}
+
+src_compile() {
+	cd "${S}/smc_pyutil" || die
+	python_foreach_impl distutils-r1_python_compile
+	cd "${S}/smc_sagews" || die
+	python_foreach_impl distutils-r1_python_compile
+	cd "${S}" || die
+	node_src_compile
+}
+
+src_install() {
+	cd "${S}/smc_pyutil" || die
+	python_foreach_impl distutils-r1_python_install
+	cd "${S}/smc_sagews" || die
+	python_foreach_impl distutils-r1_python_install
+
+	rm -r "${S}/smc_sagews" || die
+	rm -r "${S}/smc_pyutil" || die
+
+	cd "${S}" || die
+	use examples && dodoc -r examples
+	dodoc -r doc/.
+	dodoc -r "${S}/../docs/."
+	rm -r doc examples || die
+	node_src_install
+}
+
+src_test() {
+#	node_src_test
+	cd "${S}/smc_sagews" || die
+	python_foreach_impl python_test
+}

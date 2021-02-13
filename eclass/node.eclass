@@ -18,7 +18,7 @@ DEPEND="${NODEJS_DEPEND}"
 RDEPEND="${NODEJS_RDEPEND}"
 BDEPEND="${NODEJS_BDEPEND}"
 
-MODULE_PREFIX="${T}/prefix"
+NODE_MODULE_PREFIX="${T}/prefix"
 NPM_FLAGS=""
 
 case "${PN}" in
@@ -67,15 +67,17 @@ node_src_prepare() {
 }
 
 node_src_configure() {
-	#path to the modules
-	export NODE_PATH="/usr/$(get_libdir)/node_modules"
-	export npm_config_prefix="${MODULE_PREFIX}"
-	#path to the headers needed by node-gyp
-	export npm_config_nodedir="/usr/include/node"
-	in_iuse test || export NODE_ENV="production"
+	return
 }
 
 node_src_compile() {
+	#path to the modules
+	export NODE_PATH="/usr/$(get_libdir)/node_modules"
+	export npm_config_prefix="${NODE_MODULE_PREFIX}"
+	#path to the headers needed by node-gyp
+	export npm_config_nodedir="/usr/include/node"
+	in_iuse test || export NODE_ENV="production"
+
 	npm install --global "${NPM_FLAGS}" || die
 }
 
@@ -98,11 +100,11 @@ node_src_install() {
 	find . -iname "security*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
 
 	#copy files instead of symlinks
-	rsync -aLAX "${MODULE_PREFIX}/" "${ED}/usr" --exclude /bin || die
+	rsync -aLAX "${NODE_MODULE_PREFIX}/" "${ED}/usr" --exclude /bin || die
 
-	if [ -d "${MODULE_PREFIX}/bin" ] ; then
+	if [ -d "${NODE_MODULE_PREFIX}/bin" ] ; then
 		#keep the symlinks
-		rsync -aAX "${MODULE_PREFIX}/bin/" "${ED}/usr/bin" || die
+		rsync -aAX "${NODE_MODULE_PREFIX}/bin/" "${ED}/usr/bin" || die
 	fi
 }
 
