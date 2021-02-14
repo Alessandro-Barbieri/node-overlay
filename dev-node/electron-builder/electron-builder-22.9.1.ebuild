@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="A complete solution to package and build a ready for distribution Electron app for MacOS, Windows and Linux with “auto update” support out of the box"
+DESCRIPTION="A complete solution to package and build a ready for distribution Electron app for MacOS, Windows and Linux with auto update support out of the box"
 HOMEPAGE="
 	https://github.com/electron-userland/electron-builder
 	https://www.npmjs.com/package/electron-builder

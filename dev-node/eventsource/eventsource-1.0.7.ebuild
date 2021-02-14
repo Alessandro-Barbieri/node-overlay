@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="W3C compliant EventSource client for Node.js and browser (polyfill)"
 HOMEPAGE="
-	http://github.com/EventSource/eventsource
+	https://github.com/EventSource/eventsource
 	https://www.npmjs.com/package/eventsource
 "
 

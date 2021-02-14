@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Node adapter for RequireJS, for loading AMD modules. Includes RequireJS optimizer"
 HOMEPAGE="
-	http://github.com/jrburke/r.js
+	https://github.com/jrburke/r.js
 	https://www.npmjs.com/package/requirejs
 "
 

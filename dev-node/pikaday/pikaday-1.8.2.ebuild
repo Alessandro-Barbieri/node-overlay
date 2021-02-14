@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS"
+DESCRIPTION="A refreshing JavaScript Datepicker - lightweight, no dependencies, modular CSS"
 HOMEPAGE="
 	https://pikaday.com
 	https://www.npmjs.com/package/pikaday

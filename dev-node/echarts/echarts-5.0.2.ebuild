@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Apache ECharts is a powerful, interactive charting and data visualization library for browser"
 HOMEPAGE="
-	http://echarts.apache.org
+	https://echarts.apache.org
 	https://www.npmjs.com/package/echarts
 "
 

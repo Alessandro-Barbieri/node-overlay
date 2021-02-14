@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="This transformer wraps all typeof expressions with a method that replicates native behaviour. (ie. returning “symbol” for symbols)"
+DESCRIPTION="This transformer wraps all typeof expressions with a method that replicates native behaviour"
 HOMEPAGE="
 	https://babel.dev/docs/en/next/babel-plugin-transform-typeof-symbol
 	https://www.npmjs.com/package/@babel/plugin-transform-typeof-symbol

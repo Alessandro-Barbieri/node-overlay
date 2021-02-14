@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Generate regular expressions from regjsparser’s AST."
+DESCRIPTION="Generate regular expressions from regjsparser AST"
 HOMEPAGE="
 	https://github.com/bnjmnt4n/regjsgen
 	https://www.npmjs.com/package/regjsgen

@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Convert a tilde path to an absolute path: ~/dev → /Users/sindresorhus/dev"
+DESCRIPTION="Convert a tilde path to an absolute path"
 HOMEPAGE="
 	https://github.com/sindresorhus/untildify
 	https://www.npmjs.com/package/untildify

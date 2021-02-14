@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="A Light–weight CSS Preprocessor"
+DESCRIPTION="A Lightweight CSS Preprocessor"
 HOMEPAGE="
 	https://github.com/thysultan/stylis.js
 	https://www.npmjs.com/package/stylis

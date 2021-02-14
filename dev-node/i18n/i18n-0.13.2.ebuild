@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="lightweight translation module with dynamic json storage"
 HOMEPAGE="
-	http://github.com/mashpie/i18n-node
+	https://github.com/mashpie/i18n-node
 	https://www.npmjs.com/package/i18n
 "
 

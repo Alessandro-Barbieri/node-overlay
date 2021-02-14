@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="function try-catch wrapper for promises"
 HOMEPAGE="
-	http://github.com/coderaiser/try-to-catch
+	https://github.com/coderaiser/try-to-catch
 	https://www.npmjs.com/package/try-to-catch
 "
 

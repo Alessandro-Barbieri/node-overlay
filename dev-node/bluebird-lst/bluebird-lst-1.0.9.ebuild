@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Bluebird — longStackTraces: true, cancellation: true"
+DESCRIPTION="Bluebird - longStackTraces: true, cancellation: true"
 HOMEPAGE="
 	https://github.com/develar/fs-extra-p
 	https://www.npmjs.com/package/bluebird-lst

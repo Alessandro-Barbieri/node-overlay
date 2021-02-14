@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Extract text from bundle into a file."
 HOMEPAGE="
-	http://github.com/webpack-contrib/extract-text-webpack-plugin
+	https://github.com/webpack-contrib/extract-text-webpack-plugin
 	https://www.npmjs.com/package/extract-text-webpack-plugin
 "
 

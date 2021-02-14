@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="regexpu’s core functionality (i.e. rewritePattern(pattern, flag)), capable of translating ES6 Unicode regular expressions to ES5."
+DESCRIPTION="regexpu core functionality"
 HOMEPAGE="
 	https://mths.be/regexpu
 	https://www.npmjs.com/package/regexpu-core

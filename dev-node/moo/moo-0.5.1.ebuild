@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Optimised tokenizer/lexer generator! ğŸ�„ Much performance. Moo!"
+DESCRIPTION="Optimised tokenizer/lexer generator"
 HOMEPAGE="
 	https://github.com/tjvr/moo
 	https://www.npmjs.com/package/moo

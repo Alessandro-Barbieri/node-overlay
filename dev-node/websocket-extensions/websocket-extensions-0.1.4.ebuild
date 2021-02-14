@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Generic extension manager for WebSocket connections"
 HOMEPAGE="
-	http://github.com/faye/websocket-extensions-node
+	https://github.com/faye/websocket-extensions-node
 	https://www.npmjs.com/package/websocket-extensions
 "
 

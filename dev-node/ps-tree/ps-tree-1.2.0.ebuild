@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Get all children of a pid"
 HOMEPAGE="
-	http://github.com/indexzero/ps-tree
+	https://github.com/indexzero/ps-tree
 	https://www.npmjs.com/package/ps-tree
 "
 

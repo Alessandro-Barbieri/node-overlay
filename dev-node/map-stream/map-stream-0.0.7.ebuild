@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="construct pipes of streams of events"
 HOMEPAGE="
-	http://github.com/dominictarr/map-stream
+	https://github.com/dominictarr/map-stream
 	https://www.npmjs.com/package/map-stream
 "
 

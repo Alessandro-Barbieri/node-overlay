@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="SQLite library with support for opening and writing databases, prepared statements, and more. This SQLite library is in pure javascript (compiled with emscripten)."
 HOMEPAGE="
-	http://github.com/sql-js/sql.js
+	https://github.com/sql-js/sql.js
 	https://www.npmjs.com/package/sql.js
 "
 

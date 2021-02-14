@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="A tool set for CSS: fast detailed parser (CSS → AST), walker (AST traversal), generator (AST → CSS) and lexer (validation and matching) based on specs and browser implementations"
+DESCRIPTION="A tool set for CSS: fast detailed parser, walker, generator and lexer"
 HOMEPAGE="
 	https://github.com/csstree/csstree
 	https://www.npmjs.com/package/css-tree

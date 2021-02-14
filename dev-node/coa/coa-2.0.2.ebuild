@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Command-Option-Argument: Yet another parser for command line options."
 HOMEPAGE="
-	http://github.com/veged/coa
+	https://github.com/veged/coa
 	https://www.npmjs.com/package/coa
 "
 
