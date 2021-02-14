@@ -4,13 +4,15 @@ Software packaged:
 | Package       | Install | Run |
 |---------------|:-------:|:---:|
 | atom          | ✔       | ❓   |
+| carto         | ✔       | ✔   |
+| cocalc        | ✔       | ❓   |
+| coffeescript  | ✔       | ❓   |
+| gitlab-foss   | ✔       | ❓   |
 | ijavascript   | ✔       | ❓   |
-| zulip         | ✔       | ❓   |
-| zulip-desktop | ✖       | ❓   |
-| gitlab-foss   | ✖       | ❓   |
 | mocha         | ✔       | ❓   |
-| carto         | ✔       | ❓   |
+| node-red      | ✔       | ❓   |
 | pelias        | ✔       | ❓   |
 | tangram       | ✔       | ❓   |
-| cocalc        | ✔       | ❓   |
-| node-red      | ✔       | ❓   |
+| yarn          | ✔       | ✔   |
+| zulip         | ✔       | ❓   |
+| zulip-desktop | ✖       | ❓   |
