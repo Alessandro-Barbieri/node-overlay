@@ -40,7 +40,7 @@ RDEPEND="
 	dev-node/coffee-cache
 	dev-node/coffee-loader
 	dev-node/coffeelint
-	dev-node/coffeescript
+	dev-lang/coffee-script
 	dev-node/crypto-browserify
 	dev-node/css-loader
 	dev-node/cssnano

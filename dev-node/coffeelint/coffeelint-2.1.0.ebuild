@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/coffeescript
+	dev-lang/coffee-script
 	dev-node/glob
 	dev-node/ignore
 	dev-node/optimist

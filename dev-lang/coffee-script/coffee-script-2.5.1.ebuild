@@ -5,6 +5,8 @@ EAPI=7
 
 inherit node
 
+MYPN="${PN/-/}"
+SRC_URI="mirror://npm/${MYPN}/-/${MYPN}-${PV}.tgz"
 DESCRIPTION="Unfancy JavaScript"
 HOMEPAGE="
 	https://coffeescript.org
