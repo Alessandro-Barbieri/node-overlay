@@ -11,3 +11,4 @@ HOMEPAGE="
 	https://www.npmjs.com/package/jmespath
 "
 KEYWORDS="~amd64"
+LICENSE="Apache-2.0"

@@ -11,3 +11,4 @@ HOMEPAGE="
 	https://www.npmjs.com/package/format
 "
 KEYWORDS="~amd64"
+LICENSE="MIT"

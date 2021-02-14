@@ -11,3 +11,4 @@ HOMEPAGE="
 	https://www.npmjs.com/package/css-b64-images
 "
 KEYWORDS="~amd64"
+LICENSE="MIT"

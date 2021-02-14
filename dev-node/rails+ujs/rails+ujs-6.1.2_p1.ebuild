@@ -6,8 +6,7 @@ EAPI=7
 inherit node
 
 MYPV="${PV/_p/-}"
-MYP="${PN}-${MYPV}"
-SRC_URI="https://registry.npmjs.org/${PN}/-/${MYP}.tgz -> ${P}.tgz"
+SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${PN_RIGHT}/-/${PN_RIGHT}-${MYPV}.tgz -> ${P}.tgz"
 DESCRIPTION="Ruby on Rails unobtrusive scripting adapter"
 HOMEPAGE="
 	https://rubyonrails.org/

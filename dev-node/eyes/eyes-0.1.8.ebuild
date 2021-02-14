@@ -10,4 +10,4 @@ HOMEPAGE="
 		https://www.npmjs.com/package/eyes
 "
 KEYWORDS="~amd64"
-LICENSE=""
+LICENSE="MIT"

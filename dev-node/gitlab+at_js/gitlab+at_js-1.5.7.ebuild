@@ -11,8 +11,8 @@ HOMEPAGE="
 	https://www.npmjs.com/package/@gitlab/at.js
 "
 
-MYPN="${PN//_/.}"
-SRC_URI="https://registry.npmjs.org/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
+MYPN="${PN_RIGHT//_/.}"
+SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
 
 LICENSE="MIT"
 KEYWORDS="~amd64"

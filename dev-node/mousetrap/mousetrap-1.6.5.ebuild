@@ -11,5 +11,5 @@ HOMEPAGE="
 	https://www.npmjs.com/package/mousetrap
 "
 
-LICENSE="Apache-2.0 WITH LLVM-exception"
+LICENSE="Apache-2.0-with-LLVM-exceptions"
 KEYWORDS="~amd64"

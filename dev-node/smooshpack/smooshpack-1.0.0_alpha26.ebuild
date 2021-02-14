@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-MYPV="${PV/_alpha/-alpha.}"
+MYPV="${PV/_alpha/-alpha-}"
 MYP="${PN}-${MYPV}"
 SRC_URI="https://registry.npmjs.org/${PN}/-/${MYP}.tgz -> ${P}.tgz"
 DESCRIPTION="A bundler that completely works in the browser and takes advantage of it."
@@ -14,7 +14,7 @@ HOMEPAGE="
 	https://www.npmjs.com/package/smooshpack
 "
 
-LICENSE="SEE LICENSE.MD IN ROOT"
+LICENSE="LGPL-3"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}

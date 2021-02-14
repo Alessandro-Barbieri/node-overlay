@@ -10,7 +10,7 @@ HOMEPAGE="
 		https://www.npmjs.com/package/codesandbox-import-utils
 "
 
-LICENSE="SEE LICENSE IN LICENSE"
+LICENSE="LGPL-3"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}

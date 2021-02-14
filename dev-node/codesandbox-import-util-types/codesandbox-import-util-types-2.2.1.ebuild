@@ -10,3 +10,4 @@ HOMEPAGE="
 		https://www.npmjs.com/package/codesandbox-import-util-types
 "
 KEYWORDS="~amd64"
+LICENSE="LGPL-3"
