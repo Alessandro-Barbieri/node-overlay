@@ -8,3 +8,5 @@ Software packaged:
 - tangram
 - atom
 - node-red
+- cocalc
+- gitlab-foss
