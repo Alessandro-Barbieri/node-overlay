@@ -1,12 +1,16 @@
 # node-overlay
 Software packaged:
-- pelias
-- zulip
-- ijavascript
-- mocha
-- carto
-- tangram
-- atom
-- node-red
-- cocalc
-- gitlab-foss
+
+| Package       | Install | Run |
+|---------------|:-------:|:---:|
+| atom          | ✔       | ❓   |
+| ijavascript   | ✔       | ❓   |
+| zulip         | ✔       | ❓   |
+| zulip-desktop | ✖       | ❓   |
+| gitlab-foss   | ✖       | ❓   |
+| mocha         | ✔       | ❓   |
+| carto         | ✔       | ❓   |
+| pelias        | ✔       | ❓   |
+| tangram       | ✔       | ❓   |
+| cocalc        | ✔       | ❓   |
+| node-red      | ✔       | ❓   |
