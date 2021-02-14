@@ -18,3 +18,8 @@ RDEPEND="
 	dev-node/tslib
 	dev-node/zrender
 "
+
+src_prepare() {
+	rm -r licenses || die
+	node_src_prepare
+}

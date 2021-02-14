@@ -10,7 +10,7 @@ SRC_URI="https://gitlab.com/gitlab-org/gitlab-foss/-/archive/v${PV}/gitlab-foss-
 HOMEPAGE="
 	https://gitlab.com/gitlab-org/gitlab-foss
 "
-S="${WORKDIR}/${P}"
+S="${WORKDIR}/${PN}-v${PV}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
@@ -142,5 +142,12 @@ RDEPEND="
 "
 
 src_prepare() {
+	jq ". += {\"name\": \"gitlab-foss\", \"version\": \"${PV}\"}" package.json | sponge package.json || die
 	node_src_prepare
+}
+
+src_install() {
+	dodoc -r changelogs
+	rm -r changelogs || die
+	node_src_install
 }
