@@ -7,7 +7,7 @@ inherit node
 
 first="${PN%%+*}"
 second="${PN#*+}"
-SRC_URI="https://registry.npmjs.org/@${first}/${second}/-/${second}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/@${first}/${second}/-/${second}.tgz -> ${P}.tgz"
 DESCRIPTION="Tools for debugging your node.js modules and event loop"
 HOMEPAGE="
 	https://github.com/3rd-Eden/diagnostics

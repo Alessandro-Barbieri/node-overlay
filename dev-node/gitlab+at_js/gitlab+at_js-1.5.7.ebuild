@@ -12,7 +12,7 @@ HOMEPAGE="
 "
 
 MYPN="${PN_RIGHT//_/.}"
-SRC_URI="https://registry.npmjs.org/@${PN_LEFT}/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/@${PN_LEFT}/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
 
 LICENSE="MIT"
 KEYWORDS="~amd64"

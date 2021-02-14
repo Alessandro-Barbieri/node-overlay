@@ -6,7 +6,7 @@ EAPI=7
 inherit node
 
 MYPN="${PN/_/.}"
-SRC_URI="https://registry.npmjs.org/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
 DESCRIPTION="Use node's fs.realpath, but fall back to the JS implementation"
 HOMEPAGE="
 	https://github.com/isaacs/fs.realpath

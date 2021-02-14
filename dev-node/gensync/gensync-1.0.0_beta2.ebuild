@@ -7,7 +7,7 @@ inherit node
 
 MYPV="${PV/_beta/-beta.}"
 MYP="${PN}-${MYPV}"
-SRC_URI="https://registry.npmjs.org/${PN}/-/${MYP}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/${PN}/-/${MYP}.tgz -> ${P}.tgz"
 DESCRIPTION="Allows users to use generators in order to write common functions that can be both sync or async."
 HOMEPAGE="
 	https://github.com/loganfsmyth/gensync

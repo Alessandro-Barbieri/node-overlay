@@ -7,7 +7,7 @@ inherit node
 
 MYPV="${PV/_alpha/-alpha-}"
 MYP="${PN}-${MYPV}"
-SRC_URI="https://registry.npmjs.org/${PN}/-/${MYP}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/${PN}/-/${MYP}.tgz -> ${P}.tgz"
 DESCRIPTION="A bundler that completely works in the browser and takes advantage of it."
 HOMEPAGE="
 	https://github.com/codesandbox/codesandbox-client

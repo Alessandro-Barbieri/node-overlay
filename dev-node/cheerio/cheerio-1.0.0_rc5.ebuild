@@ -7,7 +7,7 @@ inherit node
 
 MYPV="${PV/_rc/-rc.}"
 MYP="${PN}-${MYPV}"
-SRC_URI="https://registry.npmjs.org/${PN}/-/${MYP}.tgz"
+SRC_URI="mirror://npm/${PN}/-/${MYP}.tgz"
 DESCRIPTION="Tiny, fast, and elegant implementation of core jQuery designed specifically for the server"
 HOMEPAGE="
 	https://github.com/cheeriojs/cheerio

@@ -7,7 +7,7 @@ inherit node
 
 MYPV="${PV/_p/-dev.}"
 MYP="${PN}-${MYPV}"
-SRC_URI="https://registry.npmjs.org/${PN}/-/${MYP}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/${PN}/-/${MYP}.tgz -> ${P}.tgz"
 DESCRIPTION="notareplacementforunderscore"
 HOMEPAGE="
 	https://github.com/AriaMinaei/utila

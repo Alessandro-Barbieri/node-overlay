@@ -7,7 +7,7 @@ inherit node
 
 MYPV="3.0.0-1"
 MYP="${PN}-${MYPV}"
-SRC_URI="https://registry.npmjs.org/${PN}/-/${MYP}.tgz"
+SRC_URI="mirror://npm/${PN}/-/${MYP}.tgz"
 DESCRIPTION="Fast implementation of JSON-Patch (RFC-6902) with duplex (observe changes) capabilities"
 HOMEPAGE="
 	https://github.com/Starcounter-Jack/JSON-Patch

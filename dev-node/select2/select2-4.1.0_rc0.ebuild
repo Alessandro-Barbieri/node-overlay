@@ -7,7 +7,7 @@ inherit node
 
 MYPV="${PV/_rc/-rc.}"
 MYP="${PN}-${MYPV}"
-SRC_URI="https://registry.npmjs.org/${PN}/-/${MYP}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/${PN}/-/${MYP}.tgz -> ${P}.tgz"
 DESCRIPTION="Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results."
 HOMEPAGE="
 	https://select2.org

@@ -7,7 +7,7 @@ inherit node flag-o-matic
 
 MYPV="${PV/_beta/-beta.}"
 MYP="${PN}-${MYPV}"
-SRC_URI="https://registry.npmjs.org/${PN}/-/${MYP}.tgz"
+SRC_URI="mirror://npm/${PN}/-/${MYP}.tgz"
 DESCRIPTION="Next-generation ZeroMQ bindings for Node.js"
 HOMEPAGE="
 	https://github.com/zeromq/zeromq.js

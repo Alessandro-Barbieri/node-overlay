@@ -6,7 +6,7 @@ EAPI=7
 inherit node
 
 MYPN="${PN/_/-}"
-SRC_URI="https://registry.npmjs.org/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
 DESCRIPTION="Tiny, fast, modular ISO 3166-1 alpha-2/alpha-3 parser."
 HOMEPAGE="
 	https://github.com/moimikey/iso3166-1

@@ -6,7 +6,7 @@ EAPI=7
 inherit node
 
 MYPN="${PN/_/-}"
-SRC_URI="https://registry.npmjs.org/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/${MYPN}/-/${MYPN}-${PV}.tgz -> ${P}.tgz"
 DESCRIPTION="JavaScript Testing utilities for React"
 HOMEPAGE="
 	https://enzymejs.github.io/enzyme/

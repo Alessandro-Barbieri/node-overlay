@@ -7,7 +7,7 @@ inherit node
 
 MYPN="${PN/_/-}"
 MYP="${MYPN}-${PV}"
-SRC_URI="https://registry.npmjs.org/${MYPN}/-/${MYP}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/${MYPN}/-/${MYP}.tgz -> ${P}.tgz"
 DESCRIPTION="Pure-JS CRC-32"
 HOMEPAGE="
 	http://sheetjs.com/opensource
