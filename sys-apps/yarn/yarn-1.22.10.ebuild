@@ -13,3 +13,4 @@ HOMEPAGE="
 
 LICENSE="BSD-2"
 KEYWORDS="~amd64"
+S="${WORKDIR}/${PN}-v${PV}"
