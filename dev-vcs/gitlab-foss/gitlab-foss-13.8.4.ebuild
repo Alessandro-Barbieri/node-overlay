@@ -54,10 +54,10 @@ RDEPEND="
 	dev-node/cron-validator
 	dev-node/cropper
 	dev-node/css-loader
-	dev-node/d3
-	dev-node/d3-sankey
-	dev-node/d3-scale
-	dev-node/d3-selection
+	node-d3/d3
+	node-d3/d3-sankey
+	node-d3/d3-scale
+	node-d3/d3-selection
 	dev-node/dateformat
 	dev-node/deckar01-task_list
 	dev-node/diff

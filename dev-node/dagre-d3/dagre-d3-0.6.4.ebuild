@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/d3
+	node-d3/d3
 	dev-node/dagre
 	dev-node/graphlib
 	node-lodash/lodash

@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/braintree+sanitize-url
-	dev-node/d3
+	node-d3/d3
 	dev-node/dagre
 	dev-node/dagre-d3
 	dev-node/entity-decode
