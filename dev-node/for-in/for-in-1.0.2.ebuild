@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Iterate over the own and inherited enumerable properties of an object, and return an object with properties that evaluate to true from the callback. Exit early by returning false. JavaScript/Node.js"
+DESCRIPTION="Iterate over the own and inherited enumerable properties of an object, and return an object with properties that evaluate to true from the callback"
 HOMEPAGE="
 	https://github.com/jonschlinkert/for-in
 	https://www.npmjs.com/package/for-in

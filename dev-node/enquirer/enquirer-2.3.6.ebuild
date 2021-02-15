@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Stylish, intuitive and user-friendly prompt system. Fast and lightweight enough for small projects, powerful and extensible enough for the most advanced use cases."
+DESCRIPTION="Stylish, intuitive and user-friendly prompt system"
 HOMEPAGE="
 	https://github.com/enquirer/enquirer
 	https://www.npmjs.com/package/enquirer

@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="[![npm version](https://img.shields.io/npm/v/stream-combiner.svg)](https://npmjs.org/package/stream-combiner)  [![Travis CI](https://travis-ci.org/dominictarr/stream-combiner.svg)](https://travis-ci.org/dominictarr/stream-combiner)"
+DESCRIPTION="Turn a pipeline into a single stream"
 HOMEPAGE="
 	https://github.com/dominictarr/stream-combiner
 	https://www.npmjs.com/package/stream-combiner

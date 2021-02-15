@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Assign the enumerable es6 Symbol properties from one or more objects to the first object passed on the arguments. Can be used as a supplement to other extend, assign or merge methods as a polyfill for the Symbols part of the es6 Object.assign method."
+DESCRIPTION="Assign the enumerable es6 Symbol properties from one or more objects to the first object passed on the argument"
 HOMEPAGE="
 	https://github.com/jonschlinkert/assign-symbols
 	https://www.npmjs.com/package/assign-symbols

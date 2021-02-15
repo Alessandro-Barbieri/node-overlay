@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="A [W3C HTML JSON forms spec](http://www.w3.org/TR/html-json-forms/) compliant field appender (for lack of a better name). Useful for people implementing application/x-www-form-urlencoded and multipart/form-data parsers."
+DESCRIPTION="A W3C HTML JSON forms spe compliant field appender"
 HOMEPAGE="
 	https://github.com/LinusU/node-append-field
 	https://www.npmjs.com/package/append-field

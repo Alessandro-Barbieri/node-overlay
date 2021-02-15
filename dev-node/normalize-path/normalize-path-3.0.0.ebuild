@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Normalize slashes in a file path to be posix/unix-like forward slashes. Also condenses repeat slashes to a single slash and removes and trailing slashes, unless disabled."
+DESCRIPTION="Normalize slashes in a file path to be posix/unix-like forward slashes"
 HOMEPAGE="
 	https://github.com/jonschlinkert/normalize-path
 	https://www.npmjs.com/package/normalize-path

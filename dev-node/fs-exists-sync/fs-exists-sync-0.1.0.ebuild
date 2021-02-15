@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Drop-in replacement for fs.existsSync with zero dependencies. Other libs I found either have crucial differences from fs.existsSync, or unnecessary dependencies. See README.md for more info."
+DESCRIPTION="Drop-in replacement for fs.existsSync with zero dependencies"
 HOMEPAGE="
 	https://github.com/jonschlinkert/fs-exists-sync
 	https://www.npmjs.com/package/fs-exists-sync

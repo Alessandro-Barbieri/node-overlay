@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Byte buffer specialized for data in chunks with special cases for dropping bytes in the front, merging bytes in to various integer types and abandoning buffer without penalty for previous chunk merges."
+DESCRIPTION="Byte buffer specialized for data in chunks with special cases for dropping bytes in the fron"
 HOMEPAGE="
 	https://github.com/indutny/offset-buffer
 	https://www.npmjs.com/package/obuf

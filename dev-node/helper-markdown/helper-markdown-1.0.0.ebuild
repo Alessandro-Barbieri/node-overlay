@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Markdown template helper. Uses remarkable to render markdown in templates. Should work with Handlebars, Lo-Dash or any template engine that supports helper functions."
+DESCRIPTION="Markdown template helper. Uses remarkable to render markdown in templates"
 HOMEPAGE="
 	https://github.com/helpers/helper-markdown
 	https://www.npmjs.com/package/helper-markdown

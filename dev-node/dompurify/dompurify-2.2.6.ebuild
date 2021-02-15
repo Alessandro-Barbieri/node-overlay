@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="DOMPurify is a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG. It's written in JavaScript and works in all modern browsers (Safari, Opera (15+), Internet Explorer (10+), Firefox and Chrome - as well as almost anything else usin"
+DESCRIPTION="DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG"
 HOMEPAGE="
 	https://github.com/cure53/DOMPurify
 	https://www.npmjs.com/package/dompurify

@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Fast and powerful array sorting. Sort an array of objects by one or more properties. Any number of nested properties or custom comparison functions may be used."
+DESCRIPTION="Fast and powerful array sorting"
 HOMEPAGE="
 	https://github.com/jonschlinkert/array-sort
 	https://www.npmjs.com/package/array-sort

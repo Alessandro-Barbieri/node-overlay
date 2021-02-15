@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="With more than 85 components, over 45 available plugins, several directives, and 1000+ icons, BootstrapVue provides one of the most comprehensive implementations of the Bootstrap v4 component and grid system available for Vue.js v2.6, complete with extens"
+DESCRIPTION="One of the most comprehensive implementations of the Bootstrap v4 component and grid system"
 HOMEPAGE="
 	https://bootstrap-vue.org
 	https://www.npmjs.com/package/bootstrap-vue

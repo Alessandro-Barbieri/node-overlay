@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="A library of cross-platform tested terminal/console command strings for doing things like color and cursor positioning.  This is a subset of both ansi and vt100.  All control codes included work on both Windows & Unix-like OSes, except where noted."
+DESCRIPTION="A library ofterminal/console command strings"
 HOMEPAGE="
 	https://github.com/iarna/console-control-strings
 	https://www.npmjs.com/package/console-control-strings

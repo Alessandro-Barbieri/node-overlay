@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Blazing fast and accurate glob matcher written in JavaScript, with no dependencies and full support for standard and extended Bash glob features, including braces, extglobs, POSIX brackets, and regular expressions."
+DESCRIPTION="Blazing fast and accurate glob matcher written in JavaScript"
 HOMEPAGE="
 	https://github.com/micromatch/picomatch
 	https://www.npmjs.com/package/picomatch

@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="More than 130 Handlebars helpers in ~20 categories. Helpers can be used with Assemble, Generate, Verb, Ghost, gulp-handlebars, grunt-handlebars, consolidate, or any node.js/Handlebars project."
+DESCRIPTION="More than 130 Handlebars helpers in ~20 categories"
 HOMEPAGE="
 	https://github.com/helpers/handlebars-helpers
 	https://www.npmjs.com/package/handlebars-helpers

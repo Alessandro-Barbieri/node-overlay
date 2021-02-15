@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with dif"
+DESCRIPTION="Math.js is an extensive math library for JavaScript and Node.js"
 HOMEPAGE="
 	https://mathjs.org
 	https://www.npmjs.com/package/mathjs

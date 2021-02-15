@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="prelude.ls is a functionally oriented utility library. It is powerful and flexible. Almost all of its functions are curried. It is written in, and is the recommended base library for, LiveScript."
+DESCRIPTION="prelude.ls is a functionally oriented utility library"
 HOMEPAGE="
 	http://preludels.com
 	https://www.npmjs.com/package/prelude-ls

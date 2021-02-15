@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="[![NPM version](https://badge.fury.io/js/jasmine-growl-reporter.svg)](http://badge.fury.io/js/jasmine-growl-reporter) [![Dependency Status](https://gemnasium.com/AlphaHydrae/jasmine-growl-reporter.svg)](https://gemnasium.com/AlphaHydrae/jasmine-growl-repo"
+DESCRIPTION="Growl reporter for Jasmine BDD"
 HOMEPAGE="
 	https://github.com/AlphaHydrae/jasmine-growl-reporter
 	https://www.npmjs.com/package/jasmine-growl-reporter

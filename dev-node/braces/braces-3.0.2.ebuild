@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Bash-like brace expansion, implemented in JavaScript. Safer than other brace expansion libs, with complete support for the Bash 4.3 braces specification, without sacrificing speed."
+DESCRIPTION="Bash-like brace expansion, implemented in JavaScript"
 HOMEPAGE="
 	https://github.com/micromatch/braces
 	https://www.npmjs.com/package/braces

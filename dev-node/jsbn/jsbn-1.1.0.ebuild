@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="The jsbn library is a fast, portable implementation of large-number math in pure JavaScript, enabling public-key crypto and other applications on desktop and mobile browsers."
+DESCRIPTION="fast, portable implementation of large-number math in pure JavaScript"
 HOMEPAGE="
 	https://github.com/andyperlitch/jsbn
 	https://www.npmjs.com/package/jsbn

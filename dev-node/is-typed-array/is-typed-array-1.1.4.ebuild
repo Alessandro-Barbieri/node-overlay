@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Is this value a JS Typed Array? This module works cross-realm/iframe, does not depend on instanceof or mutable properties, and despite ES6 Symbol.toStringTag."
+DESCRIPTION="Is this value a JS Typed Array?"
 HOMEPAGE="
 	https://github.com/inspect-js/is-typed-array
 	https://www.npmjs.com/package/is-typed-array

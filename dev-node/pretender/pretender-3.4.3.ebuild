@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Pretender is a mock server library for XMLHttpRequest and Fetch, that comes with an express/sinatra style syntax for defining routes and their handlers."
+DESCRIPTION="Pretender is a mock server library for XMLHttpRequest and Fetch"
 HOMEPAGE="
 	https://github.com/pretenderjs/pretender
 	https://www.npmjs.com/package/pretender

@@ -5,9 +5,8 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Promises of moves of files or directories with rename, falling back to recursive rename/copy on EXDEV errors, with configurable concurrency and win32 junction support."
+DESCRIPTION="Promises of moves of files or directories with rename"
 HOMEPAGE="
-	https://www.npmjs.com/package/move-concurrently
 	https://www.npmjs.com/package/move-concurrently
 "
 

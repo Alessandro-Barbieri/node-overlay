@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Creates and returns a new debounced version of the passed function that will postpone its execution until after wait milliseconds have elapsed since the last time it was invoked"
+DESCRIPTION="Creates and returns a new debounced version of the passed function"
 HOMEPAGE="
 	https://github.com/component/debounce
 	https://www.npmjs.com/package/debounce

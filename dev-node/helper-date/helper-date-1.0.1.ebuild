@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Format dates with date.js and moment.js. Uses date.js to parse human readable date phrases, and moment to format the rendered output. Should work with any Handlebars, Lo-Dash, underscore, or any template engine that allows helper functions to be registere"
+DESCRIPTION="Format dates with date.js and moment.js"
 HOMEPAGE="
 	https://github.com/helpers/helper-date
 	https://www.npmjs.com/package/helper-date

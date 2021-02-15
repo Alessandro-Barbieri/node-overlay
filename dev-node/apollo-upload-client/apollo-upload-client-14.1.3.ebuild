@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="A terminating Apollo Link for Apollo Client that allows FileList, File, Blob or ReactNativeFile instances within query or mutation variables and sends GraphQL multipart requests."
+DESCRIPTION="A terminating Apollo Link for Apollo Client"
 HOMEPAGE="
 	https://github.com/jaydenseric/apollo-upload-client
 	https://www.npmjs.com/package/apollo-upload-client

@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Autoflow (formerly named react) is a javascript module implementing a control-flow / flow control engine to make it easier to work with asynchronous code, by reducing boilerplate code and improving error and exception handling while allowing variable and "
+DESCRIPTION="Autoflow is a javascript module implementing a control-flow engine"
 HOMEPAGE="
 	https://github.com/jeffbski/autoflow
 	https://www.npmjs.com/package/autoflow
