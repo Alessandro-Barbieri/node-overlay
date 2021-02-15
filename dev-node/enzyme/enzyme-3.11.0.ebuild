@@ -27,8 +27,8 @@ RDEPEND="
 	dev-node/is-regex
 	dev-node/is-string
 	dev-node/is-subset
-	dev-node/lodash_escape
-	dev-node/lodash_isequal
+	node-lodash/lodash_escape
+	node-lodash/lodash_isequal
 	dev-node/object-inspect
 	dev-node/object-is
 	dev-node/object_assign

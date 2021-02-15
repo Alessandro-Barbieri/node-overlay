@@ -16,5 +16,5 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/hapi+joi
-	dev-node/lodash
+	node-lodash/lodash
 "

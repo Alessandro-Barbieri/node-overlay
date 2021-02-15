@@ -18,7 +18,7 @@ RDEPEND="
 	dev-node/typescript-eslint+scope-manager
 	dev-node/debug
 	dev-node/functional-red-black-tree
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/regexpp
 	dev-node/semver
 	dev-node/tsutils

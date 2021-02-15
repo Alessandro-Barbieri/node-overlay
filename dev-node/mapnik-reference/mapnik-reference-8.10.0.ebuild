@@ -14,6 +14,6 @@ KEYWORDS="~amd64"
 LICENSE="Unlicense"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/semver
 "

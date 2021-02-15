@@ -20,5 +20,5 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/codesandbox-api
 	dev-node/codesandbox-import-utils
-	dev-node/lodash_isequal
+	node-lodash/lodash_isequal
 "

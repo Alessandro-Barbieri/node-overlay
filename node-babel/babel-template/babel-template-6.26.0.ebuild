@@ -19,5 +19,5 @@ RDEPEND="
 	node-babel/babel-traverse
 	node-babel/babel-types
 	dev-node/babylon
-	dev-node/lodash
+	node-lodash/lodash
 "

@@ -17,5 +17,5 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/camelcase
 	dev-node/escape-string-regexp
-	dev-node/lodash
+	node-lodash/lodash
 "

@@ -65,11 +65,11 @@ RDEPEND="
 	dev-node/libnpx
 	dev-node/lock-verify
 	dev-node/lockfile
-	dev-node/lodash__baseuniq
-	dev-node/lodash_clonedeep
-	dev-node/lodash_union
-	dev-node/lodash_uniq
-	dev-node/lodash_without
+	node-lodash/lodash__baseuniq
+	node-lodash/lodash_clonedeep
+	node-lodash/lodash_union
+	node-lodash/lodash_uniq
+	node-lodash/lodash_without
 	dev-node/lru-cache
 	dev-node/meant
 	dev-node/mississippi
@@ -132,10 +132,10 @@ RDEPEND="
 	dev-node/write-file-atomic
 	dev-node/debuglog
 	dev-node/imurmurhash
-	dev-node/lodash__baseindexof
-	dev-node/lodash__bindcallback
-	dev-node/lodash__cacheindexof
-	dev-node/lodash__createcache
-	dev-node/lodash__getnative
-	dev-node/lodash_restparam
+	node-lodash/lodash__baseindexof
+	node-lodash/lodash__bindcallback
+	node-lodash/lodash__cacheindexof
+	node-lodash/lodash__createcache
+	node-lodash/lodash__getnative
+	node-lodash/lodash_restparam
 "

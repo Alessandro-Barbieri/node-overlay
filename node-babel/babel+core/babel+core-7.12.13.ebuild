@@ -26,7 +26,7 @@ RDEPEND="
 	dev-node/debug
 	dev-node/gensync
 	dev-node/json5
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/semver
 	dev-node/source-map
 "

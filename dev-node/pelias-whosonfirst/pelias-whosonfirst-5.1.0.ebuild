@@ -22,7 +22,7 @@ RDEPEND="
 	dev-node/command-exists
 	dev-node/download-file-sync
 	dev-node/iso3166_1
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/pelias-blacklist-stream
 	dev-node/pelias-config
 	dev-node/pelias-dbclient

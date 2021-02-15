@@ -21,7 +21,7 @@ RDEPEND="
 	dev-node/ignore
 	dev-node/import-fresh
 	dev-node/js-yaml
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/minimatch
 	dev-node/strip-json-comments
 "

@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/glob
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/scss-tokenizer
 	dev-node/yargs
 "

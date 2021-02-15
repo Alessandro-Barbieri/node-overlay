@@ -18,7 +18,7 @@ RDEPEND="
 	dev-node/chroma-js
 	dev-node/hsluv
 	dev-node/js-yaml
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/mapnik-reference
 	dev-node/semver
 	dev-node/yargs

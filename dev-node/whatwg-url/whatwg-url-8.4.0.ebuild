@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/lodash_sortby
+	node-lodash/lodash_sortby
 	dev-node/tr46
 	dev-node/webidl-conversions
 "

@@ -21,7 +21,7 @@ RDEPEND="
 	dev-node/cli-width
 	dev-node/external-editor
 	dev-node/figures
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/mute-stream
 	dev-node/run-async
 	dev-node/rxjs

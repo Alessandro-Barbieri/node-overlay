@@ -23,5 +23,5 @@ RDEPEND="
 	dev-node/debug
 	dev-node/globals
 	dev-node/invariant
-	dev-node/lodash
+	node-lodash/lodash
 "

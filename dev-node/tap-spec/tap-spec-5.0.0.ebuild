@@ -18,7 +18,7 @@ RDEPEND="
 	dev-node/chalk
 	dev-node/duplexer
 	dev-node/figures
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/pretty-ms
 	dev-node/repeat-string
 	dev-node/tap-out

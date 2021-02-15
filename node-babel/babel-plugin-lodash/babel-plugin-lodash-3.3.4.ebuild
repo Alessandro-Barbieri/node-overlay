@@ -18,6 +18,6 @@ RDEPEND="
 	node-babel/babel+helper-module-imports
 	node-babel/babel+types
 	dev-node/glob
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/require-package-name
 "

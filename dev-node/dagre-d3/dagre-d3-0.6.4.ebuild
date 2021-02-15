@@ -18,5 +18,5 @@ RDEPEND="
 	dev-node/d3
 	dev-node/dagre
 	dev-node/graphlib
-	dev-node/lodash
+	node-lodash/lodash
 "

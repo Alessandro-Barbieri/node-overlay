@@ -17,6 +17,6 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel-runtime
 	dev-node/esutils
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/to-fast-properties
 "

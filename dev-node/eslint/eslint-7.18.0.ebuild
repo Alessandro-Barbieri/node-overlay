@@ -40,7 +40,7 @@ RDEPEND="
 	dev-node/js-yaml
 	dev-node/json-stable-stringify-without-jsonify
 	dev-node/levn
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/minimatch
 	dev-node/natural-compare
 	dev-node/optionator

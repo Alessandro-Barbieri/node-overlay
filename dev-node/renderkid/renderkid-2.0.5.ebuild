@@ -18,6 +18,6 @@ RDEPEND="
 	dev-node/css-select
 	dev-node/dom-converter
 	dev-node/htmlparser2
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/strip-ansi
 "

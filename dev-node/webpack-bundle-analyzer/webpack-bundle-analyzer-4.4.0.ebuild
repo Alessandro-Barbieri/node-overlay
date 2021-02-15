@@ -20,7 +20,7 @@ RDEPEND="
 	dev-node/chalk
 	dev-node/commander
 	dev-node/gzip-size
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/opener
 	dev-node/sirv
 	dev-node/ws

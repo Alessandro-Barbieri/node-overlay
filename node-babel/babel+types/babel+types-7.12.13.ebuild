@@ -15,6 +15,6 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+helper-validator-identifier
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/to-fast-properties
 "

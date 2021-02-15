@@ -24,7 +24,7 @@ RDEPEND="
 	dev-node/code-excerpt
 	dev-node/indent-string
 	dev-node/is-ci
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/patch-console
 	dev-node/react-devtools-core
 	dev-node/react-reconciler

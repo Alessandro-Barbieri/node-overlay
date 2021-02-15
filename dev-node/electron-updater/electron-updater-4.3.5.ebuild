@@ -20,6 +20,6 @@ RDEPEND="
 	dev-node/fs-extra
 	dev-node/js-yaml
 	dev-node/lazy-val
-	dev-node/lodash_isequal
+	node-lodash/lodash_isequal
 	dev-node/semver
 "

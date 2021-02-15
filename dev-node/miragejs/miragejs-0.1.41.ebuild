@@ -17,28 +17,28 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/miragejs+pretender-node-polyfill
 	dev-node/inflected
-	dev-node/lodash_assign
-	dev-node/lodash_camelcase
-	dev-node/lodash_clonedeep
-	dev-node/lodash_compact
-	dev-node/lodash_find
-	dev-node/lodash_flatten
-	dev-node/lodash_forin
-	dev-node/lodash_get
-	dev-node/lodash_has
-	dev-node/lodash_invokemap
-	dev-node/lodash_isempty
-	dev-node/lodash_isequal
-	dev-node/lodash_isfunction
-	dev-node/lodash_isinteger
-	dev-node/lodash_isplainobject
-	dev-node/lodash_lowerfirst
-	dev-node/lodash_map
-	dev-node/lodash_mapvalues
-	dev-node/lodash_pick
-	dev-node/lodash_snakecase
-	dev-node/lodash_uniq
-	dev-node/lodash_uniqby
-	dev-node/lodash_values
+	node-lodash/lodash_assign
+	node-lodash/lodash_camelcase
+	node-lodash/lodash_clonedeep
+	node-lodash/lodash_compact
+	node-lodash/lodash_find
+	node-lodash/lodash_flatten
+	node-lodash/lodash_forin
+	node-lodash/lodash_get
+	node-lodash/lodash_has
+	node-lodash/lodash_invokemap
+	node-lodash/lodash_isempty
+	node-lodash/lodash_isequal
+	node-lodash/lodash_isfunction
+	node-lodash/lodash_isinteger
+	node-lodash/lodash_isplainobject
+	node-lodash/lodash_lowerfirst
+	node-lodash/lodash_map
+	node-lodash/lodash_mapvalues
+	node-lodash/lodash_pick
+	node-lodash/lodash_snakecase
+	node-lodash/lodash_uniq
+	node-lodash/lodash_uniqby
+	node-lodash/lodash_values
 	dev-node/pretender
 "

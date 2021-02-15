@@ -19,7 +19,7 @@ RDEPEND="
 	dev-node/console-browserify
 	dev-node/exit
 	dev-node/htmlparser2
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/minimatch
 	dev-node/shelljs
 	dev-node/strip-json-comments

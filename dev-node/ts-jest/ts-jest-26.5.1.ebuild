@@ -21,7 +21,7 @@ RDEPEND="
 	dev-node/fast-json-stable-stringify
 	node-jest/jest-util
 	dev-node/json5
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/make-error
 	dev-node/mkdirp
 	dev-node/semver

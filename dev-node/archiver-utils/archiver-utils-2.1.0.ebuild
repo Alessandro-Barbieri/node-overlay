@@ -18,11 +18,11 @@ RDEPEND="
 	dev-node/glob
 	dev-node/graceful-fs
 	dev-node/lazystream
-	dev-node/lodash_defaults
-	dev-node/lodash_difference
-	dev-node/lodash_flatten
-	dev-node/lodash_isplainobject
-	dev-node/lodash_union
+	node-lodash/lodash_defaults
+	node-lodash/lodash_difference
+	node-lodash/lodash_flatten
+	node-lodash/lodash_isplainobject
+	node-lodash/lodash_union
 	dev-node/normalize-path
 	dev-node/readable-stream
 "

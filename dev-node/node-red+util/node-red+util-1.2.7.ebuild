@@ -18,7 +18,7 @@ RDEPEND="
 	dev-node/i18next
 	dev-node/json-stringify-safe
 	dev-node/jsonata
-	dev-node/lodash_clonedeep
+	node-lodash/lodash_clonedeep
 	dev-node/moment-timezone
 	dev-node/when
 "

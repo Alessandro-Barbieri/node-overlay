@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/ajv
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/slice-ansi
 	dev-node/string-width
 "

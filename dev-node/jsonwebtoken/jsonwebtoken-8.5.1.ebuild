@@ -16,13 +16,13 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/jws
-	dev-node/lodash_includes
-	dev-node/lodash_isboolean
-	dev-node/lodash_isinteger
-	dev-node/lodash_isnumber
-	dev-node/lodash_isplainobject
-	dev-node/lodash_isstring
-	dev-node/lodash_once
+	node-lodash/lodash_includes
+	node-lodash/lodash_isboolean
+	node-lodash/lodash_isinteger
+	node-lodash/lodash_isnumber
+	node-lodash/lodash_isplainobject
+	node-lodash/lodash_isstring
+	node-lodash/lodash_once
 	dev-node/ms
 	dev-node/semver
 "

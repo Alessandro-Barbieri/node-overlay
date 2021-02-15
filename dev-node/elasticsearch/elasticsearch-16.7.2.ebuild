@@ -16,5 +16,5 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/agentkeepalive
 	dev-node/chalk
-	dev-node/lodash
+	node-lodash/lodash
 "

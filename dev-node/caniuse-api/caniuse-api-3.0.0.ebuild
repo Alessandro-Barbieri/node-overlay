@@ -17,6 +17,6 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/browserslist
 	dev-node/caniuse-lite
-	dev-node/lodash_memoize
-	dev-node/lodash_uniq
+	node-lodash/lodash_memoize
+	node-lodash/lodash_uniq
 "

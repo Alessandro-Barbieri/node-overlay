@@ -42,7 +42,7 @@ RDEPEND="
 	dev-node/is-object
 	dev-node/iso_639_3
 	dev-node/joi
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/merge
 	dev-node/pbf2json
 	dev-node/pelias-blacklist-stream

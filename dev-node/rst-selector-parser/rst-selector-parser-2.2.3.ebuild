@@ -15,6 +15,6 @@ LICENSE="BSD"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/lodash_flattendeep
+	node-lodash/lodash_flattendeep
 	dev-node/nearley
 "

@@ -20,7 +20,7 @@ RDEPEND="
 	node-babel/babel-types
 	dev-node/detect-indent
 	dev-node/jsesc
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/source-map
 	dev-node/trim-right
 "

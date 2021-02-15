@@ -18,6 +18,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/lodash__createset
-	dev-node/lodash__root
+	node-lodash/lodash__createset
+	node-lodash/lodash__root
 "

@@ -15,7 +15,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/encodeurl
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/npm-conf
 	dev-node/tunnel
 "

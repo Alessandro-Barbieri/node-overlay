@@ -22,7 +22,7 @@ RDEPEND="
 	dev-node/ini
 	dev-node/jetpack-id
 	dev-node/lazystream
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/minimist
 	dev-node/uuid
 	dev-node/xml2js

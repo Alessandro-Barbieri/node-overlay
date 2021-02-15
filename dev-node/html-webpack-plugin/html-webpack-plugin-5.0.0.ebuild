@@ -18,7 +18,7 @@ RDEPEND="
 	dev-node/types+html-minifier-terser
 	dev-node/html-minifier-terser
 	dev-node/loader-utils
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/pretty-error
 	dev-node/tapable
 "

@@ -22,5 +22,5 @@ RDEPEND="
 	node-babel/babel+types
 	dev-node/debug
 	dev-node/globals
-	dev-node/lodash
+	node-lodash/lodash
 "

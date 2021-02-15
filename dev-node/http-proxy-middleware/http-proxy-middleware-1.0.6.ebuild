@@ -18,6 +18,6 @@ RDEPEND="
 	dev-node/types+http-proxy
 	dev-node/http-proxy
 	dev-node/is-glob
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/micromatch
 "

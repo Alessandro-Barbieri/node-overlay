@@ -23,7 +23,7 @@ RDEPEND="
 	dev-node/echarts
 	dev-node/highlight_js
 	dev-node/js-beautify
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/portal-vue
 	dev-node/resize-observer-polyfill
 	dev-node/url-search-params-polyfill

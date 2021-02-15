@@ -18,7 +18,7 @@ RDEPEND="
 	node-babel/babel-runtime
 	dev-node/core-js
 	dev-node/home-or-tmp
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/mkdirp
 	dev-node/source-map-support
 "

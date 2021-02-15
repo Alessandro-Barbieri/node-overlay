@@ -22,5 +22,5 @@ RDEPEND="
 	node-babel/babel+template
 	node-babel/babel+traverse
 	node-babel/babel+types
-	dev-node/lodash
+	node-lodash/lodash
 "

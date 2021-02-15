@@ -28,7 +28,7 @@ RDEPEND="
 	dev-node/gaze
 	dev-node/get-stdin
 	dev-node/glob
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/meow
 	dev-node/mkdirp
 	dev-node/nan

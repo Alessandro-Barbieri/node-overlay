@@ -28,7 +28,7 @@ RDEPEND="
 	dev-node/convert-source-map
 	dev-node/debug
 	dev-node/json5
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/minimatch
 	dev-node/path-is-absolute
 	dev-node/private

@@ -15,6 +15,6 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/sinonjs+commons
-	dev-node/lodash_get
+	node-lodash/lodash_get
 	dev-node/type-detect
 "

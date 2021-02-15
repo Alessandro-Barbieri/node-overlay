@@ -18,7 +18,7 @@ RDEPEND="
 	dev-node/hapi+joi
 	dev-node/async
 	dev-node/csv-parse
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/parallel-transform
 	dev-node/pelias-config
 	dev-node/pelias-logger

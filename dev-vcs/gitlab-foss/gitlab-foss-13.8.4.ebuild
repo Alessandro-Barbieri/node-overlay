@@ -87,7 +87,7 @@ RDEPEND="
 	dev-node/jszip
 	dev-node/jszip-utils
 	dev-node/katex
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/marked
 	dev-node/mathjax
 	dev-node/mermaid
