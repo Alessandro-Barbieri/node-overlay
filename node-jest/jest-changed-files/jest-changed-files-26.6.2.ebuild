@@ -5,10 +5,10 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Stringify any JavaScript value."
+DESCRIPTION="A module used internally by Jest to check which files have changed since you last committed in git or hg."
 HOMEPAGE="
 	https://github.com/facebook/jest
-	https://www.npmjs.com/package/pretty-format
+	https://www.npmjs.com/package/jest-changed-files
 "
 
 LICENSE="MIT"
@@ -16,7 +16,6 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-jest/jest+types
-	dev-node/ansi-regex
-	dev-node/ansi-styles
-	dev-node/react-is
+	dev-node/execa
+	dev-node/throat
 "

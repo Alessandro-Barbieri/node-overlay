@@ -5,18 +5,16 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Stringify any JavaScript value."
+DESCRIPTION="Module for verifying whether an object has been garbage collected or not."
 HOMEPAGE="
 	https://github.com/facebook/jest
-	https://www.npmjs.com/package/pretty-format
+	https://www.npmjs.com/package/jest-leak-detector
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-jest/jest+types
-	dev-node/ansi-regex
-	dev-node/ansi-styles
-	dev-node/react-is
+	node-jest/jest-get-type
+	dev-node/pretty-format
 "

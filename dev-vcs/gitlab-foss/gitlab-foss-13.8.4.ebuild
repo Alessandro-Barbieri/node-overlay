@@ -78,7 +78,7 @@ RDEPEND="
 	dev-node/immer
 	dev-node/ipaddr_js
 	dev-node/jed
-	dev-node/jest-transform-graphql
+	node-jest/jest-transform-graphql
 	dev-node/jquery
 	dev-node/jquery_caret
 	dev-node/jquery_waitforimages

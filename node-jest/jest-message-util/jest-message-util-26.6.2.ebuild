@@ -5,22 +5,23 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Jest plugin to use babel for transformation."
+DESCRIPTION="message-util package for jest"
 HOMEPAGE="
 	https://github.com/facebook/jest
-	https://www.npmjs.com/package/babel-jest
+	https://www.npmjs.com/package/jest-message-util
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-jest/jest+transform
+	dev-node/babel+code-frame
 	node-jest/jest+types
-	dev-node/types+babel__core
-	dev-node/babel-plugin-istanbul
-	dev-node/babel-preset-jest
+	dev-node/types+stack-utils
 	dev-node/chalk
 	dev-node/graceful-fs
+	dev-node/micromatch
+	dev-node/pretty-format
 	dev-node/slash
+	dev-node/stack-utils
 "

@@ -5,18 +5,19 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Stringify any JavaScript value."
+DESCRIPTION="console package for jest"
 HOMEPAGE="
 	https://github.com/facebook/jest
-	https://www.npmjs.com/package/pretty-format
+	https://www.npmjs.com/package/@jest/console
 "
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-jest/jest+types
-	dev-node/ansi-regex
-	dev-node/ansi-styles
-	dev-node/react-is
+	dev-node/types+node
+	dev-node/chalk
+	node-jest/jest-message-util
+	node-jest/jest-util
+	dev-node/slash
 "

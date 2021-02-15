@@ -13,6 +13,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/jest-diff
+	node-jest/jest-diff
 	dev-node/pretty-format
 "

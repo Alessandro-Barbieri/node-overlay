@@ -15,10 +15,10 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/jest+types
+	node-jest/jest+types
 	dev-node/ansi-styles
-	dev-node/jest-get-type
-	dev-node/jest-matcher-utils
-	dev-node/jest-message-util
-	dev-node/jest-regex-util
+	node-jest/jest-get-type
+	node-jest/jest-matcher-utils
+	node-jest/jest-message-util
+	node-jest/jest-regex-util
 "

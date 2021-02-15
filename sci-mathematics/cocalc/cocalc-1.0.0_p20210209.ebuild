@@ -62,7 +62,7 @@ RDEPEND="
 	dev-node/html-webpack-plugin
 	dev-node/imports-loader
 	dev-node/is-obj
-	dev-node/jest
+	node-jest/jest
 	dev-node/jstransformer-coffee-script
 	dev-node/jstransformer-markdown-it
 	dev-node/jstransformer-sass

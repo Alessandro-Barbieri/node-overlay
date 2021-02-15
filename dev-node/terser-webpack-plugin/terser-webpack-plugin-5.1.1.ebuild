@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/jest-worker
+	node-jest/jest-worker
 	dev-node/p-limit
 	dev-node/schema-utils
 	dev-node/serialize-javascript

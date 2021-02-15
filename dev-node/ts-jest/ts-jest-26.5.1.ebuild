@@ -19,7 +19,7 @@ RDEPEND="
 	dev-node/bs-logger
 	dev-node/buffer-from
 	dev-node/fast-json-stable-stringify
-	dev-node/jest-util
+	node-jest/jest-util
 	dev-node/json5
 	dev-node/lodash
 	dev-node/make-error
