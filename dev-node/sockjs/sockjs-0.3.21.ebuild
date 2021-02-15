@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+PATCHES=( "${FILESDIR}/uuid.patch" )
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/faye-websocket

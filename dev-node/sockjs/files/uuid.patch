@@ -1,0 +1,12 @@
+diff -ur a/lib/transport.js b/lib/transport.js
+--- a/lib/transport.js	1985-10-26 09:15:00.000000000 +0100
++++ b/lib/transport.js	2021-02-15 16:01:11.983805078 +0100
+@@ -6,7 +6,7 @@
+ 
+   stream = require('stream');
+ 
+-  uuidv4 = require('uuid/v4');
++  { v4: uuidv4 } = require('uuid');
+ 
+   utils = require('./utils');
+ 

@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Node.js module for creating, parsing and replying to messages of the Jupyter Messaging Protocol (JMP)"
+DESCRIPTION="create, parse and reply to messages of the Jupyter Messaging Protocol"
 HOMEPAGE="
 	https://github.com/n-riesco/jmp
 	https://www.npmjs.com/package/jmp
@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="BSD"
 KEYWORDS="~amd64"
+PATCHES=( "${FILESDIR}/uuid.patch" )
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/uuid
