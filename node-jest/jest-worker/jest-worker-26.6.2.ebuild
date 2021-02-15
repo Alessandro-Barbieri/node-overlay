@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+node
+	node-types/types+node
 	dev-node/merge-stream
 	dev-node/supports-color
 "

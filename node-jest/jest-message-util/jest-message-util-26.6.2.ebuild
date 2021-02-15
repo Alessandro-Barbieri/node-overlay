@@ -17,7 +17,7 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+code-frame
 	node-jest/jest+types
-	dev-node/types+stack-utils
+	node-types/types+stack-utils
 	dev-node/chalk
 	dev-node/graceful-fs
 	dev-node/micromatch

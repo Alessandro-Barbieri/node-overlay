@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+zen-observable
+	node-types/types+zen-observable
 	dev-node/apollo-cache
 	dev-node/apollo-link
 	dev-node/apollo-utilities

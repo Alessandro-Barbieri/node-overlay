@@ -14,7 +14,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+json-schema
+	node-types/types+json-schema
 	dev-node/typescript-eslint+scope-manager
 	dev-node/typescript-eslint+types
 	dev-node/typescript-eslint+typescript-estree

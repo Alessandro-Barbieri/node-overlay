@@ -16,6 +16,6 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-jest/jest+fake-timers
 	node-jest/jest+types
-	dev-node/types+node
+	node-types/types+node
 	node-jest/jest-mock
 "

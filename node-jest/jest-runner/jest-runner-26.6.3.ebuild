@@ -19,7 +19,7 @@ RDEPEND="
 	node-jest/jest+environment
 	node-jest/jest+test-result
 	node-jest/jest+types
-	dev-node/types+node
+	node-types/types+node
 	dev-node/chalk
 	dev-node/emittery
 	dev-node/exit

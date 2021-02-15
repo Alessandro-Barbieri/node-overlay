@@ -24,12 +24,12 @@ RDEPEND="
 	node-babel/babel+polyfill
 	node-babel/babel+preset-env
 	node-babel/babel+runtime
-	dev-node/types+enzyme
-	dev-node/types+jest
-	dev-node/types+jquery
-	dev-node/types+katex
-	dev-node/types+node
-	dev-node/types+react
+	node-types/types+enzyme
+	node-types/types+jest
+	node-types/types+jquery
+	node-types/types+katex
+	node-types/types+node
+	node-types/types+react
 	dev-node/typescript-eslint+eslint-plugin
 	dev-node/typescript-eslint+parser
 	dev-node/assets-webpack-plugin

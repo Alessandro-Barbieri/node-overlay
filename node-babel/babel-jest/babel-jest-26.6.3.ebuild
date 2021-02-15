@@ -17,7 +17,7 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-jest/jest+transform
 	node-jest/jest+types
-	dev-node/types+babel__core
+	node-types/types+babel__core
 	node-babel/babel-plugin-istanbul
 	node-babel/babel-preset-jest
 	dev-node/chalk

@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+normalize-package-data
+	node-types/types+normalize-package-data
 	dev-node/normalize-package-data
 	dev-node/parse-json
 	dev-node/type-fest

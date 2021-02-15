@@ -14,9 +14,9 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+istanbul-lib-coverage
-	dev-node/types+istanbul-reports
-	dev-node/types+node
-	dev-node/types+yargs
+	node-types/types+istanbul-lib-coverage
+	node-types/types+istanbul-reports
+	node-types/types+node
+	node-types/types+yargs
 	dev-node/chalk
 "

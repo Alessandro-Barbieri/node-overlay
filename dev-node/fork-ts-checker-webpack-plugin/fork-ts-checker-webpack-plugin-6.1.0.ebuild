@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+code-frame
-	dev-node/types+json-schema
+	node-types/types+json-schema
 	dev-node/chalk
 	dev-node/chokidar
 	dev-node/cosmiconfig

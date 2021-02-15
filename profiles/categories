@@ -1,6 +1,7 @@
 atom-package
+dev-node
 node-babel
 node-jest
 node-jimp
 node-lodash
-dev-node
+node-types

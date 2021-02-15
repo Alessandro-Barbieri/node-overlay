@@ -15,7 +15,7 @@ LICENSE="Apache-2.0"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+node
+	node-types/types+node
 	dev-node/escape-string-regexp
 	dev-node/is-wsl
 	dev-node/lighthouse-logger

@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+ungap__global-this
+	node-types/types+ungap__global-this
 	dev-node/ungap+global-this
 	dev-node/tslib
 "

@@ -17,6 +17,6 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+template
 	node-babel/babel+types
-	dev-node/types+babel__core
-	dev-node/types+babel__traverse
+	node-types/types+babel__core
+	node-types/types+babel__traverse
 "

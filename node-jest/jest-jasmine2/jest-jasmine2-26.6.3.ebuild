@@ -20,7 +20,7 @@ RDEPEND="
 	node-jest/jest+source-map
 	node-jest/jest+test-result
 	node-jest/jest+types
-	dev-node/types+node
+	node-types/types+node
 	dev-node/chalk
 	dev-node/co
 	dev-node/expect

@@ -17,8 +17,8 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+types
 	node-jest/jest+types
-	dev-node/types+babel__traverse
-	dev-node/types+prettier
+	node-types/types+babel__traverse
+	node-types/types+prettier
 	dev-node/chalk
 	dev-node/expect
 	dev-node/graceful-fs

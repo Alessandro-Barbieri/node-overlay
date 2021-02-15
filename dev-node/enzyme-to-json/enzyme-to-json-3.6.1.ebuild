@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/types+cheerio
+	node-types/types+cheerio
 	node-lodash/lodash
 	dev-node/react-is
 "

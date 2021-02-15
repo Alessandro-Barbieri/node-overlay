@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/graphql-typed-document-node+core
-	dev-node/types+zen-observable
+	node-types/types+zen-observable
 	dev-node/wry+context
 	dev-node/wry+equality
 	dev-node/fast-json-stable-stringify

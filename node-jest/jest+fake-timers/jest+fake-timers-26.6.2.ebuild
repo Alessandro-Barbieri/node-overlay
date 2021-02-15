@@ -16,7 +16,7 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-jest/jest+types
 	dev-node/sinonjs+fake-timers
-	dev-node/types+node
+	node-types/types+node
 	node-jest/jest-message-util
 	node-jest/jest-mock
 	node-jest/jest-util
