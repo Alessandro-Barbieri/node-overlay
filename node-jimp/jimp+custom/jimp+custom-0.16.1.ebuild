@@ -5,17 +5,14 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Render a gif and provide frames to draw."
+DESCRIPTION="Interface to customize jimp configuration"
 HOMEPAGE="
-		https://www.npmjs.com/package/render-gif
+		https://www.npmjs.com/package/@jimp/custom
 "
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/cycled
-	dev-node/decode-gif
-	dev-node/delay
-	node-jimp/jimp
+	node-babel/babel+runtime
+	node-jimp/jimp+core
 "

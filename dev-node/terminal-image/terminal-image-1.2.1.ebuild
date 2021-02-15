@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/chalk
-	dev-node/jimp
+	node-jimp/jimp
 	dev-node/log-update
 	dev-node/render-gif
 	dev-node/term-img

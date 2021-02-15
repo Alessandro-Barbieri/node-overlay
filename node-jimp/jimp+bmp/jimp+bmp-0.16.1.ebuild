@@ -5,17 +5,15 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Render a gif and provide frames to draw."
+DESCRIPTION="Default Jimp bmp encoder/decoder."
 HOMEPAGE="
-		https://www.npmjs.com/package/render-gif
+		https://www.npmjs.com/package/@jimp/bmp
 "
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/cycled
-	dev-node/decode-gif
-	dev-node/delay
-	node-jimp/jimp
+	node-babel/babel+runtime
+	node-jimp/jimp+utils
+	dev-node/bmp-js
 "

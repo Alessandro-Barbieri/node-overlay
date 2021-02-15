@@ -5,17 +5,14 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Render a gif and provide frames to draw."
+DESCRIPTION="Blit an image."
 HOMEPAGE="
-		https://www.npmjs.com/package/render-gif
+		https://www.npmjs.com/package/@jimp/plugin-blit
 "
-
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/cycled
-	dev-node/decode-gif
-	dev-node/delay
-	node-jimp/jimp
+	node-babel/babel+runtime
+	node-jimp/jimp+utils
 "
