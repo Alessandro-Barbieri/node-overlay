@@ -95,7 +95,7 @@ RDEPEND="
 	dev-node/async
 	dev-node/autoflow
 	dev-node/autosave
-	dev-node/babel-core
+	node-babel/babel-core
 	dev-node/bookmarks
 	dev-node/chai
 	dev-node/chart_js

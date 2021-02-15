@@ -15,12 +15,12 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+core
-	dev-node/babel+plugin-proposal-class-properties
-	dev-node/babel+plugin-proposal-json-strings
-	dev-node/babel+plugin-proposal-private-methods
-	dev-node/babel+plugin-syntax-import-meta
-	dev-node/babel+preset-env
+	node-babel/babel+core
+	node-babel/babel+plugin-proposal-class-properties
+	node-babel/babel+plugin-proposal-json-strings
+	node-babel/babel+plugin-proposal-private-methods
+	node-babel/babel+plugin-syntax-import-meta
+	node-babel/babel+preset-env
 	dev-node/gitlab+at_js
 	dev-node/gitlab+favicon-overlay
 	dev-node/gitlab+svgs
@@ -40,8 +40,8 @@ RDEPEND="
 	dev-node/autosize
 	dev-node/aws-sdk
 	dev-node/axios
-	dev-node/babel-loader
-	dev-node/babel-plugin-lodash
+	node-babel/babel-loader
+	node-babel/babel-plugin-lodash
 	dev-node/bootstrap
 	dev-node/brace-expansion
 	dev-node/cache-loader

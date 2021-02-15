@@ -1,0 +1,83 @@
+# Copyright 1999-2021 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+
+inherit node
+
+DESCRIPTION="A Babel preset for each environment."
+HOMEPAGE="
+	https://babel.dev/docs/en/next/babel-preset-env
+	https://www.npmjs.com/package/@babel/preset-env
+"
+LICENSE="MIT"
+KEYWORDS="~amd64"
+RDEPEND="
+	${NODEJS_RDEPEND}
+	node-babel/babel+compat-data
+	node-babel/babel+helper-compilation-targets
+	node-babel/babel+helper-module-imports
+	node-babel/babel+helper-plugin-utils
+	node-babel/babel+helper-validator-option
+	node-babel/babel+plugin-proposal-async-generator-functions
+	node-babel/babel+plugin-proposal-class-properties
+	node-babel/babel+plugin-proposal-dynamic-import
+	node-babel/babel+plugin-proposal-export-namespace-from
+	node-babel/babel+plugin-proposal-json-strings
+	node-babel/babel+plugin-proposal-logical-assignment-operators
+	node-babel/babel+plugin-proposal-nullish-coalescing-operator
+	node-babel/babel+plugin-proposal-numeric-separator
+	node-babel/babel+plugin-proposal-object-rest-spread
+	node-babel/babel+plugin-proposal-optional-catch-binding
+	node-babel/babel+plugin-proposal-optional-chaining
+	node-babel/babel+plugin-proposal-private-methods
+	node-babel/babel+plugin-proposal-unicode-property-regex
+	node-babel/babel+plugin-syntax-async-generators
+	node-babel/babel+plugin-syntax-class-properties
+	node-babel/babel+plugin-syntax-dynamic-import
+	node-babel/babel+plugin-syntax-export-namespace-from
+	node-babel/babel+plugin-syntax-json-strings
+	node-babel/babel+plugin-syntax-logical-assignment-operators
+	node-babel/babel+plugin-syntax-nullish-coalescing-operator
+	node-babel/babel+plugin-syntax-numeric-separator
+	node-babel/babel+plugin-syntax-object-rest-spread
+	node-babel/babel+plugin-syntax-optional-catch-binding
+	node-babel/babel+plugin-syntax-optional-chaining
+	node-babel/babel+plugin-syntax-top-level-await
+	node-babel/babel+plugin-transform-arrow-functions
+	node-babel/babel+plugin-transform-async-to-generator
+	node-babel/babel+plugin-transform-block-scoped-functions
+	node-babel/babel+plugin-transform-block-scoping
+	node-babel/babel+plugin-transform-classes
+	node-babel/babel+plugin-transform-computed-properties
+	node-babel/babel+plugin-transform-destructuring
+	node-babel/babel+plugin-transform-dotall-regex
+	node-babel/babel+plugin-transform-duplicate-keys
+	node-babel/babel+plugin-transform-exponentiation-operator
+	node-babel/babel+plugin-transform-for-of
+	node-babel/babel+plugin-transform-function-name
+	node-babel/babel+plugin-transform-literals
+	node-babel/babel+plugin-transform-member-expression-literals
+	node-babel/babel+plugin-transform-modules-amd
+	node-babel/babel+plugin-transform-modules-commonjs
+	node-babel/babel+plugin-transform-modules-systemjs
+	node-babel/babel+plugin-transform-modules-umd
+	node-babel/babel+plugin-transform-named-capturing-groups-regex
+	node-babel/babel+plugin-transform-new-target
+	node-babel/babel+plugin-transform-object-super
+	node-babel/babel+plugin-transform-parameters
+	node-babel/babel+plugin-transform-property-literals
+	node-babel/babel+plugin-transform-regenerator
+	node-babel/babel+plugin-transform-reserved-words
+	node-babel/babel+plugin-transform-shorthand-properties
+	node-babel/babel+plugin-transform-spread
+	node-babel/babel+plugin-transform-sticky-regex
+	node-babel/babel+plugin-transform-template-literals
+	node-babel/babel+plugin-transform-typeof-symbol
+	node-babel/babel+plugin-transform-unicode-escapes
+	node-babel/babel+plugin-transform-unicode-regex
+	node-babel/babel+preset-modules
+	node-babel/babel+types
+	dev-node/core-js-compat
+	dev-node/semver
+"

@@ -19,11 +19,11 @@ KEYWORDS="~amd64"
 IUSE="examples"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+core
-	dev-node/babel+plugin-transform-react-jsx
-	dev-node/babel+polyfill
-	dev-node/babel+preset-env
-	dev-node/babel+runtime
+	node-babel/babel+core
+	node-babel/babel+plugin-transform-react-jsx
+	node-babel/babel+polyfill
+	node-babel/babel+preset-env
+	node-babel/babel+runtime
 	dev-node/types+enzyme
 	dev-node/types+jest
 	dev-node/types+jquery
@@ -34,7 +34,7 @@ RDEPEND="
 	dev-node/typescript-eslint+parser
 	dev-node/assets-webpack-plugin
 	dev-node/autoprefixer
-	dev-node/babel-loader
+	node-babel/babel-loader
 	dev-node/cjsx-loader
 	dev-node/clean-webpack-plugin
 	dev-node/coffee-cache

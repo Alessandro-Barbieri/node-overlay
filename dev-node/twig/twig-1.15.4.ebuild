@@ -15,7 +15,7 @@ LICENSE="BSD-2"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+runtime
+	node-babel/babel+runtime
 	dev-node/locutus
 	dev-node/minimatch
 	dev-node/walk

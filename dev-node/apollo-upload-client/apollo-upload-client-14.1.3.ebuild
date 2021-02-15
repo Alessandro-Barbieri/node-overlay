@@ -16,6 +16,6 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/apollo+client
-	dev-node/babel+runtime
+	node-babel/babel+runtime
 	dev-node/extract-files
 "

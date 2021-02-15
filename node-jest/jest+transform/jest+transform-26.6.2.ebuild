@@ -14,9 +14,9 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+core
+	node-babel/babel+core
 	node-jest/jest+types
-	dev-node/babel-plugin-istanbul
+	node-babel/babel-plugin-istanbul
 	dev-node/chalk
 	dev-node/convert-source-map
 	dev-node/fast-json-stable-stringify

@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+traverse
+	node-babel/babel+traverse
 	node-jest/jest+environment
 	node-jest/jest+source-map
 	node-jest/jest+test-result

@@ -15,8 +15,8 @@ LICENSE="MPL-2.0"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+polyfill
-	dev-node/babel+runtime
+	node-babel/babel+polyfill
+	node-babel/babel+runtime
 	dev-node/cliqz-oss+firefox-client
 	dev-node/cliqz-oss+node-firefox-connect
 	dev-node/devicefarmer+adbkit

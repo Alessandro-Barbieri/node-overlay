@@ -13,8 +13,8 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+parser
-	dev-node/babel+types
+	node-babel/babel+parser
+	node-babel/babel+types
 	dev-node/types+babel__generator
 	dev-node/types+babel__template
 	dev-node/types+babel__traverse

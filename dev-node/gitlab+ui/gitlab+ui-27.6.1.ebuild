@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+standalone
+	node-babel/babel+standalone
 	dev-node/gitlab+vue-toasted
 	dev-node/bootstrap-vue
 	dev-node/copy-to-clipboard

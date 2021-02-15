@@ -15,10 +15,10 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/babel+core
+	node-babel/babel+core
 	node-jest/jest+test-sequencer
 	node-jest/jest+types
-	dev-node/babel-jest
+	node-babel/babel-jest
 	dev-node/chalk
 	dev-node/deepmerge
 	dev-node/glob
