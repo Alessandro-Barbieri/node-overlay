@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION=""Parses" the log output of gl.getShaderInfoLog"
+DESCRIPTION="Parses the log output of gl.getShaderInfoLog"
 HOMEPAGE="
 	https://github.com/stackgl/gl-shader-errors
 	https://www.npmjs.com/package/gl-shader-errors
