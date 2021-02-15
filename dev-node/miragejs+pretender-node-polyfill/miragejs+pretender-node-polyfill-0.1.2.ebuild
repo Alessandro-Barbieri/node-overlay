@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION=""
+DESCRIPTION="pretender-node-polyfill package for miragejs"
 HOMEPAGE="
 		https://www.npmjs.com/package/@miragejs/pretender-node-polyfill
 "

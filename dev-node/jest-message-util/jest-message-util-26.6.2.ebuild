@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION=""
+DESCRIPTION="message-util package for jest"
 HOMEPAGE="
 	https://github.com/facebook/jest
 	https://www.npmjs.com/package/jest-message-util

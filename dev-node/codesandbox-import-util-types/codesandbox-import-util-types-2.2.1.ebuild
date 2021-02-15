@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION=""
+DESCRIPTION="import-util-types package for codesandbox"
 HOMEPAGE="
 		https://www.npmjs.com/package/codesandbox-import-util-types
 "

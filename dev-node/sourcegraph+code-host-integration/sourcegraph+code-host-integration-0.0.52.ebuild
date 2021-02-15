@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION=""
+DESCRIPTION="code host integration plugin for sourcegraph"
 HOMEPAGE="
 	https://github.com/sourcegraph/sourcegraph
 	https://www.npmjs.com/package/@sourcegraph/code-host-integration

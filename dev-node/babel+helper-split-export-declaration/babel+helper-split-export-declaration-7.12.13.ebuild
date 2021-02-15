@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION=""
+DESCRIPTION="helper-split-export-declaration package for babel"
 HOMEPAGE="
 	https://babel.dev/docs/en/next/babel-helper-split-export-declaration
 	https://www.npmjs.com/package/@babel/helper-split-export-declaration

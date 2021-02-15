@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION=""
+DESCRIPTION="core package for graphql-typed-document-node"
 HOMEPAGE="
 	https://github.com/dotansimha/graphql-typed-document-node
 	https://www.npmjs.com/package/@graphql-typed-document-node/core

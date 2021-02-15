@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION=""
+DESCRIPTION="environment-jsdom package for jest"
 HOMEPAGE="
 	https://github.com/facebook/jest
 	https://www.npmjs.com/package/jest-environment-jsdom
