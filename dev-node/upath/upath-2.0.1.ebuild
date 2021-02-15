@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="A proxy to path, replacing \ with / for all results (supports UNC paths) & new methods to normalize & join keeping leading ./ and add, change, default, trim file extensions."
+DESCRIPTION="A proxy to path, replacing \ with / for all results"
 HOMEPAGE="
 	https://github.com/anodynos/upath/
 	https://www.npmjs.com/package/upath

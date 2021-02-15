@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="SockJS-node is a server counterpart of SockJS-client a JavaScript library that provides a WebSocket-like object in the browser. SockJS gives you a coherent, cross-browser, Javascript API which creates a low latency, full duplex, cross-domain communication"
+DESCRIPTION="SockJS-node is a server counterpart of SockJS-client"
 HOMEPAGE="
 	https://github.com/sockjs/sockjs-node
 	https://www.npmjs.com/package/sockjs

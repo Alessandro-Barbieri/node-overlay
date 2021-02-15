@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery required. Supports Meteor, AngularJS, React, Polymer, Vue, Knockout and any CSS library, e.g. Bootstrap."
+DESCRIPTION="JavaScript library for reorderable drag-and-drop lists"
 HOMEPAGE="
 	https://github.com/SortableJS/Sortable
 	https://www.npmjs.com/package/sortablejs

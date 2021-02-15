@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Babel plugin to hoist jest.disableAutomock, jest.enableAutomock, jest.unmock, jest.mock, calls above import statements. This plugin is automatically included when using [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jes"
+DESCRIPTION="Babel plugin to hoist jest.disableAutomock, jest.enableAutomock, jest.unmock, jest.mock, calls above import statements"
 HOMEPAGE="
 	https://github.com/facebook/jest
 	https://www.npmjs.com/package/babel-plugin-jest-hoist

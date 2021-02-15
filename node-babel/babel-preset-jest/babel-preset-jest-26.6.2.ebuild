@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="> Babel preset for all Jest plugins. This preset is automatically included when using [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest)."
+DESCRIPTION="Babel preset for all Jest plugins"
 HOMEPAGE="
 	https://github.com/facebook/jest
 	https://www.npmjs.com/package/babel-preset-jest

@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Find files simply. Walks a directory tree emitting events based on what it finds. Presents a familiar callback/emitter/a+sync interface. Walk a tree of any depth."
+DESCRIPTION="Walks a directory tree emitting events based on what it finds"
 HOMEPAGE="
 	https://github.com/soldair/node-walkdir
 	https://www.npmjs.com/package/walkdir

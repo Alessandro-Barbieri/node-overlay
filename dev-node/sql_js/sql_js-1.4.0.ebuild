@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="SQLite library with support for opening and writing databases, prepared statements, and more. This SQLite library is in pure javascript (compiled with emscripten)."
+DESCRIPTION="SQLite library with support for opening and writing databases, prepared statements"
 HOMEPAGE="
 	https://github.com/sql-js/sql.js
 	https://www.npmjs.com/package/sql.js

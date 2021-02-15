@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="tar-stream is a streaming tar parser and generator and nothing else. It is streams2 and operates purely using streams which means you can easily extract/parse tarballs without ever hitting the file system."
+DESCRIPTION="tar-stream is a streaming tar parser and generator and nothing else"
 HOMEPAGE="
 	https://github.com/mafintosh/tar-stream
 	https://www.npmjs.com/package/tar-stream

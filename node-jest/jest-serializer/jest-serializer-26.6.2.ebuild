@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Module for serializing and deserializing object into memory and disk. By default, the v8 implementations are used, but if not present, it defaults to JSON implementation. Both serializers have the advantage of being able to serialize Map, Set, un"
+DESCRIPTION="Module for serializing and deserializing object into memory and disk"
 HOMEPAGE="
 	https://github.com/facebook/jest
 	https://www.npmjs.com/package/jest-serializer

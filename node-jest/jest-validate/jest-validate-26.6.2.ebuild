@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Generic configuration validation tool that helps you with warnings, errors and deprecation messages as well as showing users examples of correct configuration."
+DESCRIPTION="Configuration validation tool"
 HOMEPAGE="
 	https://github.com/facebook/jest
 	https://www.npmjs.com/package/jest-validate
