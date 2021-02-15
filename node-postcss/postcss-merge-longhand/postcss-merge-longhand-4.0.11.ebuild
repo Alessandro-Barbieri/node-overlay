@@ -5,17 +5,18 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="Merge longhand properties into shorthand with PostCSS."
 HOMEPAGE="
 	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://www.npmjs.com/package/postcss-merge-longhand
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/browserslist
+	dev-node/css-color-names
 	node-postcss/postcss
-	node-postcss/postcss-selector-parser
+	node-postcss/postcss-value-parser
+	dev-node/stylehacks
 "

@@ -73,7 +73,7 @@ RDEPEND="
 	dev-node/node-cjsx
 	dev-node/node-glob
 	dev-node/node-pre-gyp
-	dev-node/postcss-loader
+	node-postcss/postcss-loader
 	dev-node/prettier
 	dev-node/pug
 	dev-node/pug-loader

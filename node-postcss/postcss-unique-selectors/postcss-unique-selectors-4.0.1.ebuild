@@ -5,17 +5,17 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="Ensure CSS selectors are unique."
 HOMEPAGE="
 	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://www.npmjs.com/package/postcss-unique-selectors
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/browserslist
+	dev-node/alphanum-sort
 	node-postcss/postcss
-	node-postcss/postcss-selector-parser
+	dev-node/uniqs
 "

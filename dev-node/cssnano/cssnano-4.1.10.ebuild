@@ -18,5 +18,5 @@ RDEPEND="
 	dev-node/cosmiconfig
 	dev-node/cssnano-preset-default
 	dev-node/is-resolvable
-	dev-node/postcss
+	node-postcss/postcss
 "

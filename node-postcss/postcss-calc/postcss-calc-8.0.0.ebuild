@@ -5,17 +5,16 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="PostCSS plugin to reduce calc()"
 HOMEPAGE="
-	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://github.com/postcss/postcss-calc
+	https://www.npmjs.com/package/postcss-calc
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/browserslist
-	node-postcss/postcss
 	node-postcss/postcss-selector-parser
+	node-postcss/postcss-value-parser
 "

@@ -5,17 +5,15 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="PostCSS plugin to discard overridden @keyframes or @counter-style."
 HOMEPAGE="
 	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://www.npmjs.com/package/postcss-discard-overridden
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/browserslist
 	node-postcss/postcss
-	node-postcss/postcss-selector-parser
 "

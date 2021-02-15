@@ -5,17 +5,15 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="A CSS Modules transform to extract export statements from local-scope classes"
 HOMEPAGE="
-	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://github.com/css-modules/postcss-modules-scope
+	https://www.npmjs.com/package/postcss-modules-scope
 "
 
-LICENSE="MIT"
+LICENSE="ISC"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/browserslist
-	node-postcss/postcss
 	node-postcss/postcss-selector-parser
 "

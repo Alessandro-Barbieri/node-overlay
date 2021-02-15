@@ -5,17 +5,16 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="Convert values with PostCSS (e.g. ms -> s)"
 HOMEPAGE="
 	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://www.npmjs.com/package/postcss-convert-values
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/browserslist
 	node-postcss/postcss
-	node-postcss/postcss-selector-parser
+	node-postcss/postcss-value-parser
 "

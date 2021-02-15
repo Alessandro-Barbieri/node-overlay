@@ -37,7 +37,7 @@ RDEPEND="
 	dev-node/jed
 	dev-node/os-locale
 	dev-node/pino
-	dev-node/postcss
+	node-postcss/postcss
 	dev-node/probe-image-size
 	dev-node/relaxed-json
 	dev-node/semver

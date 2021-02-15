@@ -144,8 +144,8 @@ RDEPEND="
 	dev-node/nslog
 	dev-node/package-generator
 	dev-node/pathwatcher
-	dev-node/postcss
-	dev-node/postcss-selector-parser
+	node-postcss/postcss
+	node-postcss/postcss-selector-parser
 	dev-node/prebuild-install
 	dev-node/property-accessors
 	dev-node/resolve

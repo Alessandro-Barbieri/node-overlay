@@ -5,10 +5,10 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="Merge CSS rules with PostCSS."
 HOMEPAGE="
 	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://www.npmjs.com/package/postcss-merge-rules
 "
 
 LICENSE="MIT"
@@ -16,6 +16,9 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/browserslist
+	dev-node/caniuse-api
+	dev-node/cssnano-util-same-parent
 	node-postcss/postcss
 	node-postcss/postcss-selector-parser
+	dev-node/vendors
 "

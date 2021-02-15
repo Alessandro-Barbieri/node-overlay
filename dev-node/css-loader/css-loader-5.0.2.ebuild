@@ -19,12 +19,12 @@ RDEPEND="
 	dev-node/cssesc
 	dev-node/icss-utils
 	dev-node/loader-utils
-	dev-node/postcss
-	dev-node/postcss-modules-extract-imports
-	dev-node/postcss-modules-local-by-default
-	dev-node/postcss-modules-scope
-	dev-node/postcss-modules-values
-	dev-node/postcss-value-parser
+	node-postcss/postcss
+	node-postcss/postcss-modules-extract-imports
+	node-postcss/postcss-modules-local-by-default
+	node-postcss/postcss-modules-scope
+	node-postcss/postcss-modules-values
+	node-postcss/postcss-value-parser
 	dev-node/schema-utils
 	dev-node/semver
 "

@@ -5,17 +5,18 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="Normalize keyword values for position into length values."
 HOMEPAGE="
 	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://www.npmjs.com/package/postcss-normalize-positions
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/browserslist
+	dev-node/cssnano-util-get-arguments
+	dev-node/has
 	node-postcss/postcss
-	node-postcss/postcss-selector-parser
+	node-postcss/postcss-value-parser
 "

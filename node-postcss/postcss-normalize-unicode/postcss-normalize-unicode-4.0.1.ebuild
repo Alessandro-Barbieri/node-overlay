@@ -5,10 +5,10 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="Normalize unicode-range descriptors, and can convert to wildcard ranges."
 HOMEPAGE="
 	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://www.npmjs.com/package/postcss-normalize-unicode
 "
 
 LICENSE="MIT"
@@ -17,5 +17,5 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/browserslist
 	node-postcss/postcss
-	node-postcss/postcss-selector-parser
+	node-postcss/postcss-value-parser
 "

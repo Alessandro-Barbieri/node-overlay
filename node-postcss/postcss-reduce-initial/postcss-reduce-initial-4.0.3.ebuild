@@ -5,10 +5,10 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="Reduce initial definitions to the actual initial value, where possible."
 HOMEPAGE="
 	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://www.npmjs.com/package/postcss-reduce-initial
 "
 
 LICENSE="MIT"
@@ -16,6 +16,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/browserslist
+	dev-node/caniuse-api
+	dev-node/has
 	node-postcss/postcss
-	node-postcss/postcss-selector-parser
 "

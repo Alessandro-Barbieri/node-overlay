@@ -5,17 +5,18 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Detect/remove browser hacks from CSS files."
+DESCRIPTION="Optimise inline SVG with PostCSS."
 HOMEPAGE="
 	https://github.com/cssnano/cssnano
-	https://www.npmjs.com/package/stylehacks
+	https://www.npmjs.com/package/postcss-svgo
 "
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/browserslist
+	dev-node/is-svg
 	node-postcss/postcss
-	node-postcss/postcss-selector-parser
+	node-postcss/postcss-value-parser
+	dev-node/svgo
 "

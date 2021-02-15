@@ -20,5 +20,5 @@ RDEPEND="
 	dev-node/colorette
 	dev-node/fraction_js
 	dev-node/normalize-range
-	dev-node/postcss-value-parser
+	node-postcss/postcss-value-parser
 "

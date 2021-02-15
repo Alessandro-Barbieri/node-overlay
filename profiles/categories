@@ -4,4 +4,5 @@ node-babel
 node-jest
 node-jimp
 node-lodash
+node-postcss
 node-types

@@ -15,5 +15,5 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/postcss
+	node-postcss/postcss
 "

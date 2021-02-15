@@ -19,8 +19,8 @@ RDEPEND="
 	dev-node/hash-sum
 	dev-node/lru-cache
 	dev-node/merge-source-map
-	dev-node/postcss
-	dev-node/postcss-selector-parser
+	node-postcss/postcss
+	node-postcss/postcss-selector-parser
 	dev-node/source-map
 	dev-node/vue-template-es2015-compiler
 	dev-node/prettier
