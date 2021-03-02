@@ -11,7 +11,6 @@ NDDEJS_RDEPEND="${NODEJS_DEPEND}"
 NODEJS_BDEPEND="
 	app-misc/jq
 	net-misc/rsync
-	sys-apps/moreutils
 "
 
 DEPEND="${NODEJS_DEPEND}"
@@ -42,12 +41,16 @@ esac
 
 node_src_prepare() {
 	#remove version constraints on dependencies
-	jq 'if .dependencies? then .dependencies[] = "*" else . end' package.json | sponge package.json || die
-	jq 'if .devDependencies? then .devDependencies[] = "*" else . end' package.json | sponge package.json || die
+	jq 'if .dependencies? then .dependencies[] = "*" else . end' package.json > package.json.temp || die
+	mv package.json.temp package.json || die
+	jq 'if .devDependencies? then .devDependencies[] = "*" else . end' package.json > package.json.temp || die
+	mv package.json.temp package.json || die
 
 	#here we trick npm into believing there are no dependencies so it will not try to fetch them
-	jq 'with_entries(if .key == "dependencies" then .key = "deps" else . end)' package.json | sponge package.json || die
-	jq 'with_entries(if .key == "devDependencies" then .key = "devDeps" else . end)' package.json | sponge package.json || die
+	jq 'with_entries(if .key == "dependencies" then .key = "deps" else . end)' package.json > package.json.temp || die
+	mv package.json.temp package.json || die
+	jq 'with_entries(if .key == "devDependencies" then .key = "devDeps" else . end)' package.json > package.json.temp || die
+	mv package.json.temp package.json || die
 
 	# are those useful?
 	rm -fv npm-shrinkwrap.json package-lock.json yarn.lock || die
@@ -83,8 +86,10 @@ node_src_compile() {
 
 node_src_install() {
 	#restore original package.json
-	jq 'with_entries(if .key == "deps" then .key = "dependencies" else . end)' package.json | sponge package.json || die
-	jq 'with_entries(if .key == "devDeps" then .key = "devDependencies" else . end)' package.json | sponge package.json || die
+	jq 'with_entries(if .key == "deps" then .key = "dependencies" else . end)' package.json > package.json.temp || die
+	mv package.json.temp package.json || die
+	jq 'with_entries(if .key == "devDeps" then .key = "devDependencies" else . end)' package.json > package.json.temp || die
+	mv package.json.temp package.json || die
 
 	#should I delete all the dotfiles?
 	rm -rvf .[!.]* || die

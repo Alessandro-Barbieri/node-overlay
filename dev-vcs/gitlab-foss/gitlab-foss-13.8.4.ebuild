@@ -142,7 +142,8 @@ RDEPEND="
 "
 
 src_prepare() {
-	jq ". += {\"name\": \"gitlab-foss\", \"version\": \"${PV}\"}" package.json | sponge package.json || die
+	jq ". += {\"name\": \"gitlab-foss\", \"version\": \"${PV}\"}" package.json > package.json.temp || die
+	mv package.json.temp package.json || die
 	node_src_prepare
 }
 
