@@ -1,4 +1,6 @@
-# node-overlay
+# CURRENTLY BROKEN
+# MAJOR HELP NEEDED TO GET `npm --install` WORK (OFFLINE) WITH THE NEW CACHE
+
 Software packaged:
 
 | Package       | Install | Run |
