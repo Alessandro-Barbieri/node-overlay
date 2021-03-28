@@ -1,6 +1,14 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# @ECLASS: node.eclass
+# @MAINTAINER:
+# @AUTHOR:
+# Alessandro Barbieri
+# msirabella
+# @BLURB:
+# @DESCRIPTION:
+
 EXPORT_FUNCTIONS src_prepare src_compile src_install src_test src_configure
 
 SLOT="0"
@@ -10,6 +18,7 @@ NODEJS_DEPEND="net-libs/nodejs"
 NDDEJS_RDEPEND="${NODEJS_DEPEND}"
 NODEJS_BDEPEND="
 	app-misc/jq
+	net-libs/nodejs[npm]
 	net-misc/rsync
 "
 
@@ -18,6 +27,7 @@ RDEPEND="${NODEJS_RDEPEND}"
 BDEPEND="${NODEJS_BDEPEND}"
 
 NODE_MODULE_PREFIX="${T}/prefix"
+NPM="npm"
 NPM_FLAGS=""
 
 case "${PN}" in
@@ -39,6 +49,55 @@ case "${PN}" in
 	;;
 esac
 
+# shameless copy from https://gitlab.com/mjsir911/my-overlay/-/blob/master/eclass/npm.eclass
+sha256sum() {
+	command sha256sum "$@" | cut -d ' ' -f 1
+}
+
+sha1sum() {
+	command sha1sum "$@" | cut -d ' ' -f 1
+}
+
+sha512sum() {
+	command sha512sum "$@" | cut -d ' ' -f 1
+}
+
+hex2base64() {
+	xxd -r -p | base64 -w 0
+}
+
+splithash() {
+	echo "${1:0:2}/${1:2:2}/${1:4}"
+
+}
+
+getcachefile() {
+	echo -n "$CACHEDIR/index-v5/"
+	splithash "$(echo -n "pacote:tarball:file:$1" | sha256sum)"
+}
+
+newcacheline() {
+	read -r -d '' JSON <<-EOF
+		{"key":"pacote:tarball:file:$1","integrity":"sha1-$(sha1sum "$1" | hex2base64)","time":1604617124075,"size":$(wc -c < "$1")}
+	EOF
+	echo
+	echo -n "$(echo -n "$JSON" | sha1sum)"
+	echo -n '	'
+	echo "$JSON"
+}
+
+addsha1file() {
+	SHA1="$CACHEDIR/content-v2/sha1/$(splithash "$(sha1sum "$1")")"
+	mkdir -p "$(dirname "$SHA1")"
+	cp "$1" "$SHA1"
+}
+
+addfile() {
+	addsha1file "$1"
+	# newcacheline "$1" >> "$(getcachefile "$1")"
+}
+# end shameless copy
+
 node_src_prepare() {
 	#remove version constraints on dependencies
 	jq 'if .dependencies? then .dependencies[] = "*" else . end' package.json > package.json.temp || die
@@ -53,7 +112,7 @@ node_src_prepare() {
 	mv package.json.temp package.json || die
 
 	# are those useful?
-	rm -fv npm-shrinkwrap.json package-lock.json yarn.lock || die
+	#rm -fv npm-shrinkwrap.json package-lock.json yarn.lock || die
 
 	#delete some trash
 	find . -iname 'code-of-conduct*' -maxdepth 1 -delete || die
@@ -79,9 +138,23 @@ node_src_compile() {
 	export npm_config_prefix="${NODE_MODULE_PREFIX}"
 	#path to the headers needed by node-gyp
 	export npm_config_nodedir="/usr/include/node"
-	in_iuse test || export NODE_ENV="production"
+	export npm_config_tmp="${T}"
 
-	npm install --global "${NPM_FLAGS}" || die
+	in_iuse test || export NODE_ENV="production"
+	mkdir -p "${NODE_MODULE_PREFIX}" || die
+
+	export CACHEDIR=$("${NPM}" config get cache)/_cacache
+	for file in "${DISTDIR}"/*.tgz; do
+		"${NPM}" cache add "${file}" || die
+		addfile "${file}" || die
+	done
+	#"${NPM}" cache verify || die # just for good luck
+
+	"${NPM}" config set offline true || die
+	"${NPM}" config set audit false || die
+	"${NPM}" config set fund false || die
+
+	"${NPM}" install --global --loglevel verbose "${NPM_FLAGS}" . || die
 }
 
 node_src_install() {
