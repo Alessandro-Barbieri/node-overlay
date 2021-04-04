@@ -73,28 +73,28 @@ splithash() {
 
 getcachefile() {
 	echo -n "$CACHEDIR/index-v5/"
-	splithash "$(echo -n "pacote:tarball:file:$1" | sha256sum)"
+	splithash $(echo -n "pacote:tarball:file:${1}" | sha256sum)
 }
 
 newcacheline() {
 	read -r -d '' JSON <<-EOF
-		{"key":"pacote:tarball:file:$1","integrity":"sha1-$(sha1sum "$1" | hex2base64)","time":1604617124075,"size":$(wc -c < "$1")}
+		{"key":"pacote:tarball:file:${1}","integrity":sha1-$(sha1sum "${1}" | hex2base64),"time":1604617124075,"size":$(wc -c < "${1}")}
 	EOF
 	echo
-	echo -n "$(echo -n "$JSON" | sha1sum)"
+	echo -n $(echo -n "${JSON}" | sha1sum)
 	echo -n '	'
-	echo "$JSON"
+	echo "${JSON}"
 }
 
 addsha1file() {
-	SHA1="$CACHEDIR/content-v2/sha1/$(splithash "$(sha1sum "$1")")"
-	mkdir -p "$(dirname "$SHA1")"
-	cp "$1" "$SHA1"
+	SHA1="$CACHEDIR/content-v2/sha1/"$(splithash $(sha1sum "${1}"))
+	mkdir -p $(dirname "${SHA1}") || die
+	cp "${1}" "${SHA1}" || die
 }
 
 addfile() {
-	addsha1file "$1"
-	# newcacheline "$1" >> "$(getcachefile "$1")"
+	addsha1file "${1}" || die
+	# newcacheline "${1}" >> $(getcachefile "${1}")
 }
 # end shameless copy
 
@@ -112,7 +112,7 @@ node_src_prepare() {
 	mv package.json.temp package.json || die
 
 	# are those useful?
-	#rm -fv npm-shrinkwrap.json package-lock.json yarn.lock || die
+	rm -fv npm-shrinkwrap.json package-lock.json yarn.lock || die
 
 	#delete some trash
 	find . -iname 'code-of-conduct*' -maxdepth 1 -delete || die
@@ -144,17 +144,21 @@ node_src_compile() {
 	mkdir -p "${NODE_MODULE_PREFIX}" || die
 
 	export CACHEDIR=$("${NPM}" config get cache)/_cacache
-	for file in "${DISTDIR}"/*.tgz; do
-		"${NPM}" cache add "${file}" || die
-		addfile "${file}" || die
-	done
+
+	# Check that files exists before
+	if ls "${DISTDIR}"/*.tgz &> /dev/null; then
+		for file in "${DISTDIR}"/*.tgz; do
+			"${NPM}" cache add "${file}" || die
+			addfile "${file}" || die
+		done
+	fi
 	#"${NPM}" cache verify || die # just for good luck
 
 	"${NPM}" config set offline true || die
 	"${NPM}" config set audit false || die
 	"${NPM}" config set fund false || die
 
-	"${NPM}" install --global --loglevel verbose "${NPM_FLAGS}" . || die
+	"${NPM}" install --global --loglevel verbose "${NPM_FLAGS}" || die
 }
 
 node_src_install() {
