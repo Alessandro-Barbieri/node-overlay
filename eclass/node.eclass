@@ -158,7 +158,7 @@ node_src_compile() {
 	"${NPM}" config set audit false || die
 	"${NPM}" config set fund false || die
 
-	"${NPM}" install --global --loglevel verbose "${NPM_FLAGS}" || die
+	"${NPM}" install --global --loglevel verbose ${NPM_FLAGS} || die
 }
 
 node_src_install() {
