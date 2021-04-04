@@ -80,10 +80,6 @@ node_src_prepare() {
 }
 
 node_src_configure() {
-	return
-}
-
-node_src_compile() {
 	#path to the modules
 	export NODE_PATH="/usr/$(get_libdir)/node_modules"
 	export npm_config_prefix="${NODE_MODULE_PREFIX}"
@@ -96,7 +92,9 @@ node_src_compile() {
 	"${NPM}" config set offline true || die
 	"${NPM}" config set audit false || die
 	"${NPM}" config set fund false || die
+}
 
+node_src_compile() {
 	"${NPM}" install --global ${NPM_FLAGS} || die
 }
 
