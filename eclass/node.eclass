@@ -49,55 +49,6 @@ case "${PN}" in
 	;;
 esac
 
-# shameless copy from https://gitlab.com/mjsir911/my-overlay/-/blob/master/eclass/npm.eclass
-sha256sum() {
-	command sha256sum "$@" | cut -d ' ' -f 1
-}
-
-sha1sum() {
-	command sha1sum "$@" | cut -d ' ' -f 1
-}
-
-sha512sum() {
-	command sha512sum "$@" | cut -d ' ' -f 1
-}
-
-hex2base64() {
-	xxd -r -p | base64 -w 0
-}
-
-splithash() {
-	echo "${1:0:2}/${1:2:2}/${1:4}"
-
-}
-
-getcachefile() {
-	echo -n "$CACHEDIR/index-v5/"
-	splithash $(echo -n "pacote:tarball:file:${1}" | sha256sum)
-}
-
-newcacheline() {
-	read -r -d '' JSON <<-EOF
-		{"key":"pacote:tarball:file:${1}","integrity":sha1-$(sha1sum "${1}" | hex2base64),"time":1604617124075,"size":$(wc -c < "${1}")}
-	EOF
-	echo
-	echo -n $(echo -n "${JSON}" | sha1sum)
-	echo -n '	'
-	echo "${JSON}"
-}
-
-addsha1file() {
-	SHA1="$CACHEDIR/content-v2/sha1/"$(splithash $(sha1sum "${1}"))
-	mkdir -p $(dirname "${SHA1}") || die
-	cp "${1}" "${SHA1}" || die
-}
-
-addfile() {
-	addsha1file "${1}" || die
-	# newcacheline "${1}" >> $(getcachefile "${1}")
-}
-# end shameless copy
-
 node_src_prepare() {
 	#remove version constraints on dependencies
 	jq 'if .dependencies? then .dependencies[] = "*" else . end' package.json > package.json.temp || die
@@ -141,24 +92,12 @@ node_src_compile() {
 	export npm_config_tmp="${T}"
 
 	in_iuse test || export NODE_ENV="production"
-	mkdir -p "${NODE_MODULE_PREFIX}" || die
-
-	export CACHEDIR=$("${NPM}" config get cache)/_cacache
-
-	# Check that files exists before
-	if ls "${DISTDIR}"/*.tgz &> /dev/null; then
-		for file in "${DISTDIR}"/*.tgz; do
-			"${NPM}" cache add "${file}" || die
-			addfile "${file}" || die
-		done
-	fi
-	#"${NPM}" cache verify || die # just for good luck
 
 	"${NPM}" config set offline true || die
 	"${NPM}" config set audit false || die
 	"${NPM}" config set fund false || die
 
-	"${NPM}" install --global --loglevel verbose ${NPM_FLAGS} || die
+	"${NPM}" install --global ${NPM_FLAGS} || die
 }
 
 node_src_install() {
