@@ -13,3 +13,7 @@ HOMEPAGE="
 
 LICENSE="BSD-2"
 KEYWORDS="~amd64"
+BDEPEND="
+	${NODEJS_BDEPEND}
+	dev-node/typescript
+"
