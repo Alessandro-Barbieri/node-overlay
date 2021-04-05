@@ -7,7 +7,7 @@ inherit node
 
 first="${PN%%+*}"
 second="${PN#*+}"
-SRC_URI="mirror://npm/@${first}/${second}/-/${second}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/@${first}/${second}/-/${second}-${PV}.tgz -> ${P}.tgz"
 DESCRIPTION="Email address and domain validation"
 HOMEPAGE="
 	https://github.com/hapijs/address

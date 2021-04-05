@@ -8,7 +8,7 @@ inherit node
 DESCRIPTION="Object schema validation"
 first="${PN%%+*}"
 second="${PN#*+}"
-SRC_URI="mirror://npm/@${first}/${second}/-/${second}.tgz -> ${P}.tgz"
+SRC_URI="mirror://npm/@${first}/${second}/-/${second}-${PV}.tgz -> ${P}.tgz"
 HOMEPAGE="
 	https://github.com/hapijs/joi
 	https://www.npmjs.com/package/@hapi/joi
