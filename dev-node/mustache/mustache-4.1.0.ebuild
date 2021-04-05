@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 
 src_install() {
+	node_src_install
 	#conflict with dev-ruby/mustache
-	mv "${NODE_MODULE_PREFIX}/usr/bin/mustache" "${NODE_MODULE_PREFIX}/usr/bin/mustachejs" || die
-	nodejs_pkg_install
+	mv "${ED}/usr/bin/mustache" "${ED}/usr/bin/mustachejs" || die
 }
