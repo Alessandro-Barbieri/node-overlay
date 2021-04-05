@@ -66,15 +66,15 @@ node_src_prepare() {
 	rm -fv npm-shrinkwrap.json package-lock.json yarn.lock || die
 
 	#delete some trash
-	find . -iname 'code-of-conduct*' -maxdepth 1 -exec rm -vf "{}" \; || die
-	find . -iname 'code_of_conduct*' -maxdepth 1 -exec rm -vf "{}" \; || die
-	find . -iname 'contributing*' -maxdepth 1 -exec rm -vf "{}" \; || die
-	find . -iname 'contribution*' -maxdepth 1 -exec rm -vf "{}" \; || die
-	find . -iname 'dockerfile*' -maxdepth 1 -exec rm -vf "{}" \; || die
-	find . -iname 'issue_template*' -maxdepth 1 -exec rm -vf "{}" \; || die
-	find . -iname 'license*' -maxdepth 1 -exec rm -vf "{}" \; || die
-	find . -iname 'licence*' -maxdepth 1 -exec rm -vf "{}" \; || die
-	find . -iname 'pull_request_template*' -maxdepth 1 -exec rm -vf "{}" \; || die
+	find . -iname 'code-of-conduct*' -maxdepth 1 -exec rm -rv "{}" \; || die
+	find . -iname 'code_of_conduct*' -maxdepth 1 -exec rm -rv "{}" \; || die
+	find . -iname 'contributing*' -maxdepth 1 -exec rm -rv "{}" \; || die
+	find . -iname 'contribution*' -maxdepth 1 -exec rm -rv "{}" \; || die
+	find . -iname 'dockerfile*' -maxdepth 1 -exec rm -rv "{}" \; || die
+	find . -iname 'issue_template*' -maxdepth 1 -exec rm -rv "{}" \; || die
+	find . -iname 'license*' -maxdepth 1 -exec rm -rv "{}" \; || die
+	find . -iname 'licence*' -maxdepth 1 -exec rm -rv "{}" \; || die
+	find . -iname 'pull_request_template*' -maxdepth 1 -exec rm -rv "{}" \; || die
 
 	default
 }
@@ -106,7 +106,7 @@ node_src_install() {
 	mv package.json.temp package.json || die
 
 	#should I delete all the dotfiles?
-	find . -iname ".[!.]*" -exec rm -vf "{}" \; || die
+	find . -iname ".[!.]*" -exec rm -rv "{}" \; || die
 
 	#install some files in the docdir
 	find . -iname "authors*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
