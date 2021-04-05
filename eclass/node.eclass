@@ -15,7 +15,7 @@ SLOT="0"
 PN_LEFT="${PN%%+*}"
 PN_RIGHT="${PN#*+}"
 NODEJS_DEPEND="net-libs/nodejs"
-NDDEJS_RDEPEND="${NODEJS_DEPEND}"
+NODEJS_RDEPEND="${NODEJS_DEPEND}"
 NODEJS_BDEPEND="
 	app-misc/jq
 	net-libs/nodejs[npm]
