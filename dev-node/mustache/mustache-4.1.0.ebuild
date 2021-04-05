@@ -13,3 +13,9 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+
+pkg_install() {
+	#conflict with dev-ruby/mustache
+	mv "${NODE_MODULE_PREFIX}/usr/bin/mustache" "${NODE_MODULE_PREFIX}/usr/bin/mustache.js" || die
+	nodejs_pkg_install
+}
