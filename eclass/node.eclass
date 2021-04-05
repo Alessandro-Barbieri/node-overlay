@@ -106,7 +106,7 @@ node_src_install() {
 	mv package.json.temp package.json || die
 
 	#should I delete all the dotfiles?
-	find . -iname .[!.]* -exec rm -vf "{}" \; || die
+	find . -iname ".[!.]*" -exec rm -vf "{}" \; || die
 
 	#install some files in the docdir
 	find . -iname "authors*" -maxdepth 1 -exec dodoc "{}" \; -exec rm "{}" \; || die
