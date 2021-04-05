@@ -13,3 +13,7 @@ HOMEPAGE="
 
 LICENSE="Apache-2.0"
 KEYWORDS="~amd64"
+BDEPEND="
+	${BDEPEND}
+	dev-node/gulp
+"
