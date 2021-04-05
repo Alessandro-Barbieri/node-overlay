@@ -11,7 +11,7 @@ cd dev-node
 
 for f in $(cat ../dip1)
 do
-	python3 ../genera-node-ebuild.py "${f}"
+	python3.8 ../genera-node-ebuild.py "${f}"
 done
 
 find . -type f -print0 | xargs -0 sed -i -e 's|BSD-2-Clause|BSD-2|g'
