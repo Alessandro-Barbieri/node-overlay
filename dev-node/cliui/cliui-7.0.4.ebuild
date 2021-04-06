@@ -18,3 +18,6 @@ RDEPEND="
 	dev-node/strip-ansi
 	dev-node/wrap-ansi
 "
+BDEPEND="
+	dev-node/typescript
+"
