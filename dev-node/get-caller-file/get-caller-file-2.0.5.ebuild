@@ -12,3 +12,7 @@ HOMEPAGE="
 "
 LICENSE="ISC"
 KEYWORDS="~amd64"
+BDEPEND="
+	${NODEJS_BDEPEND}
+	dev-node/typescript
+"
