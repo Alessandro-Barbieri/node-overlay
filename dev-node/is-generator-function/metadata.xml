@@ -6,7 +6,7 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <bugs-to>https://github.com/shelljs/shx/issues</bugs-to>
-    <remote-id type="github">shelljs/shx</remote-id>
+    <bugs-to>https://github.com/ljharb/is-generator-function/issues</bugs-to>
+    <remote-id type="github">ljharb/is-generator-function</remote-id>
   </upstream>
 </pkgmetadata>

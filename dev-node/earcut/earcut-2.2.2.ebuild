@@ -13,3 +13,7 @@ HOMEPAGE="
 
 LICENSE="ISC"
 KEYWORDS="~amd64"
+BDEPEND="
+	${BDEPEND}
+	dev-node/browserify
+"

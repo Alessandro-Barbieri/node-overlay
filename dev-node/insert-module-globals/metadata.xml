@@ -6,7 +6,7 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <bugs-to>https://github.com/shelljs/shx/issues</bugs-to>
-    <remote-id type="github">shelljs/shx</remote-id>
+    <bugs-to>https://github.com/browserify/insert-module-globals/issues</bugs-to>
+    <remote-id type="github">browserify/insert-module-globals</remote-id>
   </upstream>
 </pkgmetadata>

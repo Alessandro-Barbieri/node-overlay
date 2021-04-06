@@ -6,7 +6,7 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <bugs-to>https://github.com/shelljs/shx/issues</bugs-to>
-    <remote-id type="github">shelljs/shx</remote-id>
+    <bugs-to>https://github.com/rubennorte/es6-object-assign/issues</bugs-to>
+    <remote-id type="github">rubennorte/es6-object-assign</remote-id>
   </upstream>
 </pkgmetadata>

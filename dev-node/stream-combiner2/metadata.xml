@@ -6,7 +6,7 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <bugs-to>https://github.com/shelljs/shx/issues</bugs-to>
-    <remote-id type="github">shelljs/shx</remote-id>
+    <bugs-to>https://github.com/substack/stream-combiner2/issues</bugs-to>
+    <remote-id type="github">substack/stream-combiner2</remote-id>
   </upstream>
 </pkgmetadata>
