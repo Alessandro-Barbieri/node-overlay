@@ -7,7 +7,7 @@ pkgcheck scan -k=NonsolvableDepsInStable > dip
 grep ":" dip | tr " " "\n" | grep dev-node/ | tr -d "," | sort -u | sed "s|dev-node/||" | grep -v "+" > dip1
 grep ":" dip | tr " " "\n" | grep dev-node/ | tr -d "," | sort -u | sed "s|dev-node/|@|" | grep "+" | tr "+" "/" >> dip1
 
-cd dev-node
+pushd dev-node
 
 for f in $(cat ../dip1)
 do
@@ -29,6 +29,6 @@ find . -name "*.xml" -type f -print0 | xargs -0 sed -i \
 
 repoman manifest > /dev/null
 
-cd ..
+popd
 
 rm dip dip1
