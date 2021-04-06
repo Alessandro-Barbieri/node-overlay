@@ -10,9 +10,13 @@ HOMEPAGE="
 	https://github.com/broofa/mime
 	https://www.npmjs.com/package/mime
 "
+SRC_URI="https://github.com/broofa/mime/archive/refs/tags/v${PV}.tar.gz -> ${P}.tgz"
 LICENSE="MIT"
 KEYWORDS="~amd64"
 BDEPEND="
 	${NODEJS_BDEPEND}
+	dev-node/mime-score
 	dev-node/runmd
+	dev-node/supports-color
 "
+S="${WORKDIR}/${P}"
