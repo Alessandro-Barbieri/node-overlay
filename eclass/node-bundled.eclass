@@ -10,6 +10,8 @@
 # @BLURB:
 # @DESCRIPTION:
 
+EXPORT_FUNCTIONS src_unpack src_prepare src_compile
+
 # ugh
 sha256sum() {
 	command sha256sum "$@" | cut -d ' ' -f 1
