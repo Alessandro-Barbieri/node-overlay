@@ -66,6 +66,23 @@ addsha512file() {
 #}
 # end ugh
 
+# @babel/types@7.12.13 ->
+# mirror://npm/@babel/types/-/types-7.12.13.tgz
+# based off of cargo_crate_uris
+npm_packages_uris() {
+	local -r regex='^((.+\/)?(.+))@(.+)$'
+	local package
+	for package; do
+		local fullname name version url
+		[[ $package =~ $regex ]] || die "Could not parse name and version from crate: $package"
+		fullname="${BASH_REMATCH[1]}"
+		name="${BASH_REMATCH[3]}"
+		version="${BASH_REMATCH[4]}"
+		url="mirror://npm/${fullname}/-/${name}-${version}.tgz -> ${fullname/\//-}-${version}.tgz"
+		echo "${url}"
+	done
+}
+
 node-bundled_src_unpack() {
 	unpack ${P}.tar.gz
 	CACHEDIR="$(npm config get cache)/_cacache"
