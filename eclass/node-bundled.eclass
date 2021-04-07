@@ -102,7 +102,6 @@ node-bundled_src_prepare() {
 	npm config set audit false
 	npm config set fund false
 
-	npm install --package-lock-only
 	default
 }
 
