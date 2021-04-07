@@ -12,6 +12,8 @@
 
 EXPORT_FUNCTIONS src_unpack src_prepare src_compile src_install
 
+RESTRICT="mirror"
+
 # ugh
 sha256sum() {
 	command sha256sum "$@" | cut -d ' ' -f 1
