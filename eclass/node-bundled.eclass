@@ -3,10 +3,10 @@
 
 # @ECLASS: node-bundled.eclass
 # @MAINTAINER:
-# msirabella
-# @AUTHOR:
-# msirabella
+# Marco Sirabella
 # Alessandro Barbieri
+# @AUTHOR:
+# Marco Sirabella
 # @BLURB:
 # @DESCRIPTION:
 
