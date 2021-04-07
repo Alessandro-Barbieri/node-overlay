@@ -53,18 +53,24 @@ addsha1file() {
 	cp "$1" "$SHA1"
 }
 
-addfile() {
-	addsha1file "$1"
-	# newcacheline "$1" >> "$(getcachefile "$1")"
+addsha512file() {
+	SHA="$CACHEDIR/content-v2/sha512/$(splithash "$(sha512sum "$1")")"
+	mkdir -p "$(dirname "$SHA")"
+	cp "$1" "$SHA"
 }
+
+#addfile() {
+#	# newcacheline "$1" >> "$(getcachefile "$1")"
+#}
 # end ugh
 
 node-bundled_src_unpack() {
 	unpack ${P}.tar.gz
 	CACHEDIR="$(npm config get cache)/_cacache"
 	for file in $DISTDIR/*.tgz; do
-		npm cache add $file || die
-		addfile $file
+		# npm cache add $file || die
+		addsha1file "${file}"
+		addsha512file "${file}"
 	done
 	# npm cache verify || die # just for good luck
 }
