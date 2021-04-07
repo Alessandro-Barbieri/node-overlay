@@ -605,11 +605,6 @@ BDEPEND="net-libs/nodejs[npm]"
 
 PATCHES=( "${FILESDIR}/${P}-is-reference.patch" )
 
-src_unpack() {
-	node-bundled_src_unpack
-	unpack rollup-2.38.5.tgz
-}
-
 src_compile() {
 	node-bundled_src_compile
 	npm run build || die
