@@ -10,7 +10,7 @@
 # @BLURB:
 # @DESCRIPTION:
 
-EXPORT_FUNCTIONS src_unpack src_prepare src_compile
+EXPORT_FUNCTIONS src_unpack src_prepare src_compile src_install
 
 # ugh
 sha256sum() {
@@ -88,4 +88,14 @@ node-bundled_src_prepare() {
 
 node-bundled_src_compile() {
 	npm ci || die
+}
+
+node-bundled_src_install() {
+	npm config set prefix ${D}/usr/
+	npm install -g
+	INSTALL_PATH=${D}/usr/lib64/node_modules/${PN}
+	rm ${INSTALL_PATH}
+	cp -r . ${INSTALL_PATH}
+	# insinto /usr/lib64/node_modules/${PN}/
+	# doins -r .
 }
