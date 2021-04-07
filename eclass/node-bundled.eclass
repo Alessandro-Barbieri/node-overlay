@@ -67,7 +67,7 @@ addsha512file() {
 # end ugh
 
 # @babel/types@7.12.13 ->
-# mirror://npm/@babel/types/-/types-7.12.13.tgz
+# mirror://npm/@babel/types/-/types-7.12.13.tgz -> @babel+types-7.12.13.tgz
 # based off of cargo_crate_uris
 npm_packages_uris() {
 	local -r regex='^((.+\/)?(.+))@(.+)$'
@@ -78,7 +78,7 @@ npm_packages_uris() {
 		fullname="${BASH_REMATCH[1]}"
 		name="${BASH_REMATCH[3]}"
 		version="${BASH_REMATCH[4]}"
-		url="mirror://npm/${fullname}/-/${name}-${version}.tgz -> ${fullname/\//-}-${version}.tgz"
+		url="mirror://npm/${fullname}/-/${name}-${version}.tgz -> ${fullname/\//+}-${version}.tgz"
 		echo "${url}"
 	done
 }
