@@ -28,7 +28,7 @@ BDEPEND="${NODEJS_BDEPEND}"
 
 NODE_MODULE_PREFIX="${T}/prefix"
 NPM="npm"
-NPM_FLAGS=""
+#NPM_FLAGS=""
 
 case "${PN}" in
 	*+*)
