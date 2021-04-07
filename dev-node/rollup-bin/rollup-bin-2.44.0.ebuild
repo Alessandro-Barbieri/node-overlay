@@ -599,8 +599,11 @@ KEYWORDS="~amd64"
 RDEPEND="net-libs/nodejs"
 BDEPEND="net-libs/nodejs[npm]"
 
+PATCHES=( "${FILESDIR}/${P}-is-reference.patch" )
+
 src_unpack() {
 	node-bundled_src_unpack
+	unpack rollup-2.38.5.tgz
 }
 
 src_compile() {
@@ -610,15 +613,15 @@ src_compile() {
 
 S="${WORKDIR}/${MYPN}-${PV}"
 
-#src_prepare() {
+src_prepare() {
 #	mv "${WORKDIR}/package/dist" "${S}" || die
-#	#it want a git repo
-#	git init || die
-#	git config --global user.email "you@example.com" || die
-#	git config --global user.name "Your Name" || die
-#	git add . || die
-#	git commit -m 'init' || die
-#
-#	export PATH="${WORKDIR}/package/dist/bin:${PATH}"
-#	node_src_prepare
-#}
+	#git want a git repo
+	git init || die
+	git config --global user.email "you@example.com" || die
+	git config --global user.name "Your Name" || die
+	git add . || die
+	git commit -m 'init' || die
+
+	export PATH="${WORKDIR}/package/dist/bin:${PATH}"
+	node-bundled_src_prepare
+}

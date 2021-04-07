@@ -1,0 +1,26 @@
+tardiff /usr/portage/distfiles/rollup-bin-2.44.0.tar.gz -u
+--- rollup-2.44.0/package-lock.json
++++ rollup-2.44.0/package-lock.json	2021-04-07 12:54:35.524510035 -0700
+@@ -2212,8 +2212,9 @@
+       "dev": true
+     },
+     "is-reference": {
+-      "version": "github:lukastaegert/is-reference#54335717efde771de5395d00d6a9edf2d557f2ff",
+-      "from": "github:lukastaegert/is-reference#update-class-features",
++      "version": "1.2.1",
++      "resolved": "https://registry.npmjs.org/is-reference/-/is-reference-1.2.1.tgz",
++      "integrity": "sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==",
+       "dev": true,
+       "requires": {
+         "@types/estree": "*"
+--- rollup-2.44.0/package.json
++++ rollup-2.44.0/package.json	2021-04-07 12:54:40.213526112 -0700
+@@ -90,7 +90,7 @@
+     "fixturify": "^2.1.0",
+     "hash.js": "^1.1.7",
+     "husky": "^5.0.9",
+-    "is-reference": "lukastaegert/is-reference#update-class-features",
++    "is-reference": "^1.2.1",
+     "lint-staged": "^10.5.4",
+     "locate-character": "^2.0.5",
+     "magic-string": "^0.25.7",
