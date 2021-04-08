@@ -599,8 +599,8 @@ HOMEPAGE="
 SLOT="0"
 LICENSE="MIT"
 KEYWORDS="~amd64"
-RDEPEND="net-libs/nodejs"
-BDEPEND="net-libs/nodejs[npm]"
+RDEPEND=""
+BDEPEND=""
 
 PATCHES=( "${FILESDIR}/${P}-is-reference.patch" )
 

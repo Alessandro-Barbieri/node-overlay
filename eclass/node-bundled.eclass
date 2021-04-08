@@ -14,6 +14,9 @@ EXPORT_FUNCTIONS src_unpack src_prepare src_compile src_install
 
 RESTRICT="mirror"
 
+RDEPEND="net-libs/nodejs"
+BDEPEND="net-libs/nodejs[npm]"
+
 # ugh
 sha256sum() {
 	command sha256sum "$@" | cut -d ' ' -f 1
