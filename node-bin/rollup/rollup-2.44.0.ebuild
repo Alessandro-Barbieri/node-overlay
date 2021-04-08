@@ -4,7 +4,6 @@
 EAPI=7
 
 inherit node-bundled
-MYPN="rollup"
 
 NPM_PACKAGES="
 @babel/code-frame@7.12.13
@@ -588,8 +587,8 @@ yocto-queue@0.1.0
 "
 
 SRC_URI="
-https://github.com/rollup/rollup/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-$(npm_packages_uris ${NPM_PACKAGES})
+	https://github.com/rollup/rollup/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+	$(npm_packages_uris ${NPM_PACKAGES})
 "
 
 DESCRIPTION="Next-generation ES module bundler"
@@ -610,10 +609,11 @@ src_compile() {
 	npm run build || die
 }
 
-S="${WORKDIR}/${MYPN}-${PV}"
+S="${WORKDIR}/${PN}-${PV}"
 
 src_prepare() {
-#	mv "${WORKDIR}/package/dist" "${S}" || die
+	cp -f "${FILESDIR}/package-lock-${PV}.json" package-lock.json || die
+
 	#git want a git repo
 	git init || die
 	git config --global user.email "you@example.com" || die
