@@ -15,7 +15,10 @@ EXPORT_FUNCTIONS src_unpack src_prepare src_compile src_install
 RESTRICT="mirror"
 
 RDEPEND="net-libs/nodejs"
-BDEPEND="net-libs/nodejs[npm]"
+BDEPEND="
+	net-libs/nodejs[npm]
+	net-misc/rsync
+"
 
 # ugh
 sha256sum() {
@@ -113,12 +116,15 @@ node-bundled_src_compile() {
 }
 
 node-bundled_src_install() {
-	npm config set prefix "${D}/usr/" || die
+	export NODE_PATH="/usr/$(get_libdir)/node_modules"
+	export NODE_MODULE_PREFIX="${T}/prefix"
+
+	npm config set prefix "${NODE_MODULE_PREFIX}" || die
 	npm install -g || die
-	INSTALL_PATH="${D}/usr/$(get_libdir)/${PN}"
 	rm -rf .[!.]* || die
-	rm -rf "${INSTALL_PATH}" || die
-	cp -r . "${INSTALL_PATH}" || die
-	# insinto /usr/lib64/node_modules/${PN}/
-	# doins -r .
+
+	rsync -aLAX "${NODE_MODULE_PREFIX}/" "${ED}/usr" --exclude /bin || die
+	if [ -d "${NODE_MODULE_PREFIX}/bin" ] ; then
+		rsync -aAX "${NODE_MODULE_PREFIX}/bin/" "${ED}/usr/bin" || die
+	fi
 }
