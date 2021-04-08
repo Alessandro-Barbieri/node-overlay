@@ -63,7 +63,7 @@ node_src_prepare() {
 	mv package.json.temp package.json || die
 
 	# are those useful?
-	rm -fv npm-shrinkwrap.json package-lock.json yarn.lock || die
+	rm -fv npm-shrinkwrap.json package-lock.json yarn.lock pnpm-lock.yaml || die
 
 	#delete some trash
 	find . -iname 'code-of-conduct*' -maxdepth 1 -exec rm -rv "{}" \; || die
