@@ -1,6 +1,7 @@
 atom-package
 dev-node
 node-babel
+node-bin
 node-d3
 node-jest
 node-jimp
