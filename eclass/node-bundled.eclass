@@ -112,7 +112,7 @@ node-bundled_src_compile() {
 node-bundled_src_install() {
 	npm config set prefix "${D}/usr/" || die
 	npm install -g || die
-	INSTALL_PATH="${D}/usr/lib64/$(get_libdir)/${PN}"
+	INSTALL_PATH="${D}/usr/$(get_libdir)/${PN}"
 	rm "${INSTALL_PATH}" || die
 	cp -r . "${INSTALL_PATH}" || die
 	# insinto /usr/lib64/node_modules/${PN}/
