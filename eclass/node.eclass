@@ -95,7 +95,7 @@ node_src_configure() {
 }
 
 node_src_compile() {
-	"${NPM}" install --global ${NPM_FLAGS} || die
+	"${NPM}" install ${NPM_FLAGS} --global || die
 }
 
 node_src_install() {
