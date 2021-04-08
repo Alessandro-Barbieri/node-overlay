@@ -76,7 +76,7 @@ npm_packages_uris() {
 	local package
 	for package; do
 		local fullname name version url
-		[[ $package =~ $regex ]] || die "Could not parse name and version from crate: $package"
+		[[ $package =~ $regex ]] || die "Could not parse name and version from package: $package"
 		fullname="${BASH_REMATCH[1]}"
 		name="${BASH_REMATCH[3]}"
 		version="${BASH_REMATCH[4]}"
@@ -86,21 +86,21 @@ npm_packages_uris() {
 }
 
 node-bundled_src_unpack() {
-	unpack ${P}.tar.gz
+	unpack "${P}.tar.gz"
 	CACHEDIR="$(npm config get cache)/_cacache"
-	for file in $DISTDIR/*.tgz; do
+	for file in "${DISTDIR}"/*.tgz; do
 		# npm cache add $file || die
-		addsha1file "${file}"
-		addsha512file "${file}"
+		addsha1file "${file}" || die
+		addsha512file "${file}" || die
 	done
 	# npm cache verify || die # just for good luck
 }
 
 node-bundled_src_prepare() {
 	# some configurations
-	npm config set offline true
-	npm config set audit false
-	npm config set fund false
+	npm config set offline true || die
+	npm config set audit false || die
+	npm config set fund false || die
 
 	default
 }
@@ -110,11 +110,11 @@ node-bundled_src_compile() {
 }
 
 node-bundled_src_install() {
-	npm config set prefix ${D}/usr/
-	npm install -g
-	INSTALL_PATH=${D}/usr/lib64/node_modules/${PN}
-	rm ${INSTALL_PATH}
-	cp -r . ${INSTALL_PATH}
+	npm config set prefix "${D}/usr/" || die
+	npm install -g || die
+	INSTALL_PATH="${D}/usr/lib64/$(get_libdir)/${PN}"
+	rm "${INSTALL_PATH}" || die
+	cp -r . "${INSTALL_PATH}" || die
 	# insinto /usr/lib64/node_modules/${PN}/
 	# doins -r .
 }
