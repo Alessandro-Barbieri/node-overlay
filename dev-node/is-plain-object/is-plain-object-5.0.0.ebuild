@@ -14,6 +14,6 @@ HOMEPAGE="
 LICENSE="MIT"
 KEYWORDS="~amd64"
 BDEPEND="
-        ${NODEJS_BDEPEND}
-        dev-node/rollup
+	${NODEJS_BDEPEND}
+	|| ( node-bin/rollup dev-node/rollup )
 "

@@ -37,6 +37,7 @@ RDEPEND="
 	dev-node/wide-align
 	dev-node/workerpool
 	dev-node/yargs
-	dev-node/yargs-parser
 	dev-node/yargs-unparser
+
+	|| ( node-bin/yargs-parser dev-node/yargs-parser )
 "

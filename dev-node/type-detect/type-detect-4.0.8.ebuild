@@ -13,3 +13,13 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+BDEPEND="
+	${NODE_BDEPEND}
+	dev-node/cross-env
+	dev-node/rollup-plugin-istanbul
+
+	|| ( node-bin/rollup+plugin-buble dev-node/rollup+plugin-buble )
+	|| ( node-bin/rollup+plugin-commonjs dev-node/rollup+plugin-commonjs )
+	|| ( node-bin/rollup+plugin-node-resolve dev-node/rollup+plugin-node-resolve )
+	|| ( node-bin/rollup dev-node/rollup )
+"
