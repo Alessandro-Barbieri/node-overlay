@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/abab
-	dev-node/acorn
+	|| ( node-bin/acorn dev-node/acorn )
 	dev-node/acorn-globals
 	dev-node/cssom
 	dev-node/cssstyle

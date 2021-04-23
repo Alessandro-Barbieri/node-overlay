@@ -20,7 +20,7 @@ RDEPEND="
 	dev-node/webassemblyjs+ast
 	dev-node/webassemblyjs+wasm-edit
 	dev-node/webassemblyjs+wasm-parser
-	dev-node/acorn
+	|| ( node-bin/acorn dev-node/acorn )
 	dev-node/browserslist
 	dev-node/chrome-trace-event
 	dev-node/enhanced-resolve

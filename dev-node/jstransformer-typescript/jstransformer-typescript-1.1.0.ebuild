@@ -16,5 +16,5 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/extend-shallow
-	dev-node/typescript
+	|| ( node-bin/typescript dev-node/typescript )
 "

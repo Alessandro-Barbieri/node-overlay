@@ -21,5 +21,6 @@ RDEPEND="
 	dev-node/require-directory
 	dev-node/string-width
 	dev-node/y18n
-	dev-node/yargs-parser
+
+	|| ( node-bin/yargs-parser dev-node/yargs-parser )
 "

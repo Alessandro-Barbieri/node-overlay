@@ -87,7 +87,7 @@ RDEPEND="
 	dev-node/ts-loader
 	dev-node/ts-node
 	dev-node/tsd
-	dev-node/typescript
+	|| ( node-bin/typescript dev-node/typescript )
 	dev-node/uglify-js
 	dev-node/uglifyjs-webpack-plugin
 	dev-node/url-loader

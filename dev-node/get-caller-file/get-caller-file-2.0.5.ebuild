@@ -6,13 +6,22 @@ EAPI=7
 inherit node
 
 DESCRIPTION="allows a function to figure out from which file it was invoked"
+SRC_URI="https://github.com/stefanpenner/get-caller-file/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 HOMEPAGE="
 	https://github.com/stefanpenner/get-caller-file
 	https://www.npmjs.com/package/get-caller-file
 "
 LICENSE="ISC"
 KEYWORDS="~amd64"
+S="${WORKDIR}/${P}"
 BDEPEND="
 	${NODEJS_BDEPEND}
-	dev-node/typescript
+	node-types/types+chai
+	node-types/types+ensure-posix-path
+	node-types/types+mocha
+	node-types/types+node
+	dev-node/chai
+	dev-node/ensure-posix-path
+	|| ( node-bin/typescript dev-node/typescript )
 "
+#	dev-node/mocha

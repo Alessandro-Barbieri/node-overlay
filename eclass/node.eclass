@@ -80,12 +80,13 @@ node_src_prepare() {
 }
 
 node_src_configure() {
+	export PATH="${PATH}:/opt/node-debian/usr/bin"
 	#path to the modules
-	export NODE_PATH="/usr/$(get_libdir)/node_modules"
+	export NODE_PATH="/usr/$(get_libdir)/node_modules:/opt/node-debian/usr/share/nodejs"
 	export npm_config_prefix="${NODE_MODULE_PREFIX}"
 	#path to the headers needed by node-gyp
 	export npm_config_nodedir="/usr/include/node"
-	export npm_config_tmp="${T}"
+#	export npm_config_tmp="${T}"
 
 	in_iuse test || export NODE_ENV="production"
 

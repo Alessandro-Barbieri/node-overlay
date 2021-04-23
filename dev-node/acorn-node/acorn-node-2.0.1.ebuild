@@ -15,7 +15,7 @@ LICENSE="Apache-2.0"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/acorn
+	|| ( node-bin/acorn dev-node/acorn )
 	dev-node/acorn-walk
 	dev-node/xtend
 "
