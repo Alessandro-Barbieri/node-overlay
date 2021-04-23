@@ -26,5 +26,6 @@ RDEPEND="
 	dev-node/redent
 	dev-node/trim-newlines
 	dev-node/type-fest
-	dev-node/yargs-parser
+
+	|| ( node-bin/yargs-parser dev-node/yargs-parser )
 "

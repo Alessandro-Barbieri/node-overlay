@@ -6,12 +6,14 @@ EAPI=7
 inherit node
 
 DESCRIPTION="easily create complex multi-column command-line-interfaces"
+SRC_URI="https://github.com/yargs/cliui/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 HOMEPAGE="
 	https://github.com/yargs/cliui
 	https://www.npmjs.com/package/cliui
 "
 LICENSE="ISC"
 KEYWORDS="~amd64"
+S="${WORKDIR}/${P}"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/string-width
@@ -19,5 +21,5 @@ RDEPEND="
 	dev-node/wrap-ansi
 "
 BDEPEND="
-	dev-node/typescript
+	|| ( node-bin/typescript dev-node/typescript )
 "

@@ -21,7 +21,6 @@ RDEPEND="
 	dev-node/duplexer2
 	dev-node/escodegen
 	dev-node/has
-	dev-node/magic-string
 	dev-node/merge-source-map
 	dev-node/object-inspect
 	dev-node/readable-stream
@@ -29,6 +28,8 @@ RDEPEND="
 	dev-node/shallow-copy
 	dev-node/static-eval
 	dev-node/through2
+
+	|| ( node-bin/magic-string dev-node/magic-string )
 "
 IUSE="examples"
 

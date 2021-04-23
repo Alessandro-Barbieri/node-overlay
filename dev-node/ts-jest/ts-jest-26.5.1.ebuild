@@ -25,5 +25,6 @@ RDEPEND="
 	dev-node/make-error
 	dev-node/mkdirp
 	dev-node/semver
-	dev-node/yargs-parser
+
+	|| ( node-bin/yargs-parser dev-node/yargs-parser )
 "
