@@ -20,12 +20,12 @@ RDEPEND="
 BDEPEND="
 	${BDEPEND}
 	dev-node/estree-walker
-	dev-node/rollup-plugin-typescript
+	node-rollup/rollup-plugin-typescript
 	dev-node/tslib
 
 	|| ( node-bin/acorn dev-node/acorn )
-	|| ( node-bin/rollup dev-node/rollup )
+	|| ( node-bin/rollup node-rollup/rollup )
 	|| ( node-bin/typescript dev-node/typescript )
 "
 S="${WORKDIR}/${P}"
-#	|| ( node-bin/rollup+plugin-typescript dev-node/rollup-plugin-typescript )
+#	|| ( node-bin/rollup+plugin-typescript node-rollup/rollup-plugin-typescript )

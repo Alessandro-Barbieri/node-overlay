@@ -19,6 +19,6 @@ BDEPEND="
 	dev-node/pnpm
 	dev-node/source-map-support
 
-	|| ( node-bin/rollup dev-node/rollup )
-	|| ( node-bin/rollup+plugin-buble dev-node/rollup+plugin-buble )
+	|| ( node-bin/rollup node-rollup/rollup )
+	|| ( node-bin/rollup+plugin-buble node-rollup/rollup+plugin-buble )
 "

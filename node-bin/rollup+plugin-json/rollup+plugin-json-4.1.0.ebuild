@@ -13,7 +13,7 @@ RDEPEND="
 	net-libs/nodejs
 	|| (
 		node-bin/rollup+pluginutils
-		dev-node/rollup+pluginutils
+		node-rollup/rollup+pluginutils
 	)
 "
 S="${WORKDIR}"

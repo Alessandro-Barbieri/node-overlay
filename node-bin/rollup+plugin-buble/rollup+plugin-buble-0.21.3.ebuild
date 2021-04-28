@@ -15,7 +15,7 @@ RDEPEND="
 	|| ( node-bin/buble dev-node/buble )
 	|| (
 		node-bin/rollup+pluginutils
-		dev-node/rollup+pluginutils
+		node-rollup/rollup+pluginutils
 	)
 "
 S="${WORKDIR}"

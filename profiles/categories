@@ -8,4 +8,5 @@ node-jest
 node-jimp
 node-lodash
 node-postcss
+node-rollup
 node-types

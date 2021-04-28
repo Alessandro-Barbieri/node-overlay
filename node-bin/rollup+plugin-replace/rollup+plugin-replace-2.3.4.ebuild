@@ -14,7 +14,7 @@ RDEPEND="
 	net-libs/nodejs
 
 	|| ( node-bin/magic-string dev-node/magic-string )
-	|| ( node-bin/rollup+pluginutils dev-node/rollup+pluginutils )
+	|| ( node-bin/rollup+pluginutils node-rollup/rollup+pluginutils )
 "
 S="${WORKDIR}"
 

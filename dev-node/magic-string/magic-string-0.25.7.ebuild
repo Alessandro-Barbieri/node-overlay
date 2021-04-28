@@ -19,10 +19,10 @@ RDEPEND="
 "
 BDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/rollup-plugin-node-resolve
+	node-rollup/rollup-plugin-node-resolve
 
-	|| ( node-bin/rollup+plugin-replace dev-node/rollup-plugin-replace )
-	|| ( node-bin/rollup+plugin-buble dev-node/rollup-plugin-buble )
-	|| ( node-bin/rollup dev-node/rollup )
+	|| ( node-bin/rollup+plugin-replace node-rollup/rollup-plugin-replace )
+	|| ( node-bin/rollup+plugin-buble node-rollup/rollup-plugin-buble )
+	|| ( node-bin/rollup node-rollup/rollup )
 "
 S="${WORKDIR}/${P}"

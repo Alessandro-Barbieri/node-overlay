@@ -15,7 +15,7 @@ RDEPEND="
 	dev-node/tslib
 
 	|| ( node-bin/typescript dev-node/typescript )
-	|| ( node-bin/rollup+pluginutils dev-node/rollup+pluginutils )
+	|| ( node-bin/rollup+pluginutils node-rollup/rollup+pluginutils )
 "
 S="${WORKDIR}"
 

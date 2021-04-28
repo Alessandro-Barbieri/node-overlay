@@ -19,7 +19,7 @@ RDEPEND="
 
 	|| (
 		node-bin/rollup+pluginutils
-		dev-node/rollup+pluginutils
+		node-rollup/rollup+pluginutils
 	)
 "
 S="${WORKDIR}"

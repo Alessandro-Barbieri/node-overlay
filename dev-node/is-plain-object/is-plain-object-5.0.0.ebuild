@@ -15,5 +15,5 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 BDEPEND="
 	${NODEJS_BDEPEND}
-	|| ( node-bin/rollup dev-node/rollup )
+	|| ( node-bin/rollup node-rollup/rollup )
 "

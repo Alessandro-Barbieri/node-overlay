@@ -11,6 +11,7 @@ find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|node-lodash/loda
 find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|dev-node/jest+|node-jest/jest+|g'
 find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|dev-node/jest-|node-jest/jest-|g'
 find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|dev-node/postcss|node-postcss/postcss|g'
+find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|dev-node/rollup|node-rollup/rollup|g'
 find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|dev-node/types+|node-types/types+|g'
 
 find . -name "*.xml" -type f -print0 | xargs -0 xmlstarlet ed --inplace -d '//*[not(./*) and (not(./text()) or normalize-space(./text())="")]'
