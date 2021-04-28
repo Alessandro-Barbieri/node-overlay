@@ -15,6 +15,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/eslint-utils
+	node-eslint/eslint-utils
 	dev-node/regexpp
 "

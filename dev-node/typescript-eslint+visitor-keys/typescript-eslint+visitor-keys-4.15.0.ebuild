@@ -15,5 +15,5 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/typescript-eslint+types
-	dev-node/eslint-visitor-keys
+	node-eslint/eslint-visitor-keys
 "

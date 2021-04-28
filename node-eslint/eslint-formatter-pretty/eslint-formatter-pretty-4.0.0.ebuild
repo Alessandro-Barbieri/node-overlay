@@ -17,7 +17,7 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/ansi-escapes
 	dev-node/chalk
-	dev-node/eslint-rule-docs
+	node-eslint/eslint-rule-docs
 	dev-node/log-symbols
 	dev-node/plur
 	dev-node/string-width

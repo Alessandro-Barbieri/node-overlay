@@ -15,8 +15,8 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/eslint-plugin-es
-	dev-node/eslint-utils
+	node-eslint/eslint-plugin-es
+	node-eslint/eslint-utils
 	dev-node/ignore
 	dev-node/minimatch
 	dev-node/resolve

@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/eslint-formatter-pretty
+	node-eslint/eslint-formatter-pretty
 	dev-node/globby
 	dev-node/meow
 	dev-node/path-exists

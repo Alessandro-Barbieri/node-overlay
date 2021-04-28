@@ -18,6 +18,6 @@ RDEPEND="
 	dev-node/typescript-eslint+scope-manager
 	dev-node/typescript-eslint+types
 	dev-node/typescript-eslint+typescript-estree
-	dev-node/eslint-scope
-	dev-node/eslint-utils
+	node-eslint/eslint-scope
+	node-eslint/eslint-utils
 "

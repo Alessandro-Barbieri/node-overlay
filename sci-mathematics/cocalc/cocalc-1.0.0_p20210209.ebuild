@@ -47,10 +47,10 @@ RDEPEND="
 	dev-node/enzyme
 	dev-node/enzyme-adapter-react_16
 	dev-node/enzyme-to-json
-	dev-node/eslint
-	dev-node/eslint-config-prettier
-	dev-node/eslint-plugin-prettier
-	dev-node/eslint-plugin-react
+	node-eslint/eslint
+	node-eslint/eslint-config-prettier
+	node-eslint/eslint-plugin-prettier
+	node-eslint/eslint-plugin-react
 	dev-node/extract-text-webpack-plugin
 	dev-node/file-loader
 	dev-node/forever

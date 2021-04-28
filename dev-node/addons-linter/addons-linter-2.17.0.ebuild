@@ -26,9 +26,9 @@ RDEPEND="
 	dev-node/common-tags
 	dev-node/deepmerge
 	dev-node/dispensary
-	dev-node/eslint
-	dev-node/eslint-plugin-no-unsanitized
-	dev-node/eslint-visitor-keys
+	node-eslint/eslint
+	node-eslint/eslint-plugin-no-unsanitized
+	node-eslint/eslint-visitor-keys
 	dev-node/espree
 	dev-node/esprima
 	dev-node/fluent-syntax

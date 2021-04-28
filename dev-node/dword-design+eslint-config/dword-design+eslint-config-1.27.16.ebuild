@@ -20,18 +20,18 @@ RDEPEND="
 	dev-node/dword-design+eslint-plugin-import-alias
 	dev-node/dword-design+functions
 	dev-node/depcheck-package-name
-	dev-node/eslint-config-airbnb-base
-	dev-node/eslint-config-prettier
-	dev-node/eslint-import-resolver-babel-module
-	dev-node/eslint-plugin-import
-	dev-node/eslint-plugin-json-format
-	dev-node/eslint-plugin-prefer-arrow
-	dev-node/eslint-plugin-prettier
-	dev-node/eslint-plugin-promise
-	dev-node/eslint-plugin-react
-	dev-node/eslint-plugin-simple-import-sort
-	dev-node/eslint-plugin-sort-keys-fix
-	dev-node/eslint-plugin-vue
+	node-eslint/eslint-config-airbnb-base
+	node-eslint/eslint-config-prettier
+	node-eslint/eslint-import-resolver-babel-module
+	node-eslint/eslint-plugin-import
+	node-eslint/eslint-plugin-json-format
+	node-eslint/eslint-plugin-prefer-arrow
+	node-eslint/eslint-plugin-prettier
+	node-eslint/eslint-plugin-promise
+	node-eslint/eslint-plugin-react
+	node-eslint/eslint-plugin-simple-import-sort
+	node-eslint/eslint-plugin-sort-keys-fix
+	node-eslint/eslint-plugin-vue
 	dev-node/load-pkg
 	dev-node/prettier
 	dev-node/vue-eslint-parser

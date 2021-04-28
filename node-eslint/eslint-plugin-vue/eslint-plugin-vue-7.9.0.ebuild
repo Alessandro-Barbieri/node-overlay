@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/eslint-utils
+	node-eslint/eslint-utils
 	dev-node/natural-compare
 	dev-node/semver
 	dev-node/vue-eslint-parser

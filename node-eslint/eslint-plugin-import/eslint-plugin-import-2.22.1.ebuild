@@ -20,8 +20,8 @@ RDEPEND="
 	dev-node/contains-path
 	dev-node/debug
 	dev-node/doctrine
-	dev-node/eslint-import-resolver-node
-	dev-node/eslint-module-utils
+	node-eslint/eslint-import-resolver-node
+	node-eslint/eslint-module-utils
 	dev-node/has
 	dev-node/minimatch
 	dev-node/object_values

@@ -18,10 +18,10 @@ RDEPEND="
 	dev-node/typescript-eslint+eslint-plugin
 	dev-node/typescript-eslint+parser
 	dev-node/chalk
-	dev-node/eslint
-	dev-node/eslint-config-prettier
-	dev-node/eslint-plugin-node
-	dev-node/eslint-plugin-prettier
+	node-eslint/eslint
+	node-eslint/eslint-config-prettier
+	node-eslint/eslint-plugin-node
+	node-eslint/eslint-plugin-prettier
 	dev-node/execa
 	dev-node/inquirer
 	dev-node/meow

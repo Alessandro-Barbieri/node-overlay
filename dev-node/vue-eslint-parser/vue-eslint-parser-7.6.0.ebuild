@@ -16,8 +16,8 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/debug
-	dev-node/eslint-scope
-	dev-node/eslint-visitor-keys
+	node-eslint/eslint-scope
+	node-eslint/eslint-visitor-keys
 	dev-node/espree
 	dev-node/esquery
 	node-lodash/lodash

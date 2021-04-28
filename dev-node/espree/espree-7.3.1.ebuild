@@ -17,5 +17,5 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	|| ( node-bin/acorn dev-node/acorn )
 	dev-node/acorn-jsx
-	dev-node/eslint-visitor-keys
+	node-eslint/eslint-visitor-keys
 "

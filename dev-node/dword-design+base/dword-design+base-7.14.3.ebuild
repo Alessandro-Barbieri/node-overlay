@@ -36,7 +36,7 @@ RDEPEND="
 	dev-node/depcheck-package-name
 	dev-node/depcheck-parser-babel
 	dev-node/docker-multirun
-	dev-node/eslint
+	node-eslint/eslint
 	dev-node/execa
 	dev-node/expect
 	dev-node/expect-mocha-image-snapshot

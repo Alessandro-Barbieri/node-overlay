@@ -22,7 +22,7 @@ RDEPEND="
 	dev-node/chokidar
 	dev-node/debounce
 	dev-node/delete-empty
-	dev-node/eslint
+	node-eslint/eslint
 	dev-node/execa
 	dev-node/fs-extra
 	dev-node/micromatch

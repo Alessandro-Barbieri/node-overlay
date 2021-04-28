@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/eslint-scope
-	dev-node/eslint-visitor-keys
+	node-eslint/eslint-scope
+	node-eslint/eslint-visitor-keys
 	dev-node/semver
 "

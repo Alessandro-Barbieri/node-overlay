@@ -16,16 +16,16 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+code-frame
-	dev-node/eslint+eslintrc
+	node-eslint/eslint+eslintrc
 	dev-node/ajv
 	dev-node/chalk
 	dev-node/cross-spawn
 	dev-node/debug
 	dev-node/doctrine
 	dev-node/enquirer
-	dev-node/eslint-scope
-	dev-node/eslint-utils
-	dev-node/eslint-visitor-keys
+	node-eslint/eslint-scope
+	node-eslint/eslint-utils
+	node-eslint/eslint-visitor-keys
 	dev-node/espree
 	dev-node/esquery
 	dev-node/esutils

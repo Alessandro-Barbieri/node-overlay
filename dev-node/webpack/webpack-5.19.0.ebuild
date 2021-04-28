@@ -25,7 +25,7 @@ RDEPEND="
 	dev-node/chrome-trace-event
 	dev-node/enhanced-resolve
 	dev-node/es-module-lexer
-	dev-node/eslint-scope
+	node-eslint/eslint-scope
 	dev-node/events
 	dev-node/glob-to-regexp
 	dev-node/graceful-fs
