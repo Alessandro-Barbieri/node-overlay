@@ -16,7 +16,7 @@ RESTRICT="mirror"
 
 RDEPEND="net-libs/nodejs"
 BDEPEND="
-	net-libs/nodejs[npm]
+	|| ( net-libs/nodejs[npm] dev-node/npm )
 	net-misc/rsync
 "
 

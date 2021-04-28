@@ -15,6 +15,7 @@ LICENSE="Artistic-2"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
+	net-libs/nodejs[-npm]
 	dev-node/JSONStream
 	dev-node/abbrev
 	dev-node/ansicolors

@@ -18,8 +18,9 @@ NODEJS_DEPEND="net-libs/nodejs"
 NODEJS_RDEPEND="${NODEJS_DEPEND}"
 NODEJS_BDEPEND="
 	app-misc/jq
-	net-libs/nodejs[npm]
 	net-misc/rsync
+
+	|| ( net-libs/nodejs[npm] dev-node/npm )
 "
 
 DEPEND="${NODEJS_DEPEND}"

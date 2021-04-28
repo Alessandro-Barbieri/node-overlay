@@ -27,7 +27,6 @@ RDEPEND="
 	dev-node/keytar
 	dev-node/mv
 	dev-node/ncp
-	dev-node/npm
 	dev-node/open
 	dev-node/q
 	dev-node/read
@@ -41,4 +40,6 @@ RDEPEND="
 	dev-node/wordwrap
 	dev-node/wrench
 	dev-node/yargs
+
+	|| ( net-libs/nodejs[npm] dev-node/npm )
 "
