@@ -14,5 +14,5 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/magic-string
+	|| ( node-bin/magic-string dev-node/magic-string )
 "

@@ -22,10 +22,11 @@ RDEPEND="
 	node-lodash/lodash
 	dev-node/nerf-dart
 	dev-node/normalize-url
-	dev-node/npm
 	dev-node/rc
 	dev-node/read-pkg
 	dev-node/registry-auth-token
 	dev-node/semver
 	dev-node/tempy
+
+	|| ( net-libs/nodejs[npm] dev-node/npm )
 "

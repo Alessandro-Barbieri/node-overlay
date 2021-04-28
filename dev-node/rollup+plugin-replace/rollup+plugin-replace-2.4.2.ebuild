@@ -15,6 +15,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/rollup+pluginutils
-	dev-node/magic-string
+	|| ( node-bin/rollup+pluginutils dev-node/rollup+pluginutils )
+	|| ( node-bin/magic-string dev-node/magic-string )
 "

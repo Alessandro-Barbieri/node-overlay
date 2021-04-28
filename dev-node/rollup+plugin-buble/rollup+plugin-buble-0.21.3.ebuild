@@ -15,13 +15,8 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	|| (
-		node-bin/buble
-		dev-node/buble
-	)
-	|| (
-		node-bin/rollup+pluginutils
-		dev-node/rollup+pluginutils
-	)
 	node-types/types+buble
+
+	|| ( node-bin/buble dev-node/buble )
+	|| ( node-bin/rollup+pluginutils dev-node/rollup+pluginutils )
 "
