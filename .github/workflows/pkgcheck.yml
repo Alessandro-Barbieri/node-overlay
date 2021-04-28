@@ -1,19 +1,17 @@
-name​: ​pkgcheck​
+name: pkgcheck
 
-​on​:
-  ​push​:
-    ​branches​: ​[main]​
-  ​pull_request​:
-    ​branches​: ​[main]​
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
-​jobs​:
-  ​build​:
-    ​runs-on​: ​ubuntu-latest​
-    ​steps​:
-    - ​name​: ​Checkout code​
-      ​uses​: ​actions/checkout@v2​
-
-    - ​name​: ​Run pkgcheck​
-      ​uses​: ​pkgcore/pkgcheck-action@v1​
-      ​with​:
-        ​args​: ​--keywords=-RedundantVersion
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run pkgcheck
+      uses: pkgcore/pkgcheck-action@v1
+      with:
+        args: --keywords=-RedundantVersion,-MissingAccountIdentifier,-OldPackageUpdate
