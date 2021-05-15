@@ -6,11 +6,9 @@ EAPI=7
 inherit node
 
 DESCRIPTION="The hackable text editor"
+HOMEPAGE="https://atom.io https://github.com/atom/atom"
 SRC_URI="https://github.com/atom/atom/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-HOMEPAGE="
-	https://atom.io
-	https://github.com/atom/atom
-"
+
 S="${WORKDIR}/${P}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
