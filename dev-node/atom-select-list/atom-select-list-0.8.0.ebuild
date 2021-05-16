@@ -18,3 +18,7 @@ RDEPEND="
 	dev-node/etch
 	dev-node/fuzzaldrin
 "
+
+src_configure() {
+	cp -r "${FILESDIR}/tsconfig.json" "${S}"/ || die
+}
