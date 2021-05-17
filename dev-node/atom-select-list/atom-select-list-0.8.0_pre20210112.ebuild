@@ -19,14 +19,13 @@ RDEPEND="
 "
 
 BDEPEND="
-	${RDEPEND}
+	${NODEJS_BDEPEND}
 	dev-node/chai
 	dev-node/esm
 	dev-node/gulp-format-md
 	dev-node/mocha
 	dev-node/mocha-headless-chrome
-	node-bin/rollup
-
+	|| ( node-bin/rollup node-rollup/rollup )
 "
 
 S="${WORKDIR}/${PN}-${COMMIT}"
