@@ -1,0 +1,20 @@
+dev-node/capital-case
+  NonsolvableDepsInStable: version 1.0.4: nonsolvable depset(rdepend) keyword(~amd64) stable profile (default/linux/amd64/17.1) (30 total): solutions: [ dev-node/upper-case-first ]
+
+dev-node/nuxt+builder
+  NonsolvableDepsInStable: version 2.15.6: nonsolvable depset(rdepend) keyword(~amd64) stable profile (default/linux/amd64/17.1) (30 total): solutions: [ dev-node/nuxt+devalue ]
+
+dev-node/nuxt+vue-renderer
+  NonsolvableDepsInStable: version 2.15.6: nonsolvable depset(rdepend) keyword(~amd64) stable profile (default/linux/amd64/17.1) (30 total): solutions: [ dev-node/nuxt+devalue ]
+
+dev-node/nuxt+webpack
+  NonsolvableDepsInStable: version 2.15.6: nonsolvable depset(rdepend) keyword(~amd64) stable profile (default/linux/amd64/17.1) (30 total): solutions: [ dev-node/webpackbar ]
+
+dev-node/sentence-case
+  NonsolvableDepsInStable: version 3.0.4: nonsolvable depset(rdepend) keyword(~amd64) stable profile (default/linux/amd64/17.1) (30 total): solutions: [ dev-node/upper-case-first ]
+
+node-postcss/postcss-values-parser
+  NonsolvableDepsInStable: version 5.0.0: nonsolvable depset(rdepend) keyword(~amd64) stable profile (default/linux/amd64/17.1) (30 total): solutions: [ dev-node/is-url-superb, dev-node/quote-unquote ]
+
+node-lodash/lodash_template
+  NonsolvableDepsInStable: version 4.5.0: nonsolvable depset(rdepend) keyword(~amd64) stable profile (default/linux/amd64/17.1) (30 total): solutions: [ node-lodash/lodash_templatesettings ]
