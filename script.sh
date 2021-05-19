@@ -9,12 +9,11 @@ grep ":" dip | tr " " "\n" | grep dev-node/ | tr -d "," | sort -u | sed "s|dev-n
 
 pushd dev-node
 
-for f in $(cat ../dip1)
-do
-	python3.8 ../genera-node-ebuild.py "${f}" &
+for f in $(cat ../dip1) do
+	python ../genera-node-ebuild.py "${f}" &
 done
 
-repoman manifest > /dev/null
+pkgdev manifest >> /dev/null
 
 popd
 

@@ -13,3 +13,8 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+
+BDEPEND="
+	${NODEJS_BDEPEND}
+	dev-node/cross-env
+"
