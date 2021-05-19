@@ -5,7 +5,8 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="_.template without full lodash source."
+DESCRIPTION="Handmade _.template() without full lodash source"
+LICENSE="MIT"
 HOMEPAGE="
 		https://www.npmjs.com/package/lodash-template
 "
