@@ -23,4 +23,5 @@ src_install() {
 	mv "${PN_RIGHT}-${PV}" "${ED}/${INSTALLPATH}/@${PN_LEFT}/${PN_RIGHT}" || die
 	fperms +x "${INSTALLPATH}/@${PN_LEFT}/${PN_RIGHT}/dist/cli.js"
 	dosym "../share/nodejs/@${PN_LEFT}/${PN_RIGHT}/dist/cli.js" "/opt/node-debian/usr/bin/base"
+	dosym "./${PN_RIGHT}/node_modules/@${PN_LEFT}/base-config-node" "${INSTALLPATH}/@${PN_LEFT}/base-config-node"
 }
