@@ -1,4 +1,5 @@
 atom-package
+dev-lerna
 dev-node
 node-babel
 node-bin
