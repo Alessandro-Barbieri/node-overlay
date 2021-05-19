@@ -15,5 +15,5 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 BDEPEND="
 	${NODEJS_BDEPEND}
-	dev-node/dword-design+base
+	|| ( node-bin/dword-design+base dev-node/dword-design+base )
 "
