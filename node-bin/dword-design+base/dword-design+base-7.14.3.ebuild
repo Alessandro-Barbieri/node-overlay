@@ -18,6 +18,8 @@ BDEPEND=""
 S="${WORKDIR}"
 
 src_install() {
-	dodir "/opt/node-debian/node-modules/@${PN_LEFT}"
-	mv "${PN_RIGHT}-${PV}" "${ED}/opt/node-debian/node-modules/@${PN_LEFT}/${PN_RIGHT}" || die
+	dodir "/opt/node-debian/node_modules/@${PN_LEFT}"
+	mv "${PN_RIGHT}-${PV}" "${ED}/opt/node-debian/node_modules/@${PN_LEFT}/${PN_RIGHT}" || die
+	fperms +x "/opt/node-debian/node_modules/@${PN_LEFT}/${PN_RIGHT}/dist/cli.js"
+	dosym "../@${PN_LEFT}/${PN_RIGHT}/dist/cli.js" "/opt/node-debian/bin/base"
 }
