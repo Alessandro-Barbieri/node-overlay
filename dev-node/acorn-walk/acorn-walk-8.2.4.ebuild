@@ -13,6 +13,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 BDEPEND="
 	${NODEJS_BDEPEND}
+	|| ( node-bin/rollup+plugin-buble node-rollup/rollup-plugin-buble )
 	|| ( node-bin/rollup node-rollup/rollup )
 "
 S="${WORKDIR}/${MYPN}-${PV}/${PN}"
