@@ -13,3 +13,9 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+BDEPEND="
+	${NODEJS_BDEPEND}
+	dev-node/dword-design+base
+	dev-node/dword-design+functions
+	dev-node/fs-extra
+"
