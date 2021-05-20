@@ -13,10 +13,10 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/abab
-	|| ( node-bin/acorn dev-node/acorn )
 	dev-node/acorn-globals
 	dev-node/cssom
 	dev-node/cssstyle
@@ -41,4 +41,7 @@ RDEPEND="
 	dev-node/whatwg-url
 	dev-node/ws
 	dev-node/xml-name-validator
+
+	bootstrap? ( node-bin/acorn )
+	!bootstrap? ( dev-node/acorn )
 "

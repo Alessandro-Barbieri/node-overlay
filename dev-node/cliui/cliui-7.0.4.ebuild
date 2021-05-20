@@ -11,6 +11,7 @@ SRC_URI="https://github.com/yargs/cliui/archive/refs/tags/v${PV}.tar.gz -> ${P}.
 
 LICENSE="ISC"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 S="${WORKDIR}/${P}"
 RDEPEND="
 	${NODEJS_RDEPEND}
@@ -22,5 +23,6 @@ RDEPEND="
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/rimraf
-	|| ( node-bin/typescript dev-node/typescript )
+	bootstrap? ( node-bin/typescript )
+	!bootstrap? ( dev-node/typescript )
 "

@@ -12,19 +12,19 @@ SRC_URI="https://github.com/atom/atom-select-list/archive/${COMMIT}.tar.gz -> ${
 S="${WORKDIR}/${PN}-${COMMIT}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/etch
 	dev-node/fuzzaldrin
 "
-
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/chai
 	dev-node/esm
 	dev-node/gulp-format-md
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? ( node-bin/rollup )
+	!bootstrap? ( node-rollup/rollup )
 "
-
 #	dev-node/mocha
 #	dev-node/mocha-headless-chrome

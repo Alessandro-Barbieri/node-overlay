@@ -13,6 +13,7 @@ HOMEPAGE="
 "
 LICENSE="ISC"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 S="${WORKDIR}/${P}"
 BDEPEND="
 	${NODEJS_BDEPEND}
@@ -21,7 +22,8 @@ BDEPEND="
 	node-types/types+node
 	dev-node/chai
 	dev-node/ensure-posix-path
-	|| ( node-bin/typescript dev-node/typescript )
+	bootstrap? ( node-bin/typescript )
+	!bootstrap? ( dev-node/typescript )
 "
 #	node-types/types+mocha
 #	dev-node/mocha

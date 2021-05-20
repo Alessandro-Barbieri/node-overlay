@@ -12,6 +12,7 @@ HOMEPAGE="
 "
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/ungap+promise-all-settled
@@ -39,5 +40,6 @@ RDEPEND="
 	dev-node/yargs
 	dev-node/yargs-unparser
 
-	|| ( node-bin/yargs-parser dev-node/yargs-parser )
+	bootstrap? ( node-bin/yargs-parser )
+	!bootstrap? ( dev-node/yargs-parser )
 "

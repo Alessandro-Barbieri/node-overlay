@@ -9,6 +9,7 @@ SRC_URI="mirror://debian/pool/main/n/node-rollup-plugin-commonjs/node-rollup-plu
 SLOT="0"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
 	dev-node/commondir
@@ -16,11 +17,15 @@ RDEPEND="
 	dev-node/glob
 	dev-node/resolve
 
-	|| ( node-bin/is-reference dev-node/is-reference )
-	|| ( node-bin/magic-string dev-node/magic-string )
-	|| (
+	bootstrap? (
 		node-bin/rollup+pluginutils
+		node-bin/is-reference
+		node-bin/magic-string
+	)
+	!bootstrap? (
 		node-rollup/rollup+pluginutils
+		dev-node/magic-string
+		dev-node/is-reference
 	)
 "
 S="${WORKDIR}"

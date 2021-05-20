@@ -9,13 +9,18 @@ SRC_URI="mirror://debian/pool/main/n/node-rollup-plugin-buble/node-rollup-plugin
 SLOT="0"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
 	node-types/types+buble
-	|| ( node-bin/buble dev-node/buble )
-	|| (
+
+	bootstrap? (
 		node-bin/rollup+pluginutils
+		node-bin/buble
+	)
+	!bootstrap? (
 		node-rollup/rollup+pluginutils
+		dev-node/buble
 	)
 "
 S="${WORKDIR}"

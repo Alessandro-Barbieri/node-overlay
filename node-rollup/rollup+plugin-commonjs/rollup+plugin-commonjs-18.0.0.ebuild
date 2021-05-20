@@ -13,6 +13,7 @@ HOMEPAGE="
 SRC_URI="https://github.com/rollup/plugins/archive/refs/tags/commonjs-v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/commondir
@@ -20,9 +21,16 @@ RDEPEND="
 	dev-node/glob
 	dev-node/resolve
 
-	|| ( node-bin/is-reference dev-node/is-reference )
-	|| ( node-bin/magic-string dev-node/magic-string )
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup+pluginutils )
+	bootstrap? (
+		node-bin/is-reference
+		node-bin/magic-string
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		dev-node/is-reference
+		dev-node/magic-string
+		node-rollup/rollup+pluginutils
+	)
 "
 BDEPEND="
 	${NODEJS_BDEPEND}
@@ -33,9 +41,17 @@ BDEPEND="
 	dev-node/source-map
 	dev-node/source-map-support
 
-	|| ( node-bin/rollup node-rollup/rollup )
-	|| ( node-bin/rollup+plugin-json node-rollup/rollup+plugin-json )
-	|| ( node-bin/rollup+plugin-node-resolve node-rollup/rollup+plugin-node-resolve )
-	|| ( node-bin/typescript dev-node/typescript )
+	bootstrap? (
+		node-bin/rollup
+		node-bin/rollup+plugin-json
+		node-bin/rollup+plugin-node-resolve
+		node-bin/typescript
+	)
+	!bootstrap? (
+		node-rollup/rollup
+		node-rollup/rollup+plugin-json
+		node-rollup/rollup+plugin-node-resolve
+		dev-node/typescript
+	)
 "
 S="${WORKDIR}/${PN_RIGHT/plugin/plugins}-v${PV}/packages/commonjs"

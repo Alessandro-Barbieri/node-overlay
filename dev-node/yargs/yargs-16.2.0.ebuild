@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/cliui
@@ -22,5 +23,6 @@ RDEPEND="
 	dev-node/string-width
 	dev-node/y18n
 
-	|| ( node-bin/yargs-parser dev-node/yargs-parser )
+	bootstrap? ( node-bin/yargs-parser )
+	!bootstrap? ( dev-node/yargs-parser )
 "

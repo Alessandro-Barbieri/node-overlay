@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-types/types+eslint-scope
@@ -20,7 +21,6 @@ RDEPEND="
 	dev-node/webassemblyjs+ast
 	dev-node/webassemblyjs+wasm-edit
 	dev-node/webassemblyjs+wasm-parser
-	|| ( node-bin/acorn dev-node/acorn )
 	dev-node/browserslist
 	dev-node/chrome-trace-event
 	dev-node/enhanced-resolve
@@ -39,4 +39,7 @@ RDEPEND="
 	dev-node/terser-webpack-plugin
 	dev-node/watchpack
 	dev-node/webpack-sources
+
+	bootstrap? ( node-bin/acorn )
+	!bootstrap? ( dev-node/acorn )
 "

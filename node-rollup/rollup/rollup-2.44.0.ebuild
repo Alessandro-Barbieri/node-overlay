@@ -16,6 +16,7 @@ SRC_URI="
 "
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/acorn-jsx
@@ -56,24 +57,41 @@ BDEPEND="
 	dev-node/require-relative
 	dev-node/requirejs
 
-	|| ( node-bin/acorn dev-node/acorn )
-	|| ( node-bin/buble dev-node/buble )
-	|| ( node-bin/is-reference dev-node/is-reference )
-	|| ( node-bin/magic-string dev-node/magic-string )
-	|| ( node-bin/rollup+plugin-alias node-rollup/rollup+plugin-alias )
-	|| ( node-bin/rollup+plugin-buble node-rollup/rollup+plugin-buble )
-	|| ( node-bin/rollup+plugin-commonjs node-rollup/rollup+plugin-commonjs )
-	|| ( node-bin/rollup+plugin-json node-rollup/rollup+plugin-json )
-	|| ( node-bin/rollup+plugin-node-resolve node-rollup/rollup+plugin-node-resolve )
-	|| ( node-bin/rollup+plugin-replace node-rollup/rollup+plugin-replace )
-	|| ( node-bin/rollup+plugin-alias node-rollup/rollup+plugin-alias )
-	|| ( node-bin/rollup+plugin-alias node-rollup/rollup+plugin-alias )
-	|| ( node-bin/rollup+plugin-alias node-rollup/rollup+plugin-alias )
-	|| ( node-bin/rollup+plugin-string node-rollup/rollup-plugin-string )
-	|| ( node-bin/rollup+plugin-terser node-rollup/rollup-plugin-terser )
-	|| ( node-bin/rollup+plugin-typescript node-rollup/rollup-plugin-typescript )
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup-pluginutils )
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? (
+		node-bin/acorn
+		node-bin/buble
+		node-bin/is-reference
+		node-bin/magic-string
+		node-bin/rollup
+		node-bin/rollup+plugin-buble
+		node-bin/rollup+plugin-commonjs
+		node-bin/rollup+plugin-json
+		node-bin/rollup+plugin-node-resolve
+		node-bin/rollup+plugin-replace
+		node-bin/rollup+plugin-alias
+		node-bin/rollup+plugin-string
+		node-bin/rollup+plugin-terser
+		node-bin/rollup+plugin-typescript
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		dev-node/acorn
+		dev-node/buble
+		dev-node/is-reference
+		dev-node/magic-string
+		node-rollup/rollup
+		node-rollup/rollup+plugin-alias
+		node-rollup/rollup+plugin-buble
+		node-rollup/rollup+plugin-commonjs
+		node-rollup/rollup+plugin-json
+		node-rollup/rollup+plugin-node-resolve
+		node-rollup/rollup+plugin-replace
+		node-rollup/rollup+plugin-alias
+		node-rollup/rollup-plugin-string
+		node-rollup/rollup-plugin-terser
+		node-rollup/rollup-plugin-typescript
+		node-rollup/rollup-pluginutils
+	)
 "
 S="${WORKDIR}/${P}"
 

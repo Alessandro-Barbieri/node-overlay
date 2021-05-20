@@ -13,6 +13,7 @@ HOMEPAGE="
 SRC_URI="https://github.com/rollup/plugins/archive/refs/tags/alias-v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/slash
@@ -22,9 +23,17 @@ BDEPEND="
 	dev-node/pnpm
 	dev-node/del-cli
 
-	|| ( node-bin/typescript dev-node/typescript )
-	|| ( node-bin/rollup+plugin-node-resolve node-rollup/rollup+plugin-node-resolve )
-	|| ( node-rollup/rollup+plugin-typescript node-bin/rollup+plugin-typescript )
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? (
+		node-bin/typescript
+		node-bin/rollup
+		node-bin/rollup+plugin-node-resolve
+		node-bin/rollup+plugin-typescript
+	)
+	!bootstrap? (
+		dev-node/typescript
+		node-rollup/rollup
+		node-rollup/rollup+plugin-node-resolve
+		node-rollup/rollup+plugin-typescript
+	 )
 "
 S="${WORKDIR}/${PN_RIGHT/plugin/plugins}-v${PV}/packages/alias"

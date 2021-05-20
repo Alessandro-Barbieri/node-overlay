@@ -14,6 +14,7 @@ SRC_URI="https://github.com/terser/terser/archive/refs/tags/v${PV}.tar.gz -> ${P
 S="${WORKDIR}/${PN}-${PV}"
 LICENSE="BSD-2"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/commander
@@ -23,5 +24,6 @@ RDEPEND="
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/rimraf
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? ( node-bin/rollup )
+	!bootstrap? ( node-rollup/rollup )
 "

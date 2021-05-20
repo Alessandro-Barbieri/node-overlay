@@ -14,14 +14,14 @@ SRC_URI="https://github.com/yargs/yargs-parser/archive/refs/tags/v${PV}.tar.gz -
 S="${WORKDIR}/${P}"
 LICENSE="ISC"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/gts
 	node-types/types+node
 	node-types/types+chai
 
-	|| ( node-bin/typescript dev-node/typescript )
+	bootstrap? ( node-bin/typescript )
+	!bootstrap? ( dev-node/typescript )
 "
-#	|| ( node-bin/rollout dev-node/rollout )
-
 #	node-types/types+mocha

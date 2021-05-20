@@ -11,14 +11,21 @@ HOMEPAGE="
 	https://www.npmjs.com/package/acorn
 "
 SRC_URI="https://github.com/acornjs/acorn/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${P}/${PN}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
-S="${WORKDIR}/${P}/${PN}"
+IUSE="bootstrap"
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/pnpm
 	dev-node/source-map-support
 
-	|| ( node-bin/rollup node-rollup/rollup )
-	|| ( node-bin/rollup+plugin-buble node-rollup/rollup+plugin-buble )
+	bootstrap? (
+		node-bin/rollup
+		node-bin/rollup+plugin-buble
+	)
+	!bootstrap? (
+		node-rollup/rollup
+		node-rollup/rollup+plugin-buble
+	)
 "

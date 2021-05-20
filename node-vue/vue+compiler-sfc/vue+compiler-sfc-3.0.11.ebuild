@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+parser
@@ -31,5 +32,10 @@ RDEPEND="
 	node-postcss/postcss-selector-parser
 	dev-node/source-map
 
-	|| ( node-bin/magic-string dev-node/magic-string )
+	bootstrap? (
+		node-bin/magic-string
+	)
+	!bootstrap? (
+		dev-node/magic-string
+	)
 "

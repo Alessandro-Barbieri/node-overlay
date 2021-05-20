@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap examples"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/acorn-node
@@ -29,9 +30,9 @@ RDEPEND="
 	dev-node/static-eval
 	dev-node/through2
 
-	|| ( node-bin/magic-string dev-node/magic-string )
+	bootstrap? ( node-bin/magic-string )
+	!bootstrap? ( dev-node/magic-string )
 "
-IUSE="examples"
 
 src_install() {
 	use examples && dodoc -r example

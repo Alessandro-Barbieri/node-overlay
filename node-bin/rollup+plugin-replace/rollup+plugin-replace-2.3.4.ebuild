@@ -9,12 +9,19 @@ SRC_URI="mirror://debian/pool/main/n/node-rollup-plugin-replace/node-rollup-plug
 SLOT="0"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	dev-node/minimatch
 	net-libs/nodejs
 
-	|| ( node-bin/magic-string dev-node/magic-string )
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup+pluginutils )
+	bootstrap? (
+		node-bin/rollup+pluginutils
+		node-bin/magic-string
+	)
+	!bootstrap? (
+		node-rollup/rollup+pluginutils
+		dev-node/magic-string
+	)
 "
 S="${WORKDIR}"
 

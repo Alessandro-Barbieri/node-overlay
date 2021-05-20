@@ -12,8 +12,10 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	|| ( dev-node/acorn node-bin/acorn )
+	bootstrap? ( node-bin/acorn )
+	!bootstrap? ( dev-node/acorn )
 	dev-node/acorn-walk
 "

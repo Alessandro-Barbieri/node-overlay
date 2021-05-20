@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-types/types+jest
@@ -26,5 +27,6 @@ RDEPEND="
 	dev-node/mkdirp
 	dev-node/semver
 
-	|| ( node-bin/yargs-parser dev-node/yargs-parser )
+	bootstrap? ( node-bin/yargs-parser )
+	!bootstrap? ( dev-node/yargs-parser )
 "

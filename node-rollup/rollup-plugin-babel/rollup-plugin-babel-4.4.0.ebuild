@@ -13,11 +13,17 @@ HOMEPAGE="
 SRC_URI="https://github.com/rollup/rollup-plugin-babel/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+helper-module-imports
 
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup-pluginutils )
+	bootstrap? (
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		node-rollup/rollup-pluginutils
+	)
 "
 BDEPEND="
 	${NODEJS_BDEPEND}
@@ -30,9 +36,17 @@ BDEPEND="
 	dev-node/source-map
 	dev-node/source-map-support
 
-	|| ( node-bin/buble dev-node/buble )
-	|| ( node-rollup/rollup-plugin-json node-bin/rollup+plugin-json )
-	|| ( node-bin/rollup+plugin-buble node-rollup/rollup-plugin-buble )
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? (
+		node-bin/buble
+		node-bin/rollup
+		node-bin/rollup+plugin-buble
+		node-bin/rollup+plugin-json
+	)
+	!bootstrap? (
+		dev-node/buble
+		node-rollup/rollup
+		node-rollup/rollup-plugin-buble
+		node-rollup/rollup-plugin-json
+	)
 "
 S="${WORKDIR}/${P}"

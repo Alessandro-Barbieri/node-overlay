@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/commenting
@@ -24,5 +25,10 @@ RDEPEND="
 	dev-node/spdx-satisfies
 	node-lodash/lodash
 
-	|| ( node-bin/magic-string dev-node/magic-string )
+	bootstrap? (
+		node-bin/magic-string
+	)
+	!bootstrap? (
+		dev-node/magic-string
+	)
 "

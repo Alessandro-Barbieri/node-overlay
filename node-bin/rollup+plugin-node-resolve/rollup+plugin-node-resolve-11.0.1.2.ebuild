@@ -9,6 +9,7 @@ SRC_URI="mirror://debian/pool/main/n/node-rollup-plugin-node-resolve/node-rollup
 SLOT="0"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
 	dev-node/builtin-modules
@@ -17,8 +18,10 @@ RDEPEND="
 	dev-node/resolve
 	node-types/types+resolve
 
-	|| (
+	bootstrap? (
 		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
 		node-rollup/rollup+pluginutils
 	)
 "

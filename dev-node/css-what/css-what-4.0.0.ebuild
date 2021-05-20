@@ -13,7 +13,9 @@ HOMEPAGE="
 
 LICENSE="BSD-2"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 BDEPEND="
 	${NODEJS_BDEPEND}
-	|| ( node-bin/typescript dev-node/typescript )
+	bootstrap? ( node-bin/typescript )
+	!bootstrap? ( dev-node/typescript )
 "

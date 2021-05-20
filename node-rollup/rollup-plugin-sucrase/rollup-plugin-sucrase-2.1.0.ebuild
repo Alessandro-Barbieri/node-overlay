@@ -13,8 +13,14 @@ HOMEPAGE="
 
 LICENSE="LIL"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/sucrase
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup+pluginutils )
+	bootstrap? (
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		node-rollup/rollup+pluginutils
+	)
 "

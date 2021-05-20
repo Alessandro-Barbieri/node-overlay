@@ -9,10 +9,13 @@ SRC_URI="mirror://debian/pool/main/n/node-rollup-plugin-string/node-rollup-plugi
 SLOT="0"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
-	|| (
+	bootstrap? (
 		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
 		node-rollup/rollup+pluginutils
 	)
 "

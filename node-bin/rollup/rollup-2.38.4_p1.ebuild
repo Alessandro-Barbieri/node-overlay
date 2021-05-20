@@ -9,6 +9,7 @@ SRC_URI="mirror://debian/pool/main/n/node-rollup/rollup_2.38.4-1_all.deb"
 LICENSE="MIT"
 KEYWORDS="~amd64"
 SLOT="0"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
 	dev-node/ansi-escapes
@@ -23,11 +24,16 @@ RDEPEND="
 	dev-node/source-map
 	dev-node/sourcemap-codec
 
-	|| ( node-bin/is-reference dev-node/is-reference )
-	|| ( node-bin/magic-string dev-node/magic-string )
-	|| ( node-bin/yargs-parser dev-node/yargs-parser )
-	|| (
+	bootstrap? (
+		node-bin/yargs-parser
+		node-bin/is-reference
+		node-bin/magic-string
 		node-bin/acorn
+	)
+	!bootstrap? (
+		dev-node/yargs-parser
+		dev-node/is-reference
+		dev-node/magic-string
 		(
 			dev-node/acorn
 			dev-node/acorn-dynamic-import

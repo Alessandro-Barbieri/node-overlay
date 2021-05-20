@@ -13,21 +13,31 @@ HOMEPAGE="
 SRC_URI="https://github.com/rollup/plugins/archive/refs/tags/typescript-v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/resolve
 
-	|| (
-		node-rollup/rollup+pluginutils
+	bootstrap? (
 		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		node-rollup/rollup+pluginutils
 	)
 "
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/pnpm
 
-	|| ( node-bin/rollup node-rollup/rollup )
-	|| ( node-bin/rollup+plugin-commonjs node-rollup/rollup+plugin-commonjs )
-	|| ( node-bin/rollup+plugin-buble node-rollup/rollup+plugin-buble )
+	bootstrap? (
+		node-bin/rollup
+		node-bin/rollup+plugin-commonjs
+		node-bin/rollup+plugin-buble
+	)
+	!bootstrap? (
+		node-rollup/rollup
+		node-rollup/rollup+plugin-commonjs
+		node-rollup/rollup+plugin-buble
+	)
 "
 S="${WORKDIR}/${PN_RIGHT/plugin/plugins}-v${PV}/packages/typescript"

@@ -10,9 +10,11 @@ HOMEPAGE="https://github.com/teppeis/typescript-simple https://www.npmjs.com/pac
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	|| ( node-bin/typescript dev-node/typescript )
+	bootstrap? ( node-bin/typescript )
+	!bootstrap? ( dev-node/typescript )
 "
 
 BDEPEND="

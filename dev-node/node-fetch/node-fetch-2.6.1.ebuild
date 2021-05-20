@@ -14,6 +14,7 @@ SRC_URI="https://github.com/node-fetch/node-fetch/archive/refs/tags/v${PV}.tar.g
 S="${WORKDIR}/${P}/${PN}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/ungap+url-search-params
@@ -38,5 +39,6 @@ BDEPEND="
 	node-babel/babel-register
 	node-rollup/rollup-plugin-babel
 
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? ( node-bin/rollup )
+	!bootstrap? ( node-rollup/rollup )
 "
