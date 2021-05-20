@@ -47,7 +47,6 @@ BDEPEND="
 	dev-node/locate-character
 	dev-node/markdownlint-cli
 	dev-node/micromatch
-	dev-node/mocha
 	dev-node/node-fetch
 	dev-node/nyc
 	dev-node/pinst
