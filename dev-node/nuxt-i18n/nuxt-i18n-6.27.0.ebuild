@@ -25,5 +25,5 @@ RDEPEND="
 	dev-node/klona
 	node-lodash/lodash_merge
 	dev-node/ufo
-	dev-node/vue-i18n
+	node-vue/vue-i18n
 "

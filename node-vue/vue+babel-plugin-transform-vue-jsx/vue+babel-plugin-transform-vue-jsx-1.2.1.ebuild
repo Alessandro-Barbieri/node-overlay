@@ -16,7 +16,7 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+helper-module-imports
 	node-babel/babel+plugin-syntax-jsx
-	dev-node/vue+babel-helper-vue-jsx-merge-props
+	node-vue/vue+babel-helper-vue-jsx-merge-props
 	dev-node/html-tags
 	node-lodash/lodash_kebabcase
 	dev-node/svg-tags

@@ -44,5 +44,5 @@ RDEPEND="
 	dev-node/safe-require
 	dev-node/sass-loader
 	dev-node/stylelint
-	dev-node/vue
+	node-vue/vue
 "

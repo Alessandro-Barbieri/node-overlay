@@ -19,5 +19,5 @@ RDEPEND="
 	dev-node/bootstrap
 	dev-node/popper_js
 	dev-node/portal-vue
-	dev-node/vue-functional-data-merge
+	node-vue/vue-functional-data-merge
 "

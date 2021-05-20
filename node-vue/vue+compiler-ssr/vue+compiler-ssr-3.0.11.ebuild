@@ -15,6 +15,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/vue+shared
-	dev-node/vue+compiler-dom
+	node-vue/vue+shared
+	node-vue/vue+compiler-dom
 "

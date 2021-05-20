@@ -22,5 +22,5 @@ RDEPEND="
 	dev-node/scule
 	dev-node/semver
 	dev-node/upath
-	dev-node/vue-template-compiler
+	node-vue/vue-template-compiler
 "

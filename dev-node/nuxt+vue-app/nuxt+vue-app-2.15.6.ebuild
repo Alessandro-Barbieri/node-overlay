@@ -18,11 +18,11 @@ RDEPEND="
 	dev-node/node-fetch
 	dev-node/ufo
 	dev-node/unfetch
-	dev-node/vue
-	dev-node/vue-client-only
-	dev-node/vue-meta
-	dev-node/vue-no-ssr
-	dev-node/vue-router
-	dev-node/vue-template-compiler
-	dev-node/vuex
+	node-vue/vue
+	node-vue/vue-client-only
+	node-vue/vue-meta
+	node-vue/vue-no-ssr
+	node-vue/vue-router
+	node-vue/vue-template-compiler
+	node-vue/vuex
 "

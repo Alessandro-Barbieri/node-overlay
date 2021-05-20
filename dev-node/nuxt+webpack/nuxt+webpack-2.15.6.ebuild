@@ -51,9 +51,9 @@ RDEPEND="
 	dev-node/time-fix-plugin
 	dev-node/ufo
 	dev-node/url-loader
-	dev-node/vue-loader
-	dev-node/vue-style-loader
-	dev-node/vue-template-compiler
+	node-vue/vue-loader
+	node-vue/vue-style-loader
+	node-vue/vue-template-compiler
 	dev-node/webpack
 	dev-node/webpack-bundle-analyzer
 	dev-node/webpack-dev-middleware

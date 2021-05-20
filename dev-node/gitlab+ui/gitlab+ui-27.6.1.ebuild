@@ -27,5 +27,5 @@ RDEPEND="
 	dev-node/portal-vue
 	dev-node/resize-observer-polyfill
 	dev-node/url-search-params-polyfill
-	dev-node/vue-runtime-helpers
+	node-vue/vue-runtime-helpers
 "

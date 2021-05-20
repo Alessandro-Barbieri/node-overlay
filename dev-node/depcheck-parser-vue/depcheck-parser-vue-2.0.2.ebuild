@@ -17,5 +17,5 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+core
 	dev-node/fs-extra
-	dev-node/vue-template-compiler
+	node-vue/vue-template-compiler
 "

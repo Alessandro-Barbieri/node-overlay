@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/vue+shared
+	node-vue/vue+shared
 	node-babel/babel+parser
 	node-babel/babel+types
 	dev-node/estree-walker

@@ -23,7 +23,7 @@ RDEPEND="
 	node-lodash/lodash
 	dev-node/lru-cache
 	dev-node/ufo
-	dev-node/vue
-	dev-node/vue-meta
-	dev-node/vue-server-renderer
+	node-vue/vue
+	node-vue/vue-meta
+	node-vue/vue-server-renderer
 "

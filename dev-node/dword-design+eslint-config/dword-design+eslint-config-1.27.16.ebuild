@@ -34,5 +34,5 @@ RDEPEND="
 	node-eslint/eslint-plugin-vue
 	dev-node/load-pkg
 	dev-node/prettier
-	dev-node/vue-eslint-parser
+	node-vue/vue-eslint-parser
 "

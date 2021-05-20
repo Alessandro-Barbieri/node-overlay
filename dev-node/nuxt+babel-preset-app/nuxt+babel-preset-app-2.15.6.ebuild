@@ -27,7 +27,7 @@ RDEPEND="
 	node-babel/babel+plugin-transform-runtime
 	node-babel/babel+preset-env
 	node-babel/babel+runtime
-	dev-node/vue+babel-preset-jsx
+	node-vue/vue+babel-preset-jsx
 	dev-node/core-js
 	dev-node/core-js-compat
 	dev-node/regenerator-runtime

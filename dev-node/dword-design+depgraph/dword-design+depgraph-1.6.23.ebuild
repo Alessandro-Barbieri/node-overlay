@@ -35,6 +35,6 @@ RDEPEND="
 	dev-node/multimatch
 	dev-node/nuxt-fontawesome
 	dev-node/require-package-name
-	dev-node/vue
-	dev-node/vue-spinner
+	node-vue/vue
+	node-vue/vue-spinner
 "
