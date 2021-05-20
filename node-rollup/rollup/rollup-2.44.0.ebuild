@@ -30,6 +30,32 @@ BDEPEND="
 	node-types/types+require-relative
 	node-types/types+signal-exit
 	node-types/types+yargs-parser
+	dev-node/acorn-class-fields
+	dev-node/acorn-static-class-features
+	dev-node/chokidar
+	dev-node/colorette
+	dev-node/core-js
+	dev-node/date-time
+	dev-node/es5-shim
+	dev-node/es6-shim
+	node-eslint/eslint
+	node-eslint/eslint-plugin-import
+	dev-node/execa
+	dev-node/fixturify
+	dev-node/hash_js
+	dev-node/lint-staged
+	dev-node/locate-character
+	dev-node/markdownlint-cli
+	dev-node/micromatch
+	dev-node/mocha
+	dev-node/node-fetch
+	dev-node/nyc
+	dev-node/pinst
+	dev-node/prettier
+	dev-node/pretty-bytes
+	dev-node/pretty-ms
+	dev-node/require-relative
+	dev-node/requirejs
 
 	|| ( node-bin/acorn dev-node/acorn )
 	|| ( node-bin/buble dev-node/buble )
@@ -64,31 +90,3 @@ src_prepare() {
 #	export PATH="${S}/dist/bin:${PATH}"
 	node_src_prepare
 }
-
-#    "acorn-class-fields": "*",
- #   "acorn-static-class-features": "*",
- #   "chokidar": "*",
-  #  "codecov": "*",
-   ## "colorette": "*",
-   # "core-js": "*",
-    #"date-time": "*",
-    #"es5-shim": "*",
-    #"es6-shim": "*",
-    #"eslint": "*",
-    #"eslint-plugin-import": "*",
-    #"execa": "*",
-    #"fixturify": "*",
-    #"hash.js": "*",
-    #"lint-staged": "*",
-    #"locate-character": "*",
-    #"markdownlint-cli": "*",
-    #"micromatch": "*",
-    #"mocha": "*",
-    #"node-fetch": "*",
-    #"nyc": "*",
-    #"pinst": "*",
-    #"prettier": "*",
-    #"pretty-bytes": "*",
-    #"pretty-ms": "*",
-    #"require-relative": "*",
-    #"requirejs": "*",
