@@ -15,7 +15,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-lodash/lodash-template
 	dev-node/conventional-changelog-angular
 	dev-node/conventional-changelog-core
 	dev-node/conventional-recommended-bump
@@ -26,4 +25,5 @@ RDEPEND="
 	dev-node/pify
 	dev-node/semver
 	node-lerna/lerna+validation-error
+	node-lodash/lodash-template
 "

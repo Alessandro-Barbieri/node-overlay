@@ -15,7 +15,6 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-lodash/lodash
 	dev-node/add-stream
 	dev-node/conventional-changelog-writer
 	dev-node/conventional-commits-parser
@@ -30,4 +29,5 @@ RDEPEND="
 	dev-node/read-pkg-up
 	dev-node/shelljs
 	dev-node/through2
+	node-lodash/lodash
 "
