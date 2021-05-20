@@ -17,7 +17,7 @@ RDEPEND="
 
 BDEPEND="
 	${NODEJS_BDEPEND}
-	dev-node/mocha
 	dev-node/pkg-up
 	dev-node/semver
 "
+#	dev-node/mocha

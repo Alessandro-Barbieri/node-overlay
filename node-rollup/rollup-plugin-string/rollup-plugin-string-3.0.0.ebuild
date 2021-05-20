@@ -15,5 +15,5 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-rollup/rollup-pluginutils
+	|| ( node-bin/rollup+pluginutils node-rollup/rollup-pluginutils )
 "

@@ -18,10 +18,10 @@ BDEPEND="
 	${NODEJS_BDEPEND}
 	node-types/types+chai
 	node-types/types+ensure-posix-path
-	node-types/types+mocha
 	node-types/types+node
 	dev-node/chai
 	dev-node/ensure-posix-path
 	|| ( node-bin/typescript dev-node/typescript )
 "
+#	node-types/types+mocha
 #	dev-node/mocha

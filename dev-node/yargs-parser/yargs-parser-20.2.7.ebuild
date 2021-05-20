@@ -11,17 +11,17 @@ HOMEPAGE="
 	https://www.npmjs.com/package/yargs-parser
 "
 SRC_URI="https://github.com/yargs/yargs-parser/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${P}"
 LICENSE="ISC"
 KEYWORDS="~amd64"
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/gts
 	node-types/types+node
-	node-types/types+mocha
 	node-types/types+chai
 
 	|| ( node-bin/typescript dev-node/typescript )
 "
 #	|| ( node-bin/rollout dev-node/rollout )
 
-S="${WORKDIR}/${P}"
+#	node-types/types+mocha
