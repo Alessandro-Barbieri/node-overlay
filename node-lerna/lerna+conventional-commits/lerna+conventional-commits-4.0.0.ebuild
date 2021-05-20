@@ -15,15 +15,15 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	node-lerna/lerna+validation-error
+	dev-lodash/lodash-template
 	dev-node/conventional-changelog-angular
 	dev-node/conventional-changelog-core
 	dev-node/conventional-recommended-bump
 	dev-node/fs-extra
 	dev-node/get-stream
-	dev-node/lodash-template
 	dev-node/npm-package-arg
 	dev-node/npmlog
 	dev-node/pify
 	dev-node/semver
+	node-lerna/lerna+validation-error
 "

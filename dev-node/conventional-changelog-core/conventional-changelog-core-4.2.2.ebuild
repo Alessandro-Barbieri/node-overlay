@@ -15,6 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
+	dev-lodash/lodash
 	dev-node/add-stream
 	dev-node/conventional-changelog-writer
 	dev-node/conventional-commits-parser
@@ -23,7 +24,6 @@ RDEPEND="
 	dev-node/git-raw-commits
 	dev-node/git-remote-origin-url
 	dev-node/git-semver-tags
-	dev-node/lodash
 	dev-node/normalize-package-data
 	dev-node/q
 	dev-node/read-pkg
