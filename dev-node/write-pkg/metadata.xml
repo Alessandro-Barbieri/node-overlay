@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer type="person">
-		<email>marco@scardovi.com</email>
-		<name>Marco Scardovi</name>
-	</maintainer>
-	<upstream>
-		<bugs-to>https://github.com/sindresorhus/write-pkg/issues</bugs-to>
-		<remote-id type="github">sindresorhus/write-pkg</remote-id>
-	</upstream>
+  <maintainer type="person">
+    <email>marco@scardovi.com</email>
+    <name>Marco Scardovi</name>
+  </maintainer>
+  <upstream>
+    <bugs-to>https://github.com/sindresorhus/write-pkg/issues</bugs-to>
+    <remote-id type="github">sindresorhus/write-pkg</remote-id>
+  </upstream>
 </pkgmetadata>

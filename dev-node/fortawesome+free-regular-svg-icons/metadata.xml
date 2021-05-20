@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>lssndrbarbieri@gmail.com</email>
+    <name>Alessandro Barbieri</name>
+  </maintainer>
+  <upstream>
+    <bugs-to>http://github.com/FortAwesome/Font-Awesome/issues</bugs-to>
+    <remote-id type="github">FortAwesome/Font-Awesome</remote-id>
+  </upstream>
+</pkgmetadata>

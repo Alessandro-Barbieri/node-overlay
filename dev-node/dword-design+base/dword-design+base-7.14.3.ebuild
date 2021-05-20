@@ -68,3 +68,17 @@ RDEPEND="
 	dev-node/std-env
 	dev-node/yaml
 "
+BDEPEND="
+	${NODEJS_BDEPEND}
+	node-babel/babel+cli
+	dev-node/dword-design+proxyquire
+	dev-node/dword-design+tester
+	dev-node/dword-design+tester-plugin-tmp-dir
+	dev-node/is-docker
+	dev-node/unify-mocha-output
+	dev-node/sharp
+	dev-node/p-event
+	dev-node/rimraf
+	dev-node/stealthy-require
+	dev-node/with-local-tmp-dir
+"
