@@ -4,6 +4,7 @@ set -xe
 
 find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|BSD-2-Clause|BSD-2|g'
 find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|BSD-3-Clause|BSD|g'
+find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|WTFPL|WTFPL-2|g'
 find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|dev-node/babel|node-babel/babel|g'
 find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|dev-node/eslint|node-eslint/eslint|g'
 find . -name "*.ebuild" -type f -print0 | xargs -0 sed -i -e 's|dev-node/lodash|node-lodash/lodash|g'

@@ -25,10 +25,11 @@ RDEPEND="
 	dev-node/estree-walker
 	dev-node/hash-sum
 	dev-node/lru-cache
-	dev-node/magic-string
 	dev-node/merge-source-map
 	node-postcss/postcss
 	node-postcss/postcss-modules
 	node-postcss/postcss-selector-parser
 	dev-node/source-map
+
+	|| ( node-bin/magic-string dev-node/magic-string )
 "
