@@ -19,3 +19,7 @@ RDEPEND="
 	dev-node/source-map
 	dev-node/source-map-support
 "
+BDEPEND="
+	${NODEJS_BDEPEND}
+	dev-node/rimraf
+"
