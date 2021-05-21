@@ -17,7 +17,7 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+parser
 	node-babel/babel+traverse
-	dev-node/vue+compiler-sfc
+	node-vue/vue+compiler-sfc
 	dev-node/builtin-modules
 	dev-node/camelcase
 	dev-node/cosmiconfig

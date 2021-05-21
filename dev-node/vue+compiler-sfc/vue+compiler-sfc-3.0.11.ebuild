@@ -17,10 +17,10 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+parser
 	node-babel/babel+types
-	dev-node/vue+compiler-core
-	dev-node/vue+compiler-dom
-	dev-node/vue+compiler-ssr
-	dev-node/vue+shared
+	node-vue/vue+compiler-core
+	node-vue/vue+compiler-dom
+	node-vue/vue+compiler-ssr
+	node-vue/vue+shared
 	dev-node/consolidate
 	dev-node/estree-walker
 	dev-node/hash-sum

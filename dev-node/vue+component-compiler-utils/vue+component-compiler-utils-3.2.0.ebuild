@@ -22,6 +22,6 @@ RDEPEND="
 	node-postcss/postcss
 	node-postcss/postcss-selector-parser
 	dev-node/source-map
-	dev-node/vue-template-es2015-compiler
+	node-vue/vue-template-es2015-compiler
 	dev-node/prettier
 "

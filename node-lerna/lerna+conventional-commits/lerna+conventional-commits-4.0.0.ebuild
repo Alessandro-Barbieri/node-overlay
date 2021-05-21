@@ -25,5 +25,5 @@ RDEPEND="
 	dev-node/pify
 	dev-node/semver
 	node-lerna/lerna+validation-error
-	node-lodash/lodash-template
+	node-lodash/lodash_template
 "

@@ -19,7 +19,7 @@ RDEPEND="
 	node-babel/babel+plugin-proposal-pipeline-operator
 	node-babel/babel+preset-env
 	dev-node/dword-design+functions
-	dev-node/vue+babel-preset-jsx
+	node-vue/vue+babel-preset-jsx
 	node-babel/babel-plugin-add-module-exports
 	node-babel/babel-plugin-macros
 	node-babel/babel-plugin-module-resolver

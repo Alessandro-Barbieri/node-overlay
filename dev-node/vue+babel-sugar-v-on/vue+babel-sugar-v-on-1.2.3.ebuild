@@ -15,6 +15,6 @@ KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+plugin-syntax-jsx
-	dev-node/vue+babel-plugin-transform-vue-jsx
+	node-vue/vue+babel-plugin-transform-vue-jsx
 	dev-node/camelcase
 "

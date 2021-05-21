@@ -15,9 +15,9 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/vue+component-compiler-utils
+	node-vue/vue+component-compiler-utils
 	dev-node/hash-sum
 	dev-node/loader-utils
-	dev-node/vue-hot-reload-api
-	dev-node/vue-style-loader
+	node-vue/vue-hot-reload-api
+	node-vue/vue-style-loader
 "

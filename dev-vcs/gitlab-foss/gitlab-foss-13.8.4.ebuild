@@ -124,14 +124,14 @@ RDEPEND="
 	dev-node/url-loader
 	dev-node/uuid
 	dev-node/visibilityjs
-	dev-node/vue
-	dev-node/vue-apollo
-	dev-node/vue-loader
-	dev-node/vue-router
-	dev-node/vue-template-compiler
-	dev-node/vue-virtual-scroll-list
-	dev-node/vuedraggable
-	dev-node/vuex
+	node-vue/vue
+	node-vue/vue-apollo
+	node-vue/vue-loader
+	node-vue/vue-router
+	node-vue/vue-template-compiler
+	node-vue/vue-virtual-scroll-list
+	node-vue/vuedraggable
+	node-vue/vuex
 	dev-node/web-vitals
 	dev-node/webpack
 	dev-node/webpack-bundle-analyzer

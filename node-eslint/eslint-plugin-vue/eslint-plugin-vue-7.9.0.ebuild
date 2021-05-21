@@ -18,5 +18,5 @@ RDEPEND="
 	node-eslint/eslint-utils
 	dev-node/natural-compare
 	dev-node/semver
-	dev-node/vue-eslint-parser
+	node-vue/vue-eslint-parser
 "

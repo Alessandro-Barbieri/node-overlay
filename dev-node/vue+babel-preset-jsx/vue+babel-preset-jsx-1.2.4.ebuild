@@ -14,12 +14,12 @@ LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/vue+babel-helper-vue-jsx-merge-props
-	dev-node/vue+babel-plugin-transform-vue-jsx
-	dev-node/vue+babel-sugar-composition-api-inject-h
-	dev-node/vue+babel-sugar-composition-api-render-instance
-	dev-node/vue+babel-sugar-functional-vue
-	dev-node/vue+babel-sugar-inject-h
-	dev-node/vue+babel-sugar-v-model
-	dev-node/vue+babel-sugar-v-on
+	node-vue/vue+babel-helper-vue-jsx-merge-props
+	node-vue/vue+babel-plugin-transform-vue-jsx
+	node-vue/vue+babel-sugar-composition-api-inject-h
+	node-vue/vue+babel-sugar-composition-api-render-instance
+	node-vue/vue+babel-sugar-functional-vue
+	node-vue/vue+babel-sugar-inject-h
+	node-vue/vue+babel-sugar-v-model
+	node-vue/vue+babel-sugar-v-on
 "
