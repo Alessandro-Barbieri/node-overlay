@@ -11,7 +11,7 @@ HOMEPAGE="
 	https://www.npmjs.com/package/sanitize-filename
 "
 
-LICENSE="|| ( WTFPL-2-2 ISC )"
+LICENSE="|| ( WTFPL-2 ISC )"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}

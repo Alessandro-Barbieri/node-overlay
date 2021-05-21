@@ -11,5 +11,5 @@ HOMEPAGE="
 	https://www.npmjs.com/package/opener
 "
 
-LICENSE="|| ( WTFPL-2-2 MIT )"
+LICENSE="|| ( WTFPL-2 MIT )"
 KEYWORDS="~amd64"
