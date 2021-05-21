@@ -1,5 +1,4 @@
 atom-package
-dev-lerna
 dev-node
 node-babel
 node-bin
@@ -7,6 +6,7 @@ node-d3
 node-eslint
 node-jest
 node-jimp
+node-lerna
 node-lodash
 node-postcss
 node-rollup
