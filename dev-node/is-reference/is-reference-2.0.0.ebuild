@@ -12,6 +12,7 @@ HOMEPAGE="
 "
 SRC_URI="https://github.com/Rich-Harris/is-reference/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${P}"
+
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
@@ -23,7 +24,6 @@ BDEPEND="
 	dev-node/estree-walker
 	dev-node/acorn-class-fields
 	dev-node/acorn-static-class-features
-
 	|| ( node-bin/acorn dev-node/acorn )
 	|| ( node-bin/typescript dev-node/typescript )
 "

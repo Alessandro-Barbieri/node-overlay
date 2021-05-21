@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="➡️ An ES6 string tag that makes indentation right"
+DESCRIPTION="ES6 string tag that makes indentation right"
 HOMEPAGE="
 	https://github.com/ZhouHansen/endent
 	https://www.npmjs.com/package/endent

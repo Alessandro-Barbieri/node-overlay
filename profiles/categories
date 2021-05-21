@@ -6,6 +6,7 @@ node-d3
 node-eslint
 node-jest
 node-jimp
+node-lerna
 node-lodash
 node-postcss
 node-rollup

@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="👋 Hackable console logger"
+DESCRIPTION="Hackable console logger"
 HOMEPAGE="
 	https://github.com/klaussinani/signale
 	https://www.npmjs.com/package/signale

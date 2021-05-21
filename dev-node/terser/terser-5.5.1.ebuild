@@ -11,7 +11,9 @@ HOMEPAGE="
 	https://www.npmjs.com/package/terser
 "
 SRC_URI="https://github.com/terser/terser/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+
 S="${WORKDIR}/${PN}-${PV}"
+
 LICENSE="BSD-2"
 KEYWORDS="~amd64"
 RDEPEND="
