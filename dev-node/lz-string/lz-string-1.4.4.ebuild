@@ -11,5 +11,5 @@ HOMEPAGE="
 	https://www.npmjs.com/package/lz-string
 "
 
-LICENSE="WTFPL-2-2-2-2"
+LICENSE="WTFPL-2-2"
 KEYWORDS="~amd64"

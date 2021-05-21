@@ -11,7 +11,7 @@ HOMEPAGE="
 	https://www.npmjs.com/package/truncate-utf8-bytes
 "
 
-LICENSE="WTFPL-2-2-2-2"
+LICENSE="WTFPL-2-2"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}

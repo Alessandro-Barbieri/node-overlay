@@ -11,5 +11,5 @@ HOMEPAGE="
 	https://www.npmjs.com/package/path-is-inside
 "
 
-LICENSE="|| ( WTFPL-2-2-2-2 MIT )"
+LICENSE="|| ( WTFPL-2-2 MIT )"
 KEYWORDS="~amd64"
