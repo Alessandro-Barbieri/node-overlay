@@ -55,6 +55,7 @@ BDEPEND="
 	dev-node/pretty-ms
 	dev-node/require-relative
 	dev-node/requirejs
+
 	|| ( node-bin/acorn dev-node/acorn )
 	|| ( node-bin/buble dev-node/buble )
 	|| ( node-bin/is-reference dev-node/is-reference )
