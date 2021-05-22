@@ -14,8 +14,16 @@ SRC_URI="https://github.com/stefanpenner/matcher-collection/archive/refs/tags/v$
 S="${WORKDIR}/${PN}-${PV}"
 LICENSE="ISC"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/minimatch
 	node-types/types+minimatch
+"
+BDEPEND="
+	${NODEJS_BDEPEND}
+	node-types/types+node
+
+	bootstrap? ( node-bin/typescript )
+	!bootstrap? ( dev-node/typescript )
 "
