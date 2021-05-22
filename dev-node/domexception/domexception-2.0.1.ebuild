@@ -17,3 +17,9 @@ RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/webidl-conversions
 "
+BDEPEND="
+	${NODEJS_BDEPEND}
+	dev-node/mkdirp
+	dev-node/request
+	dev-node/webidl2js
+"
