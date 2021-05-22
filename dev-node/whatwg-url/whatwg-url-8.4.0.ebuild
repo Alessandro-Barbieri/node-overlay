@@ -24,7 +24,7 @@ BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/recast
 	dev-node/browserify
-	dev-node/domexceptions
+	dev-node/domexception
 	dev-node/glob
 	dev-node/got
 	dev-node/webidl2js
