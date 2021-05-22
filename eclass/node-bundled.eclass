@@ -112,7 +112,7 @@ node-bundled_src_prepare() {
 }
 
 node-bundled_src_compile() {
-	npm ci || die
+	npm ci --loglevel verbose || die
 }
 
 node-bundled_src_install() {
@@ -120,10 +120,10 @@ node-bundled_src_install() {
 	export NODE_MODULE_PREFIX="${T}/prefix"
 
 	npm config set prefix "${NODE_MODULE_PREFIX}" || die
-	npm install -g || die
+	npm install -g --loglevel verbose || die
 	rm -rf .[!.]* || die
 
-	rsync -aLAX "${NODE_MODULE_PREFIX}/" "${ED}/usr" --exclude /bin || die
+	rsync -aLAX "${NODE_MODULE_PREFIX}/" "${ED}/opt/node-debian/usr" --exclude /bin || die
 	if [ -d "${NODE_MODULE_PREFIX}/bin" ] ; then
 		rsync -aAX "${NODE_MODULE_PREFIX}/bin/" "${ED}/opt/node-debian/bin" || die
 	fi
