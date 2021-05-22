@@ -2,29 +2,37 @@
 
 set -xe
 
-pkgcheck scan -k=NonsolvableDepsInStable > dip
+pkgcheck scan -k=NonsolvableDepsInStable > dip-0
 
-grep ":" dip | tr " " "\n" | grep node-babel/ | tr -d "," | sort -u | sed "s|node-babel/||" | grep -v "+" > dipbabel
-grep ":" dip | tr " " "\n" | grep node-postcss/ | tr -d "," | sort -u | sed "s|node-postcss/||" | grep -v "+" > dippostcss
-grep ":" dip | tr " " "\n" | grep dev-node/ | tr -d "," | sort -u | sed "s|dev-node/||" | grep -v "+" > dip1
-grep ":" dip | tr " " "\n" | grep dev-node/ | tr -d "," | sort -u | sed "s|dev-node/|@|" | grep "+" | tr "+" "/" >> dip1
+grep ":" dip-0 | tr " " "\n" | grep dev-node/ | tr -d "," | sort -u | sed "s|dev-node/||" | grep -v "+" > dip-node
+grep ":" dip-0 | tr " " "\n" | grep dev-node/ | tr -d "," | sort -u | sed "s|dev-node/|@|" | grep "+" | tr "+" "/" >> dip-node
+grep ":" dip-0 | tr " " "\n" | grep node-babel/ | tr -d "," | sort -u | sed "s|node-babel/||" | grep -v "+" > dip-babel
+grep ":" dip-0 | tr " " "\n" | grep node-lodash/ | tr -d "," | sort -u | sed "s|node-lodash/||" | grep -v "+" > dip-lodash
+grep ":" dip-0 | tr " " "\n" | grep node-postcss/ | tr -d "," | sort -u | sed "s|node-postcss/||" | grep -v "+" > dip-postcss
 
 pushd dev-node
-for f in $(cat ../dip1)
-do
-	python3 ../genera-node-ebuild.py "${f}" &
-done
-popd
-
-pushd node-postcss
-for f in $(cat ../dippostcss)
+for f in $(cat ../dip-node)
 do
 	python3 ../genera-node-ebuild.py "${f}" &
 done
 popd
 
 pushd node-babel
-for f in $(cat ../dipbabel)
+for f in $(cat ../dip-babel)
+do
+	python3 ../genera-node-ebuild.py "${f}" &
+done
+popd
+
+pushd node-lodash
+for f in $(cat ../dip-lodash)
+do
+	python3 ../genera-node-ebuild.py "${f}" &
+done
+popd
+
+pushd node-postcss
+for f in $(cat ../dip-postcss)
 do
 	python3 ../genera-node-ebuild.py "${f}" &
 done
@@ -32,4 +40,4 @@ popd
 
 pkgdev manifest > /dev/null
 
-rm dip*
+rm dip-*
