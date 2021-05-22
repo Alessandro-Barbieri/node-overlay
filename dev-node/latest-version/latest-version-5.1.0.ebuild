@@ -13,7 +13,9 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/package-json
+	bootstrap? ( node-bin/package-json )
+	!bootstrap? ( dev-node/package-json )
 "
