@@ -39,6 +39,6 @@ BDEPEND="
 	node-babel/babel-register
 	node-rollup/rollup-plugin-babel
 
-	bootstrap? ( node-bin/rollup )
+  bootstrap? ( node-bin/rollup )
 	!bootstrap? ( node-rollup/rollup )
 "

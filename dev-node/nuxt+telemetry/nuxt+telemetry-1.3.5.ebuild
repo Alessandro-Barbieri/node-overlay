@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="> ℹ️ Only used for Nuxt 2.13+"
+DESCRIPTION="Only used for Nuxt 2.13+"
 HOMEPAGE="
 	https://github.com/nuxt/telemetry
 	https://www.npmjs.com/package/@nuxt/telemetry

@@ -13,3 +13,9 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
+BDEPEND="
+	${NODEJS_BDEPEND}
+	bootstrap? ( node-bin/rollup )
+	!bootstrap? ( node-rollup/rollup )
+"

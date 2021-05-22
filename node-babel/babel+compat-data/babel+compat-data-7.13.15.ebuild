@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION=""
+DESCRIPTION="Compat data plugin for babel"
 HOMEPAGE="
 		https://www.npmjs.com/package/@babel/compat-data
 "

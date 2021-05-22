@@ -19,9 +19,15 @@ BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/gts
 	node-types/types+node
+	node-types/types+mocha
 	node-types/types+chai
 
-	bootstrap? ( node-bin/typescript )
-	!bootstrap? ( dev-node/typescript )
+	bootstrap? (
+      node-bin/typescript
+      node-bin/rollup
+    )
+	!bootstrap? (
+      dev-node/typescript
+      node-rollup/rollup
+    )
 "
-#	node-types/types+mocha

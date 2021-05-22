@@ -6,7 +6,10 @@ EAPI=7
 inherit node
 
 DESCRIPTION="easily create complex multi-column command-line-interfaces"
-HOMEPAGE="https://github.com/yargs/cliui https://www.npmjs.com/package/cliui"
+HOMEPAGE="
+	https://github.com/yargs/cliui
+	https://www.npmjs.com/package/cliui
+"
 SRC_URI="https://github.com/yargs/cliui/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="ISC"

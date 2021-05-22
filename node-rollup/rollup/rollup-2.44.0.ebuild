@@ -10,10 +10,8 @@ HOMEPAGE="
 	https://rollupjs.org/
 	https://www.npmjs.com/package/rollup
 "
-SRC_URI="
-	https://github.com/rollup/rollup/archive/refs/tags/v${PV}.tar.gz -> ${P}.tgz
-	mirror://npm/rollup/-/rollup-${PV}.tgz -> ${P}-bootstrap.tgz
-"
+SRC_URI="https://github.com/rollup/rollup/archive/refs/tags/v${PV}.tar.gz -> ${P}.tgz"
+S="${WORKDIR}/${P}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
 IUSE="bootstrap"
@@ -93,10 +91,8 @@ BDEPEND="
 		node-rollup/rollup-pluginutils
 	)
 "
-S="${WORKDIR}/${P}"
 
 src_prepare() {
-#	mv "${WORKDIR}/package/dist" "${S}" || die
 	#it want a git repo
 	git init || die
 	git config --global user.email "you@example.com" || die
@@ -104,6 +100,5 @@ src_prepare() {
 	git add . || die
 	git commit -m 'init' || die
 
-#	export PATH="${S}/dist/bin:${PATH}"
 	node_src_prepare
 }
