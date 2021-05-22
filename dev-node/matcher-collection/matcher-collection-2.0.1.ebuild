@@ -10,7 +10,8 @@ HOMEPAGE="
 	https://github.com/stefanpenner/matcher-collection
 	https://www.npmjs.com/package/matcher-collection
 "
-
+SRC_URI="https://github.com/stefanpenner/matcher-collection/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-${PV}"
 LICENSE="ISC"
 KEYWORDS="~amd64"
 RDEPEND="
