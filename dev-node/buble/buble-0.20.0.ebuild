@@ -14,6 +14,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/acorn-dynamic-import
@@ -22,13 +23,20 @@ RDEPEND="
 	dev-node/minimist
 	dev-node/regexpu-core
 
-	|| ( node-bin/acorn dev-node/acorn )
-	|| ( node-bin/magic-string dev-node/magic-string )
+	bootstrap? (
+		node-bin/acorn
+		node-bin/magic-string
+	)
+	!bootstrap? (
+		dev-node/acorn
+		dev-node/magic-string
+	)
 "
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/acorn-dynamic-import
 	dev-node/acorn-jsx
 
-	|| ( node-bin/acorn dev-node/acorn )
+	bootstrap? ( node-bin/acorn )
+	!bootstrap? ( dev-node/acorn )
 "

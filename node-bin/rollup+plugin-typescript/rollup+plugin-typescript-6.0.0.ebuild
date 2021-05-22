@@ -6,18 +6,25 @@ EAPI=7
 DESCRIPTION="Seamless integration between Rollup and TypeScript"
 HOMEPAGE="https://tracker.debian.org/pkg/node-rollup-plugin-typescript"
 SRC_URI="mirror://debian/pool/main/n/node-rollup-plugin-typescript/node-rollup-plugin-typescript_6.0.0+~1.0.1-3_all.deb"
+S="${WORKDIR}"
 SLOT="0"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
 	dev-node/resolve
 	dev-node/tslib
 
-	|| ( node-bin/typescript dev-node/typescript )
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup+pluginutils )
+	bootstrap? (
+		node-bin/typescript
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		dev-node/typescript
+		node-rollup/rollup+pluginutils
+	)
 "
-S="${WORKDIR}"
 
 src_unpack() {
 	default

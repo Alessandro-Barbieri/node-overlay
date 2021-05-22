@@ -9,14 +9,14 @@ inherit node distutils-r1
 COMMIT="0a0c09a174086706914f2c32c07ca84ad62de81b"
 DESCRIPTION="Collaborative Calculation in the Cloud"
 SRC_URI="https://github.com/sagemathinc/cocalc/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-${COMMIT}/src"
 HOMEPAGE="
 	https://cocalc.com
 	https://github.com/sagemathinc/cocalc
 "
-S="${WORKDIR}/${PN}-${COMMIT}/src"
 LICENSE="AGPL-3+ Commons-Clause CC-BY-SA-2.0"
 KEYWORDS="~amd64"
-IUSE="examples"
+IUSE="bootstrap examples"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+core
@@ -87,7 +87,6 @@ RDEPEND="
 	dev-node/ts-loader
 	dev-node/ts-node
 	dev-node/tsd
-	|| ( node-bin/typescript dev-node/typescript )
 	dev-node/uglify-js
 	dev-node/uglifyjs-webpack-plugin
 	dev-node/url-loader
@@ -100,6 +99,9 @@ RDEPEND="
 	dev-node/webpack-path-rewriter
 	dev-node/webpack-sha-hash
 	dev-node/webpack-stats-plugin
+
+	bootstrap? ( node-bin/typescript )
+	!bootstrap? ( dev-node/typescript )
 "
 
 src_prepare() {

@@ -13,9 +13,11 @@ HOMEPAGE="
 
 LICENSE="Apache-2.0"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	|| ( node-bin/acorn dev-node/acorn )
+	bootstrap? ( node-bin/acorn )
+	!bootstrap? ( dev-node/acorn )
 	dev-node/acorn-walk
 	dev-node/xtend
 "

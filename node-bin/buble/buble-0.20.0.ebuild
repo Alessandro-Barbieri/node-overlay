@@ -9,15 +9,19 @@ HOMEPAGE="https://tracker.debian.org/pkg/node-buble"
 LICENSE="MIT"
 KEYWORDS="~amd64"
 SLOT="0"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
 	dev-node/chalk
 	dev-node/minimist
 	dev-node/regexpu-core
 
-	|| ( node-bin/magic-string dev-node/magic-string )
-	|| (
+	bootstrap? (
 		node-bin/acorn
+		node-bin/magic-string
+	)
+	!bootstrap? (
+		dev-node/magic-string
 		(
 			dev-node/acorn
 			dev-node/acorn-dynamic-import

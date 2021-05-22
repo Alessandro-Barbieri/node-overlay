@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-types/types+minimist
@@ -27,5 +28,6 @@ RDEPEND="
 	dev-node/trim-newlines
 	dev-node/type-fest
 
-	|| ( node-bin/yargs-parser dev-node/yargs-parser )
+	bootstrap? ( node-bin/yargs-parser )
+	!bootstrap? ( dev-node/yargs-parser )
 "

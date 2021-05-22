@@ -13,8 +13,15 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup+pluginutils )
-	|| ( node-bin/magic-string dev-node/magic-string )
+	bootstrap? (
+		node-bin/magic-string
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		dev-node/magic-string
+		node-rollup/rollup+pluginutils
+	)
 "

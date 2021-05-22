@@ -15,15 +15,24 @@ S="${WORKDIR}/${P}"
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-types/types+estree
 "
 BDEPEND="
 	${BDEPEND}
-	dev-node/estree-walker
 	dev-node/acorn-class-fields
 	dev-node/acorn-static-class-features
-	|| ( node-bin/acorn dev-node/acorn )
-	|| ( node-bin/typescript dev-node/typescript )
+
+	bootstrap? (
+		node-bin/estree-walker
+		node-bin/acorn
+		node-bin/typescript
+	)
+	!bootstrap? (
+		dev-node/estree-walker
+		dev-node/acorn
+		dev-node/typescript
+	)
 "

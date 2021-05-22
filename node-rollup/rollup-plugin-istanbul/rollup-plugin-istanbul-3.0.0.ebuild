@@ -14,12 +14,19 @@ SRC_URI="https://github.com/artberri/rollup-plugin-istanbul/archive/refs/tags/v$
 S="${WORKDIR}/${PN}-${PV}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/istanbul-lib-instrument
-	|| ( node-rollup/rollup+pluginutils node-bin/rollup+pluginutils )
+	bootstrap? (
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		node-rollup/rollup+pluginutils
+	)
 "
 BDEPEND="
 	${NODEJS_BDEPEND}
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? ( node-bin/rollup )
+	!bootstrap? ( node-rollup/rollup )
 "

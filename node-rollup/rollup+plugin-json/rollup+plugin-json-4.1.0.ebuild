@@ -13,10 +13,13 @@ HOMEPAGE="
 SRC_URI="https://github.com/rollup/plugins/archive/refs/tags/json-v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	|| (
+	bootstrap? (
 		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
 		node-rollup/rollup+pluginutils
 	)
 "

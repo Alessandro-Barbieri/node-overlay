@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-babel/babel+parser
@@ -22,7 +23,6 @@ RDEPEND="
 	node-vue/vue+compiler-ssr
 	node-vue/vue+shared
 	dev-node/consolidate
-	dev-node/estree-walker
 	dev-node/hash-sum
 	dev-node/lru-cache
 	dev-node/merge-source-map
@@ -31,5 +31,12 @@ RDEPEND="
 	node-postcss/postcss-selector-parser
 	dev-node/source-map
 
-	|| ( node-bin/magic-string dev-node/magic-string )
+	bootstrap? (
+		node-bin/estree-walker
+		node-bin/magic-string
+	)
+	!bootstrap? (
+		dev-node/estree-walker
+		dev-node/magic-string
+	)
 "

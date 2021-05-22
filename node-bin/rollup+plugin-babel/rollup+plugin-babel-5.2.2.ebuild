@@ -9,13 +9,16 @@ SRC_URI="mirror://debian/pool/main/n/node-rollup-plugin-babel/node-rollup-plugin
 LICENSE="MIT"
 KEYWORDS="~amd64"
 SLOT="0"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
 	node-babel/babel+helper-module-imports
 	node-babel/babel+preset-env
 
-	|| (
+	bootstrap? (
 		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
 		node-rollup/rollup+pluginutils
 	)
 "

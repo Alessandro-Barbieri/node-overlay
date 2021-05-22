@@ -11,10 +11,17 @@ SRC_URI="https://github.com/acornjs/acorn/archive/refs/tags/${PV}.tar.gz -> ${P}
 S="${WORKDIR}/${MYPN}-${PV}/${PN}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/micromatch
 
-	|| ( node-bin/rollup+plugin-buble node-rollup/rollup-plugin-buble )
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? (
+		node-bin/rollup
+		node-bin/rollup+plugin-buble
+	)
+	!bootstrap? (
+		node-rollup/rollup
+		node-rollup/rollup-plugin-buble
+	)
 "

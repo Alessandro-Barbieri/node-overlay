@@ -13,8 +13,10 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/extend-shallow
-	|| ( node-bin/typescript dev-node/typescript )
+	bootstrap? ( node-bin/typescript )
+	!bootstrap? ( dev-node/typescript )
 "

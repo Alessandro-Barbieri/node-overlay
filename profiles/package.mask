@@ -1,4 +1,5 @@
 #https://github.com/Rich-Harris/estree-walker/issues/26
 >=dev-node/estree-walker-2.0.2
+>=node-bin/estree-walker-2.0.2
 =dev-node/is-reference-2.0.0
 

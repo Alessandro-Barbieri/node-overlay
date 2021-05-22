@@ -13,13 +13,21 @@ HOMEPAGE="
 SRC_URI="https://github.com/rollup/rollup-plugin-replace/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	|| ( node-bin/magic-string dev-node/magic-string )
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup-pluginutils )
+	bootstrap? (
+		node-bin/magic-string
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		dev-node/magic-string
+		node-rollup/rollup-pluginutils
+	)
 "
 BDEPEND="
 	${NODEJS_BDEPEND}
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? ( node-bin/rollup )
+	!bootstrap? ( node-rollup/rollup )
 "
 S="${WORKDIR}/${P}"

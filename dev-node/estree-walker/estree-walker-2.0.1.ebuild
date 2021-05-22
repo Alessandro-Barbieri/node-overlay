@@ -13,9 +13,16 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 BDEPEND="
 	node-types/types+estree
 	node-rollup/rollup-plugin-sucrase
-	|| ( node-bin/rollup node-rollup/rollup )
-	|| ( node-bin/typescript dev-node/typescript )
+	bootstrap? (
+		node-bin/rollup
+		node-bin/typescript
+	)
+	!bootstrap? (
+		node-rollup/rollup
+		dev-node/typescript
+	)
 "

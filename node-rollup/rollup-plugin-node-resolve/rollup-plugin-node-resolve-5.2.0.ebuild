@@ -11,7 +11,9 @@ HOMEPAGE="
 	https://www.npmjs.com/package/rollup-plugin-node-resolve
 "
 SRC_URI="https://github.com/rollup/rollup-plugin-node-resolve/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${P}"
 LICENSE="MIT"
+IUSE="bootstrap"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
@@ -20,13 +22,23 @@ RDEPEND="
 	dev-node/resolve
 	node-types/types+resolve
 
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup-pluginutils )
+	bootstrap? (
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		node-rollup/rollup-pluginutils
+	)
 "
 BDEPEND="
 	${NODEJS_BDEPEND}
 	node-rollup/rollup-plugin-babel
 
-	|| ( node-rollup/rollup-plugin-json node-bin/rollup+plugin-json )
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? (
+		node-bin/rollup
+		node-bin/rollup+plugin-json
+	)
+	!bootstrap? (
+		node-rollup/rollup
+		node-rollup/rollup-plugin-json
+	)
 "
-S="${WORKDIR}/${P}"

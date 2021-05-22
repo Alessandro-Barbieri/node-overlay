@@ -13,10 +13,12 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/dword-design+functions
 	dev-node/fs-extra
 
-	|| ( node-bin/dword-design+base dev-node/dword-design+base )
+	bootstrap? ( node-bin/dword-design+base )
+	!bootstrap? ( dev-node/dword-design+base )
 "

@@ -13,13 +13,25 @@ HOMEPAGE="
 SRC_URI="https://github.com/rollup/rollup-plugin-buble/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	|| ( node-bin/buble dev-node/buble )
+	bootstrap? (
+		node-bin/buble
+	)
+	!bootstrap? (
+		dev-node/buble
+	)
 "
 BDEPEND="
 	${NODEJS_BDEPEND}
-	|| ( node-bin/rollup+pluginutils node-rollup/rollup-pluginutils )
-	|| ( node-bin/rollup node-rollup/rollup )
+	bootstrap? (
+		node-bin/rollup
+		node-bin/rollup+pluginutils
+	)
+	!bootstrap? (
+		node-rollup/rollup
+		node-rollup/rollup-pluginutils
+	)
 "
 S="${WORKDIR}/${P}"

@@ -11,8 +11,10 @@ HOMEPAGE="
 	https://www.npmjs.com/package/yargs-parser
 "
 SRC_URI="https://github.com/yargs/yargs-parser/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${P}"
 LICENSE="ISC"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 BDEPEND="
 	${NODEJS_BDEPEND}
 	dev-node/gts
@@ -20,8 +22,12 @@ BDEPEND="
 	node-types/types+mocha
 	node-types/types+chai
 
-	|| ( node-bin/typescript dev-node/typescript )
+	bootstrap? (
+      node-bin/typescript
+      node-bin/rollup
+    )
+	!bootstrap? (
+      dev-node/typescript
+      node-rollup/rollup
+    )
 "
-#	|| ( node-bin/rollout dev-node/rollout )
-
-S="${WORKDIR}/${P}"
