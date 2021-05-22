@@ -5,9 +5,9 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Provide access to win32 and posix path operations; sourced directly from upstream Node.js"
+DESCRIPTION="Provide access to win32 and posix path operations"
 HOMEPAGE="
-	http://github.com/tjfontaine/node-path-platform
+	https://github.com/tjfontaine/node-path-platform
 	https://www.npmjs.com/package/path-platform
 "
 

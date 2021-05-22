@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Find semver versions in a string: unicorn v1.2.3 → 1.2.3"
+DESCRIPTION="Find semver versions in a string: unicorn v1.2.3 -> 1.2.3"
 HOMEPAGE="
 	https://github.com/sindresorhus/find-versions
 	https://www.npmjs.com/package/find-versions

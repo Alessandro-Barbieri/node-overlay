@@ -37,6 +37,5 @@ BDEPEND="
 	node-babel/babel-preset-env
 	node-babel/babel-register
 	node-rollup/rollup-plugin-babel
-
 	|| ( node-bin/rollup node-rollup/rollup )
 "

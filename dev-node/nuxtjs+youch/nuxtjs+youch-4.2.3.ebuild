@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Pretty error reporting for Node.js 🚀 (Modified for Nuxt.js & SSR Bundles)"
+DESCRIPTION="Pretty error reporting for Node.js modified for Nuxt.js & SSR Bundles"
 HOMEPAGE="
 	https://github.com/poppinss/nuxt
 	https://www.npmjs.com/package/@nuxtjs/youch

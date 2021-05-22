@@ -5,7 +5,7 @@ EAPI=7
 
 inherit node
 
-DESCRIPTION="Send parameterized requests to GitHubâs APIs with sensible defaults in browsers and Node"
+DESCRIPTION="Send parameterized requests to GitHub's APIs with sensible defaults"
 HOMEPAGE="
 	https://github.com/octokit/request.js
 	https://www.npmjs.com/package/@octokit/request

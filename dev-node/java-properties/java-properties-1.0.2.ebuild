@@ -7,7 +7,7 @@ inherit node
 
 DESCRIPTION="Reads and interpolates Java .properties files"
 HOMEPAGE="
-	http://github.com/mattdsteele/java-properties
+	https://github.com/mattdsteele/java-properties
 	https://www.npmjs.com/package/java-properties
 "
 
