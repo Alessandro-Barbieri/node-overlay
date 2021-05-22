@@ -13,3 +13,17 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
+BDEPEND="
+	${NODEJS_BDEPEND}
+	node-types/types+node
+	dev-node/ava+typescript
+	dev-node/sindresorhus+tsconfig
+	dev-node/ava
+	dev-node/create-cert
+	dev-node/del-cli
+	dev-node/p-event
+
+	bootstrap? ( node-bin/typescript )
+	!bootstrap? ( dev-node/typescript )
+"
