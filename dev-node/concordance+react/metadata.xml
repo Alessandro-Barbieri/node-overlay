@@ -6,7 +6,7 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <bugs-to>https://github.com/lukechilds/create-cert/issues</bugs-to>
-    <remote-id type="github">lukechilds/create-cert</remote-id>
+    <bugs-to>https://github.com/concordancejs/react/issues</bugs-to>
+    <remote-id type="github">concordancejs/react</remote-id>
   </upstream>
 </pkgmetadata>

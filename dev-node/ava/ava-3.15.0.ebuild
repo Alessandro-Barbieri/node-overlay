@@ -47,7 +47,7 @@ RDEPEND="
 	dev-node/is-error
 	dev-node/is-plain-object
 	dev-node/is-promise
-	dev-node/lodash
+	node-lodash/lodash
 	dev-node/matcher
 	dev-node/md5-hex
 	dev-node/mem

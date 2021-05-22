@@ -6,7 +6,7 @@
     <name>Alessandro Barbieri</name>
   </maintainer>
   <upstream>
-    <bugs-to>https://github.com/lukechilds/create-cert/issues</bugs-to>
-    <remote-id type="github">lukechilds/create-cert</remote-id>
+    <bugs-to>https://github.com/jamestalmage/currently-unhandled/issues</bugs-to>
+    <remote-id type="github">jamestalmage/currently-unhandled</remote-id>
   </upstream>
 </pkgmetadata>
