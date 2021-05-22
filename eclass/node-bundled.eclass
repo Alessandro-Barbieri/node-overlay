@@ -5,10 +5,9 @@
 # @MAINTAINER:
 # Marco Sirabella
 # Alessandro Barbieri
-# @AUTHOR:
-# Marco Sirabella
-# @BLURB:
-# @DESCRIPTION:
+# @AUTHOR: Marco Sirabella
+# @BLURB: Eclass used to create and maintain node-bundled packages
+# @DESCRIPTION: Node-bundled eclass for nodejs' based packages
 
 EXPORT_FUNCTIONS src_unpack src_prepare src_compile src_install
 
