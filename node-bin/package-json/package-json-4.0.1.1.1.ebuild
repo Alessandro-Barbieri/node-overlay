@@ -6,17 +6,20 @@ EAPI=7
 DESCRIPTION="Get metadata of a package from the npm registry"
 HOMEPAGE="https://tracker.debian.org/pkg/node-package-json"
 SRC_URI="mirror://debian/pool/main/n/node-package-json/node-package-json_4.0.1-1.1_all.deb"
+S="${WORKDIR}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
 SLOT="0"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
-	dev-node/got
 	dev-node/registry-auth-token
 	dev-node/registry-url
 	dev-node/semver
+
+	bootstrap? ( node-bin/got )
+	!bootstrap? ( dev-node/got )
 "
-S="${WORKDIR}"
 
 src_unpack() {
 	default

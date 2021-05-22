@@ -14,6 +14,7 @@ SRC_URI="https://github.com/jsdom/whatwg-url/archive/refs/tags/v${PV}.tar.gz -> 
 S="${WORKDIR}/${PN}-${PV}"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-lodash/lodash_sortby
@@ -26,6 +27,8 @@ BDEPEND="
 	dev-node/browserify
 	dev-node/domexception
 	dev-node/glob
-	dev-node/got
 	dev-node/webidl2js
+
+	bootstrap? ( node-bin/got )
+	!bootstrap? ( dev-node/got )
 "

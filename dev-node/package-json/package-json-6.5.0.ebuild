@@ -10,13 +10,15 @@ HOMEPAGE="
 	https://github.com/sindresorhus/package-json
 	https://www.npmjs.com/package/package-json
 "
-
+IUSE="bootstrap"
 LICENSE="MIT"
 KEYWORDS="~amd64"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/got
 	dev-node/registry-auth-token
 	dev-node/registry-url
 	dev-node/semver
+
+	bootstrap? ( node-bin/got )
+	!bootstrap? ( dev-node/got )
 "

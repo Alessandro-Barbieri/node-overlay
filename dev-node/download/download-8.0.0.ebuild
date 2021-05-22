@@ -13,6 +13,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/archive-type
@@ -22,8 +23,10 @@ RDEPEND="
 	dev-node/file-type
 	dev-node/filenamify
 	dev-node/get-stream
-	dev-node/got
 	dev-node/make-dir
 	dev-node/p-event
 	dev-node/pify
+
+	bootstrap? ( node-bin/got )
+	!bootstrap? ( dev-node/got )
 "

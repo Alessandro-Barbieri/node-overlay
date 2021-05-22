@@ -12,6 +12,7 @@ HOMEPAGE="
 "
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	dev-node/debug
@@ -23,4 +24,7 @@ RDEPEND="
 	dev-node/sumchecker
 	dev-node/global-agent
 	dev-node/global-tunnel-ng
+
+	bootstrap? ( node-bin/got )
+	!bootstrap? ( dev-node/got )
 "
