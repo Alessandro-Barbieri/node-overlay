@@ -12,21 +12,21 @@ grep ":" dip | tr " " "\n" | grep dev-node/ | tr -d "," | sort -u | sed "s|dev-n
 pushd dev-node
 for f in $(cat ../dip1)
 do
-	python3.8 ../genera-node-ebuild.py "${f}" &
+	python3 ../genera-node-ebuild.py "${f}" &
 done
 popd
 
 pushd node-postcss
 for f in $(cat ../dippostcss)
 do
-	python3.8 ../genera-node-ebuild.py "${f}" &
+	python3 ../genera-node-ebuild.py "${f}" &
 done
 popd
 
 pushd node-babel
 for f in $(cat ../dipbabel)
 do
-	python3.8 ../genera-node-ebuild.py "${f}" &
+	python3 ../genera-node-ebuild.py "${f}" &
 done
 popd
 
