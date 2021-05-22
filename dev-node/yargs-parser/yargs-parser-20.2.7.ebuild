@@ -23,11 +23,11 @@ BDEPEND="
 	node-types/types+chai
 
 	bootstrap? (
-      node-bin/typescript
-      node-bin/rollup
-    )
+		node-bin/typescript
+		node-bin/rollup
+	)
 	!bootstrap? (
-      dev-node/typescript
-      node-rollup/rollup
-    )
+		dev-node/typescript
+		node-rollup/rollup
+	)
 "
