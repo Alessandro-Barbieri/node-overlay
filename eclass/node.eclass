@@ -6,8 +6,8 @@
 # @AUTHOR:
 # Alessandro Barbieri
 # msirabella
-# @BLURB:
-# @DESCRIPTION:
+# @BLURB: Eclass used to create and maintain node based packages
+# @DESCRIPTION: Node eclass for nodejs' based packages
 
 EXPORT_FUNCTIONS src_prepare src_compile src_install src_test src_configure
 
