@@ -21,11 +21,11 @@ RDEPEND="
 	dev-node/estree-walker
 	dev-node/picomatch
 	dev-node/semver
- 	dev-node/write-pkg
- "
+	dev-node/write-pkg
+"
 
- BDEPEND="
- 	${NODEJS_BDEPEND}
- 	dev-node/estree-walker
- 	dev-node/picomatch
+BDEPEND="
+	${NODEJS_BDEPEND}
+	dev-node/estree-walker
+	dev-node/picomatch
 "
