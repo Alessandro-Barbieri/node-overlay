@@ -21,18 +21,19 @@ RDEPEND="
 "
 BDEPEND="
 	${BDEPEND}
-	dev-node/estree-walker
 	node-rollup/rollup-plugin-typescript
 	dev-node/tslib
 	dev-node/acorn-class-fields
 	dev-node/acorn-static-class-features
 
 	bootstrap? (
+		node-bin/estree-walker
 		node-bin/acorn
 		node-bin/rollup
 		node-bin/typescript
 	)
 	!bootstrap? (
+		dev-node/estree-walker
 		dev-node/acorn
 		dev-node/typescript
 		node-rollup/rollup

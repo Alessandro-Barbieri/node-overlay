@@ -6,16 +6,22 @@ EAPI=7
 DESCRIPTION="A set of utility functions commonly used by Rollup plugins"
 HOMEPAGE="https://tracker.debian.org/pkg/node-rollup-pluginutils"
 SRC_URI="mirror://debian/pool/main/n/node-rollup-pluginutils/node-rollup-pluginutils_4.1.0+~2.8.2-3_all.deb"
+S="${WORKDIR}"
 SLOT="0"
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
-	dev-node/estree-walker
 	dev-node/picomatch
 	node-types/types+estree
+	bootstrap? (
+		node-bin/estree-walker
+	)
+	!bootstrap? (
+		dev-node/estree-walker
+	)
 "
-S="${WORKDIR}"
 
 src_unpack() {
 	default

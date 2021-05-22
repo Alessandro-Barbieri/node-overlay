@@ -16,15 +16,16 @@ KEYWORDS="~amd64"
 IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/estree-walker
 	dev-node/resolve
 
 	bootstrap? (
+		node-bin/estree-walker
 		node-bin/is-reference
 		node-bin/magic-string
 		node-bin/rollup+pluginutils
 	)
 	!bootstrap? (
+		dev-node/estree-walker
 		dev-node/is-reference
 		dev-node/magic-string
 		node-rollup/rollup-pluginutils

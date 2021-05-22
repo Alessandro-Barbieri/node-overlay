@@ -13,16 +13,17 @@ IUSE="bootstrap"
 RDEPEND="
 	net-libs/nodejs
 	dev-node/commondir
-	dev-node/estree-walker
 	dev-node/glob
 	dev-node/resolve
 
 	bootstrap? (
+		node-bin/estree-walker
 		node-bin/rollup+pluginutils
 		node-bin/is-reference
 		node-bin/magic-string
 	)
 	!bootstrap? (
+		dev-node/estree-walker
 		node-rollup/rollup+pluginutils
 		dev-node/magic-string
 		dev-node/is-reference

@@ -23,7 +23,6 @@ RDEPEND="
 	node-vue/vue+compiler-ssr
 	node-vue/vue+shared
 	dev-node/consolidate
-	dev-node/estree-walker
 	dev-node/hash-sum
 	dev-node/lru-cache
 	dev-node/merge-source-map
@@ -33,9 +32,11 @@ RDEPEND="
 	dev-node/source-map
 
 	bootstrap? (
+		node-bin/estree-walker
 		node-bin/magic-string
 	)
 	!bootstrap? (
+		dev-node/estree-walker
 		dev-node/magic-string
 	)
 "

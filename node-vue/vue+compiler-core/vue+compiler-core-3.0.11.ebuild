@@ -13,11 +13,18 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
 	node-vue/vue+shared
 	node-babel/babel+parser
 	node-babel/babel+types
-	dev-node/estree-walker
 	dev-node/source-map
+
+	bootstrap? (
+		node-bin/estree-walker
+	)
+	!bootstrap? (
+		dev-node/estree-walker
+	)
 "

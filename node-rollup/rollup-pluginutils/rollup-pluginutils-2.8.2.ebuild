@@ -17,7 +17,12 @@ KEYWORDS="~amd64"
 IUSE="bootstrap"
 RDEPEND="
 	${NODEJS_RDEPEND}
-	dev-node/estree-walker
+	bootstrap? (
+		node-bin/estree-walker
+	)
+	!bootstrap? (
+		dev-node/estree-walker
+	)
 "
 BDEPEND="
 	${NODEJS_BDEPEND}
