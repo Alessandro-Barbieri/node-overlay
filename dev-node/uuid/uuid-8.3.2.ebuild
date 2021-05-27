@@ -13,3 +13,9 @@ HOMEPAGE="
 
 LICENSE="MIT"
 KEYWORDS="~amd64"
+
+src_install() {
+	node_src_install
+	# errno binary conflicts with dev-libs/ossp-uuid
+	mv "${ED}/usr/bin/uuid" "${ED}/usr/bin/node-uuid" || die
+}
